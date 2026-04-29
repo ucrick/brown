@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Store Product Finder</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
   <style>
     :root {
       --blue: #0057a8;
@@ -54,11 +58,13 @@
     .header h1 {
       margin: 0 0 6px;
       font-size: 24px;
+      line-height: 1.2;
     }
 
     .header p {
       margin: 0;
       font-size: 14px;
+      line-height: 1.4;
       color: rgba(255,255,255,0.92);
     }
 
@@ -242,7 +248,9 @@
 
     .zone-box,
     .pharmacy-box,
-    .med-box {
+    .med-box,
+    .household-box,
+    .till2-box {
       background: white;
       border: 3px solid #1f2937;
       border-radius: 12px;
@@ -281,7 +289,7 @@
 
     .upper-map-group {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1.15fr;
       gap: 8px;
       align-items: stretch;
     }
@@ -292,7 +300,6 @@
       gap: 10px;
     }
 
-    /* 关键修改：Till 2 在 Household 的右下方 */
     .upper-side-stack {
       display: grid;
       grid-template-columns: 0.42fr 1fr;
@@ -306,31 +313,19 @@
       grid-row: 2 / 3;
     }
 
-    .household-box,
-    .till2-box {
-      border: 2px solid #243041;
-      border-radius: 14px;
-      background: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 10px;
-      font-weight: 900;
-      color: #142b4d;
-      box-shadow: 0 2px 0 rgba(17,24,39,0.04);
-    }
-
     .household-box {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
       font-size: 18px;
+      line-height: 1.25;
+      color: #142b4d;
     }
 
     .till2-box {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
-      font-size: 16px;
+      font-size: 18px;
+      color: #142b4d;
     }
 
     .aisle-block {
@@ -385,7 +380,8 @@
       padding: 0;
     }
 
-    .target-section::after {
+    .target-section::after,
+    .target::after {
       content: "HERE";
       position: absolute;
       top: -12px;
@@ -450,21 +446,6 @@
       z-index: 2;
     }
 
-    .target::after {
-      content: "HERE";
-      position: absolute;
-      top: -12px;
-      right: 6px;
-      background: #111827;
-      color: white;
-      font-size: 9px;
-      font-weight: 900;
-      padding: 3px 7px;
-      border-radius: 999px;
-      white-space: nowrap;
-      letter-spacing: 0.4px;
-    }
-
     .match-item {
       border: 1px solid var(--border);
       border-radius: 12px;
@@ -525,6 +506,12 @@
       background: white;
     }
 
+    .loading {
+      color: var(--muted);
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
     @media (max-width: 820px) {
       .quick-buttons { grid-template-columns: repeat(2, 1fr); }
       .location-segment { font-size: 13px; }
@@ -552,7 +539,6 @@
     <section class="map-card">
       <h2 class="card-title">Map</h2>
       <p class="map-help">Yellow = target section. Dark cell = exact area inside that section.</p>
-
       <div class="map-wrap">
         <div class="store-map">
           <div class="left-zone" id="leftZones"></div>
@@ -560,14 +546,12 @@
           <div class="map-main">
             <div class="upper-map-group">
               <div class="upper-aisles" id="upperAisleMap"></div>
-
               <div class="upper-side-stack">
                 <div class="household-box" id="householdBox">Household</div>
                 <div class="upper-side-empty" aria-hidden="true"></div>
                 <div class="till2-box" id="till2Box">Till 2</div>
               </div>
             </div>
-
             <div class="lower-aisles" id="lowerAisleMap"></div>
           </div>
 
@@ -584,92 +568,19 @@
   </main>
 
   <script>
+    const CSV_FILES = {
+      products: "products.csv",
+      groups: "groups.csv"
+    };
+
     const aisles = [
-      {
-        aisle: 1,
-        top: [
-          { id: "T1", label: "Beauty" },
-          { id: "T2", label: "Hair" }
-        ],
-        bottom: [
-          { id: "B1", label: "Skin" },
-          { id: "B2", label: "Body" }
-        ]
-      },
-      {
-        aisle: 2,
-        top: [
-          { id: "T1", label: "Sun" },
-          { id: "T2", label: "Face" }
-        ],
-        bottom: [
-          { id: "B1", label: "Natural" },
-          { id: "B2", label: "Herbal" }
-        ]
-      },
-      {
-        aisle: 3,
-        top: [
-          { id: "T1", label: "Allergy" },
-          { id: "T2", label: "First Aid" }
-        ],
-        bottom: [
-          { id: "B1", label: "Baby" },
-          { id: "B2", label: "Kids" }
-        ]
-      },
-      {
-        aisle: 4,
-        top: [
-          { id: "T1", label: "Vitamins" },
-          { id: "T2", label: "Immune" },
-          { id: "T3", label: "Fish Oil" }
-        ],
-        bottom: [
-          { id: "B1", label: "Multi" },
-          { id: "B2", label: "Minerals" },
-          { id: "B3", label: "Joint" }
-        ]
-      },
-      {
-        aisle: 5,
-        top: [
-          { id: "T1", label: "Honey" },
-          { id: "T2", label: "Manuka" },
-          { id: "T3", label: "Propolis" }
-        ],
-        bottom: [
-          { id: "B1", label: "Protein" },
-          { id: "B2", label: "Sports" },
-          { id: "B3", label: "Weight" }
-        ]
-      },
-      {
-        aisle: 6,
-        top: [
-          { id: "T1", label: "Toothbrush" },
-          { id: "T2", label: "Toothpaste" },
-          { id: "T3", label: "Mouthwash" }
-        ],
-        bottom: [
-          { id: "B1", label: "Hygiene" },
-          { id: "B2", label: "Deodorant" },
-          { id: "B3", label: "Care" }
-        ]
-      },
-      {
-        aisle: 7,
-        top: [
-          { id: "T1", label: "General" },
-          { id: "T2", label: "General" },
-          { id: "T3", label: "General" }
-        ],
-        bottom: [
-          { id: "B1", label: "General" },
-          { id: "B2", label: "General" },
-          { id: "B3", label: "General" }
-        ]
-      }
+      { aisle: 1, top: [{ id: "T1", label: "Beauty" }, { id: "T2", label: "Hair" }], bottom: [{ id: "B1", label: "Skin" }, { id: "B2", label: "Body" }] },
+      { aisle: 2, top: [{ id: "T1", label: "Sun" }, { id: "T2", label: "Face" }], bottom: [{ id: "B1", label: "Natural" }, { id: "B2", label: "Herbal" }] },
+      { aisle: 3, top: [{ id: "T1", label: "Allergy" }, { id: "T2", label: "First Aid" }], bottom: [{ id: "B1", label: "Baby" }, { id: "B2", label: "Kids" }] },
+      { aisle: 4, top: [{ id: "T1", label: "Vitamins" }, { id: "T2", label: "Immune" }, { id: "T3", label: "Fish Oil" }], bottom: [{ id: "B1", label: "Multi" }, { id: "B2", label: "Minerals" }, { id: "B3", label: "Joint" }] },
+      { aisle: 5, top: [{ id: "T1", label: "Honey" }, { id: "T2", label: "Manuka" }, { id: "T3", label: "Propolis" }], bottom: [{ id: "B1", label: "Protein" }, { id: "B2", label: "Sports" }, { id: "B3", label: "Weight" }] },
+      { aisle: 6, top: [{ id: "T1", label: "Toothbrush" }, { id: "T2", label: "Toothpaste" }, { id: "T3", label: "Mouthwash" }], bottom: [{ id: "B1", label: "Hygiene" }, { id: "B2", label: "Deodorant" }, { id: "B3", label: "Care" }] },
+      { aisle: 7, top: [{ id: "T1", label: "General" }, { id: "T2", label: "General" }, { id: "T3", label: "General" }], bottom: [{ id: "B1", label: "General" }, { id: "B2", label: "General" }, { id: "B3", label: "General" }] }
     ];
 
     const leftZones = [
@@ -689,209 +600,6 @@
       { id: "back-door", label: "Back Door" }
     ];
 
-    const items = [
-      {
-        id: "vitamin-c",
-        title: "Vitamin C",
-        type: "Product / Category",
-        keywords: "vitamin c vitamins immune immunity zinc cold flu swisse blackmores supplement",
-        areaType: "aisle",
-        aisle: 4,
-        side: "top",
-        section: "T2",
-        sectionLabel: "Immune",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: false
-      },
-      {
-        id: "swisse",
-        title: "Swisse Vitamins",
-        type: "Brand",
-        keywords: "swisse brand vitamins supplement immune",
-        areaType: "aisle",
-        aisle: 4,
-        side: "top",
-        section: "T1",
-        sectionLabel: "Vitamins",
-        horizontal: "left",
-        vertical: "middle",
-        advice: false
-      },
-      {
-        id: "blackmores-fish-oil",
-        title: "Blackmores Fish Oil",
-        type: "Brand / Product",
-        keywords: "blackmores fish oil omega 3 supplement",
-        areaType: "aisle",
-        aisle: 4,
-        side: "top",
-        section: "T3",
-        sectionLabel: "Fish Oil",
-        horizontal: "right",
-        vertical: "bottom",
-        advice: false
-      },
-      {
-        id: "honey",
-        title: "Manuka Honey",
-        type: "Product / Category",
-        keywords: "manuka honey honey propolis natural health",
-        areaType: "aisle",
-        aisle: 5,
-        side: "top",
-        section: "T2",
-        sectionLabel: "Manuka",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: false
-      },
-      {
-        id: "toothbrush",
-        title: "Toothbrush",
-        type: "Product / Category",
-        keywords: "toothbrush oral care manual toothbrush electric toothbrush",
-        areaType: "aisle",
-        aisle: 6,
-        side: "top",
-        section: "T1",
-        sectionLabel: "Toothbrush",
-        horizontal: "left",
-        vertical: "middle",
-        advice: false
-      },
-      {
-        id: "colgate",
-        title: "Colgate Toothpaste",
-        type: "Brand / Product",
-        keywords: "colgate toothpaste oral care teeth whitening",
-        areaType: "aisle",
-        aisle: 6,
-        side: "top",
-        section: "T2",
-        sectionLabel: "Toothpaste",
-        horizontal: "middle",
-        vertical: "top",
-        advice: false
-      },
-      {
-        id: "sunscreen",
-        title: "Sunscreen",
-        type: "Product / Category",
-        keywords: "sunscreen sun care spf skin care",
-        areaType: "aisle",
-        aisle: 2,
-        side: "top",
-        section: "T1",
-        sectionLabel: "Sun",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: false
-      },
-      {
-        id: "cerave",
-        title: "CeraVe / Skin Care",
-        type: "Brand",
-        keywords: "cerave skin care cleanser moisturiser lotion",
-        areaType: "aisle",
-        aisle: 1,
-        side: "bottom",
-        section: "B1",
-        sectionLabel: "Skin",
-        horizontal: "right",
-        vertical: "top",
-        advice: false
-      },
-      {
-        id: "hayfever",
-        title: "Hay Fever / Allergy",
-        type: "Symptom",
-        keywords: "hay fever hayfever allergy antihistamine nasal spray",
-        areaType: "aisle",
-        aisle: 3,
-        side: "top",
-        section: "T1",
-        sectionLabel: "Allergy",
-        horizontal: "left",
-        vertical: "middle",
-        advice: true
-      },
-      {
-        id: "first-aid",
-        title: "First Aid / Bandage",
-        type: "Category",
-        keywords: "first aid plaster bandage wound dressing tape",
-        areaType: "aisle",
-        aisle: 3,
-        side: "top",
-        section: "T2",
-        sectionLabel: "First Aid",
-        horizontal: "middle",
-        vertical: "bottom",
-        advice: false
-      },
-      {
-        id: "panadol",
-        title: "Panadol / Pain Relief",
-        type: "Brand / Symptom",
-        keywords: "panadol pain relief headache fever paracetamol nurofen",
-        areaType: "right-med",
-        zoneId: "pain-relief",
-        sectionLabel: "Pain Relief",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: true
-      },
-      {
-        id: "cold-flu",
-        title: "Cold & Flu",
-        type: "Symptom",
-        keywords: "cold flu blocked nose fever medicine",
-        areaType: "right-med",
-        zoneId: "cold-flu",
-        sectionLabel: "Cold & Flu",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: true
-      },
-      {
-        id: "cough-syrup",
-        title: "Cough Syrup",
-        type: "Product / Symptom",
-        keywords: "cough syrup liquid cough dry cough chesty cough",
-        areaType: "right-med",
-        zoneId: "cough-syrup",
-        sectionLabel: "Cough Syrup",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: true
-      },
-      {
-        id: "sore-throat",
-        title: "Sore Throat / Lozenges",
-        type: "Symptom / Product",
-        keywords: "sore throat lozenges throat spray strepsils",
-        areaType: "right-med",
-        zoneId: "sore-throat",
-        sectionLabel: "Sore Throat",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: true
-      },
-      {
-        id: "prescription",
-        title: "Prescription Medicine",
-        type: "Service",
-        keywords: "prescription medicine pharmacist pharmacy antibiotics restricted medicine",
-        areaType: "pharmacy",
-        zoneId: "pharmacist",
-        sectionLabel: "Pharmacist",
-        horizontal: "middle",
-        vertical: "middle",
-        advice: true
-      }
-    ];
-
     const quickButtons = [
       { label: "Vitamins", key: "vitamins" },
       { label: "Pain Relief", key: "pain relief" },
@@ -903,6 +611,9 @@
       { label: "Prescription", key: "prescription" }
     ];
 
+    let items = [];
+    let fuse = null;
+
     const searchInput = document.getElementById("searchInput");
     const searchBtn = document.getElementById("searchBtn");
     const quickButtonsBox = document.getElementById("quickButtons");
@@ -913,6 +624,8 @@
     const rightMedZonesBox = document.getElementById("rightMedZones");
     const pharmacyZonesBox = document.getElementById("pharmacyZones");
     const resultList = document.getElementById("resultList");
+    const householdBox = document.getElementById("householdBox");
+    const till2Box = document.getElementById("till2Box");
 
     function getAisleColor(aisleNumber) {
       const colorMap = {
@@ -927,16 +640,176 @@
       return colorMap[aisleNumber] || "var(--blue)";
     }
 
+    function normalize(value) {
+      return value === undefined || value === null ? "" : String(value).trim();
+    }
+
+    function normalizeKey(value) {
+      return normalize(value).toLowerCase();
+    }
+
+    function parseBool(value) {
+      const v = normalizeKey(value);
+      return ["true", "yes", "y", "1"].includes(v);
+    }
+
+    function parsePriority(value) {
+      const n = Number(normalize(value));
+      return Number.isFinite(n) ? n : 0;
+    }
+
     function capitalize(word) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
+      const v = normalize(word);
+      return v ? v.charAt(0).toUpperCase() + v.slice(1).toLowerCase() : "";
     }
 
     function displayHorizontal(value) {
-      return value === "middle" ? "Center" : capitalize(value);
+      const v = normalizeKey(value);
+      if (v === "middle" || v === "center") return "Center";
+      return capitalize(v || "middle");
     }
 
     function displayVertical(value) {
-      return value === "middle" ? "Middle Shelf" : `${capitalize(value)} Shelf`;
+      const v = normalizeKey(value) || "middle";
+      if (v === "middle") return "Middle Shelf";
+      return `${capitalize(v)} Shelf`;
+    }
+
+    function cleanRow(row) {
+      const cleaned = {};
+      Object.entries(row || {}).forEach(([key, value]) => {
+        const cleanKey = normalize(key);
+        if (!cleanKey) return;
+        cleaned[cleanKey] = normalize(value);
+      });
+      return cleaned;
+    }
+
+    function readCSV(url) {
+      return new Promise((resolve, reject) => {
+        Papa.parse(url, {
+          download: true,
+          header: true,
+          skipEmptyLines: true,
+          complete: results => {
+            if (results.errors && results.errors.length) {
+              console.warn(`CSV warnings for ${url}:`, results.errors);
+            }
+            resolve((results.data || []).map(cleanRow));
+          },
+          error: error => reject(error)
+        });
+      });
+    }
+
+    function mergeGroupAndProduct(group, product) {
+      const merged = { ...(group || {}) };
+      Object.entries(product || {}).forEach(([key, value]) => {
+        if (normalize(value) !== "") merged[key] = value;
+      });
+
+      merged.id = merged.id || `${merged.groupId || "item"}-${Math.random().toString(36).slice(2)}`;
+      merged.status = normalizeKey(merged.status || "active");
+      merged.title = normalize(merged.title || merged.displayName || merged.groupName || merged.sectionLabel || "Untitled");
+      merged.displayName = normalize(merged.displayName || merged.title);
+      merged.brand = normalize(merged.brand || "");
+      merged.type = normalize(merged.type || "Product");
+      merged.areaType = normalizeKey(merged.areaType || "aisle");
+      merged.aisle = normalize(merged.aisle);
+      merged.side = normalizeKey(merged.side || "top");
+      merged.section = normalize(merged.section);
+      merged.sectionLabel = normalize(merged.sectionLabel || merged.subcategory || merged.groupName || merged.category || "");
+      merged.zoneId = normalizeKey(merged.zoneId || "");
+      merged.horizontal = normalizeKey(merged.horizontal || "middle");
+      merged.vertical = normalizeKey(merged.vertical || "middle");
+      merged.advice = parseBool(merged.advice);
+      merged.ageRestricted = parseBool(merged.ageRestricted);
+      merged.pharmacistOnly = parseBool(merged.pharmacistOnly);
+      merged.priority = parsePriority(merged.priority);
+
+      merged.searchText = [
+        merged.id,
+        merged.title,
+        merged.displayName,
+        merged.brand,
+        merged.type,
+        merged.groupId,
+        merged.groupName,
+        merged.variant,
+        merged.ageRange,
+        merged.size,
+        merged.flavour,
+        merged.category,
+        merged.subcategory,
+        merged.symptoms,
+        merged.aliases,
+        merged.keywords,
+        merged.keywordsExtra,
+        merged.activeIngredient,
+        merged.activeIngredientExtra,
+        merged.targetCustomer,
+        merged.sectionLabel,
+        merged.shelfNote,
+        merged.notes
+      ].map(normalize).filter(Boolean).join(" ");
+
+      return merged;
+    }
+
+    async function loadData() {
+      answerBox.innerHTML = `<section class="answer-card"><div class="loading">Loading product data...</div></section>`;
+      buildMap(null);
+
+      const [productRows, groupRows] = await Promise.all([
+        readCSV(CSV_FILES.products),
+        readCSV(CSV_FILES.groups)
+      ]);
+
+      const groupsById = new Map();
+      groupRows.forEach(group => {
+        const groupId = normalize(group.groupId);
+        if (groupId) groupsById.set(groupId, group);
+      });
+
+      items = productRows
+        .map(product => mergeGroupAndProduct(groupsById.get(normalize(product.groupId)), product))
+        .filter(item => item.status !== "inactive" && item.status !== "disabled" && item.status !== "hide");
+
+      fuse = new Fuse(items, {
+        includeScore: true,
+        ignoreLocation: true,
+        threshold: 0.38,
+        distance: 120,
+        minMatchCharLength: 2,
+        keys: [
+          { name: "title", weight: 0.28 },
+          { name: "displayName", weight: 0.24 },
+          { name: "brand", weight: 0.16 },
+          { name: "aliases", weight: 0.14 },
+          { name: "symptoms", weight: 0.12 },
+          { name: "activeIngredient", weight: 0.10 },
+          { name: "activeIngredientExtra", weight: 0.08 },
+          { name: "keywords", weight: 0.08 },
+          { name: "keywordsExtra", weight: 0.08 },
+          { name: "category", weight: 0.06 },
+          { name: "subcategory", weight: 0.06 },
+          { name: "sectionLabel", weight: 0.06 },
+          { name: "searchText", weight: 0.04 }
+        ]
+      });
+
+      if (items.length === 0) {
+        answerBox.innerHTML = `<section class="answer-card"><div class="empty">No active products found. Check products.csv and groups.csv.</div></section>`;
+        resultList.innerHTML = "";
+        return;
+      }
+
+      const initialList = [...items].sort(sortByPriority).slice(0, 12);
+      selectItem(initialList[0], initialList);
+    }
+
+    function sortByPriority(a, b) {
+      return (b.priority || 0) - (a.priority || 0) || normalize(a.displayName).localeCompare(normalize(b.displayName));
     }
 
     function buildQuickButtons() {
@@ -959,7 +832,10 @@
       }
       if (item.areaType === "right-med") return `Right Side · ${item.sectionLabel}`;
       if (item.areaType === "pharmacy") return "Pharmacist";
-      return "";
+      if (item.areaType === "household") return `Household · ${displayHorizontal(item.horizontal)} · ${displayVertical(item.vertical)}`;
+      if (item.areaType === "till2") return "Till 2";
+      if (item.areaType === "checkout") return "Checkout";
+      return normalize(item.sectionLabel || item.areaType || "");
     }
 
     function makeZoneBox(zone, isTarget, className) {
@@ -969,9 +845,12 @@
       return div;
     }
 
-    function buildLeftZones() {
+    function buildLeftZones(targetItem) {
       leftZonesBox.innerHTML = "";
-      leftZones.forEach(zone => leftZonesBox.appendChild(makeZoneBox(zone, false, "zone-box")));
+      leftZones.forEach(zone => {
+        const isTarget = targetItem && targetItem.areaType === "checkout" && targetItem.zoneId === zone.id;
+        leftZonesBox.appendChild(makeZoneBox(zone, isTarget, "zone-box"));
+      });
     }
 
     function buildRightMedZones(targetItem) {
@@ -990,55 +869,53 @@
       });
     }
 
+    function buildSideZones(targetItem) {
+      householdBox.classList.toggle("target", Boolean(targetItem && targetItem.areaType === "household"));
+      till2Box.classList.toggle("target", Boolean(targetItem && targetItem.areaType === "till2"));
+    }
+
     function cellKey(horizontal, vertical) {
-      return `${horizontal}-${vertical}`;
+      return `${normalizeKey(horizontal)}-${normalizeKey(vertical)}`;
     }
 
     function buildSectionDetail(item) {
+      const targetHorizontal = normalizeKey(item.horizontal || "middle");
+      const targetVertical = normalizeKey(item.vertical || "middle");
       const horizontals = ["left", "middle", "right"];
       const verticals = ["top", "middle", "bottom"];
       let html = `<div class="section-detail">`;
-
       verticals.forEach(vertical => {
         horizontals.forEach(horizontal => {
-          const isTargetCell = cellKey(horizontal, vertical) === cellKey(item.horizontal, item.vertical);
+          const isTargetCell = cellKey(horizontal, vertical) === cellKey(targetHorizontal, targetVertical);
           html += `<div class="section-cell ${isTargetCell ? "target-cell" : ""}">${isTargetCell ? "ITEM" : ""}</div>`;
         });
       });
-
       html += `</div>`;
       return html;
     }
 
     function buildShelfSide(sections, sideName, aisleNumber, targetItem) {
       const countClass = sections.length === 2 ? "two" : "three";
-
       const html = sections.map(section => {
         const isTarget =
           targetItem &&
           targetItem.areaType === "aisle" &&
-          targetItem.aisle === aisleNumber &&
-          targetItem.side === sideName &&
-          targetItem.section === section.id;
+          String(targetItem.aisle) === String(aisleNumber) &&
+          normalizeKey(targetItem.side) === sideName &&
+          normalize(targetItem.section) === section.id;
 
         if (isTarget) {
           return `<div class="shelf-section target-section">${buildSectionDetail(targetItem)}</div>`;
         }
-
         return `<div class="shelf-section">${section.label}</div>`;
       }).join("");
-
       return `<div class="shelf-side ${countClass}">${html}</div>`;
     }
 
     function buildAisleGroup(container, aisleList, targetItem) {
       container.innerHTML = "";
       aisleList.forEach(aisle => {
-        const isActiveAisle =
-          targetItem &&
-          targetItem.areaType === "aisle" &&
-          targetItem.aisle === aisle.aisle;
-
+        const isActiveAisle = targetItem && targetItem.areaType === "aisle" && String(targetItem.aisle) === String(aisle.aisle);
         const aisleColor = getAisleColor(aisle.aisle);
         const row = document.createElement("div");
         row.className = `aisle-block ${isActiveAisle ? "active-aisle" : ""}`;
@@ -1054,18 +931,23 @@
     }
 
     function buildMap(targetItem) {
-      buildLeftZones();
+      buildLeftZones(targetItem);
       buildAisleGroup(upperAisleMap, aisles.filter(a => a.aisle <= 3), targetItem);
       buildAisleGroup(lowerAisleMap, aisles.filter(a => a.aisle >= 4), targetItem);
+      buildSideZones(targetItem);
       buildRightMedZones(targetItem);
       buildPharmacyZones(targetItem);
+    }
+
+    function getDisplayName(item) {
+      return normalize(item.displayName || item.title || item.groupName || item.sectionLabel || "Item");
     }
 
     function renderAnswer(item) {
       let locationHTML = "";
 
       if (item.areaType === "aisle") {
-        const aisleColor = getAisleColor(item.aisle);
+        const aisleColor = getAisleColor(Number(item.aisle));
         locationHTML = `
           <div class="big-location">
             <span class="location-chip" style="background:${aisleColor}">A${item.aisle}</span>
@@ -1084,19 +966,30 @@
           </div>
         `;
       } else if (item.areaType === "pharmacy") {
+        locationHTML = `<div class="big-location"><span class="location-segment">Pharmacist</span></div>`;
+      } else if (item.areaType === "household") {
         locationHTML = `
           <div class="big-location">
-            <span class="location-segment">Pharmacist</span>
+            <span class="location-segment">Household</span>
+            <span class="location-segment">${displayHorizontal(item.horizontal)}</span>
+            <span class="location-segment">${displayVertical(item.vertical)}</span>
           </div>
         `;
+      } else if (item.areaType === "till2") {
+        locationHTML = `<div class="big-location"><span class="location-segment">Till 2</span></div>`;
+      } else if (item.areaType === "checkout") {
+        locationHTML = `<div class="big-location"><span class="location-segment">Checkout</span></div>`;
+      } else {
+        locationHTML = `<div class="big-location"><span class="location-segment">${getLocationText(item)}</span></div>`;
       }
 
+      const adviceNeeded = item.advice || item.pharmacistOnly || item.ageRestricted;
       answerBox.innerHTML = `
         <section class="answer-card">
           <div class="answer-label">Best match</div>
-          <h2 class="answer-title">${item.title}</h2>
+          <h2 class="answer-title">${getDisplayName(item)}</h2>
           ${locationHTML}
-          ${item.advice ? `<div class="warning">Ask staff if needed.</div>` : ""}
+          ${adviceNeeded ? `<div class="warning">Ask staff if needed.</div>` : ""}
         </section>
       `;
     }
@@ -1113,9 +1006,9 @@
         div.className = `match-item ${item.id === activeId ? "active" : ""}`;
 
         if (item.areaType === "aisle") {
-          const aisleColor = getAisleColor(item.aisle);
+          const aisleColor = getAisleColor(Number(item.aisle));
           div.innerHTML = `
-            <span class="match-title">${item.title}</span>
+            <span class="match-title">${getDisplayName(item)}</span>
             <div class="match-location">
               <span class="aisle-mini-chip" style="background:${aisleColor};">A${item.aisle}</span>
               <span>${item.sectionLabel} · ${displayHorizontal(item.horizontal)} · ${displayVertical(item.vertical)}</span>
@@ -1123,7 +1016,7 @@
           `;
         } else {
           div.innerHTML = `
-            <span class="match-title">${item.title}</span>
+            <span class="match-title">${getDisplayName(item)}</span>
             <div class="match-location"><span>${getLocationText(item)} · ${item.type}</span></div>
           `;
         }
@@ -1139,19 +1032,64 @@
       renderResults(list || [item], item.id);
     }
 
+    function directScore(item, query) {
+      const q = normalizeKey(query);
+      if (!q) return 0;
+      const title = normalizeKey(item.title);
+      const displayName = normalizeKey(item.displayName);
+      const brand = normalizeKey(item.brand);
+      const aliases = normalizeKey(item.aliases);
+      const sectionLabel = normalizeKey(item.sectionLabel);
+      if (displayName === q || title === q) return 1000;
+      if (brand === q) return 600;
+      if (displayName.includes(q) || title.includes(q)) return 420;
+      if (aliases.includes(q)) return 320;
+      if (brand.includes(q)) return 260;
+      if (sectionLabel.includes(q)) return 180;
+      return 0;
+    }
+
     function searchItems() {
-      const query = searchInput.value.trim().toLowerCase();
-      let results;
+      const query = searchInput.value.trim();
 
       if (!query) {
-        results = items;
-      } else {
-        const tokens = query.split(/\s+/).filter(Boolean);
-        results = items.filter(item => {
-          const text = `${item.title} ${item.type} ${item.keywords} ${item.sectionLabel}`.toLowerCase();
-          return tokens.some(token => text.includes(token));
-        });
+        const list = [...items].sort(sortByPriority).slice(0, 12);
+        selectItem(list[0], list);
+        return;
       }
+
+      const fuseResults = fuse
+        ? fuse.search(query, { limit: 30 }).map(result => ({ ...result.item, _score: result.score }))
+        : [];
+
+      const directMatches = items
+        .map(item => ({ item, score: directScore(item, query) }))
+        .filter(row => row.score > 0)
+        .map(row => ({ ...row.item, _directScore: row.score }));
+
+      const byId = new Map();
+      [...directMatches, ...fuseResults].forEach(item => {
+        const existing = byId.get(item.id);
+        if (!existing) {
+          byId.set(item.id, item);
+        } else {
+          byId.set(item.id, {
+            ...existing,
+            _directScore: Math.max(existing._directScore || 0, item._directScore || 0),
+            _score: Math.min(existing._score ?? 1, item._score ?? 1)
+          });
+        }
+      });
+
+      const results = Array.from(byId.values())
+        .sort((a, b) => {
+          const directDiff = (b._directScore || 0) - (a._directScore || 0);
+          if (directDiff) return directDiff;
+          const fuseDiff = (a._score ?? 1) - (b._score ?? 1);
+          if (fuseDiff) return fuseDiff;
+          return sortByPriority(a, b);
+        })
+        .slice(0, 12);
 
       if (results.length === 0) {
         answerBox.innerHTML = `
@@ -1171,7 +1109,18 @@
     searchInput.addEventListener("input", searchItems);
 
     buildQuickButtons();
-    selectItem(items[0], items);
+    loadData().catch(error => {
+      console.error(error);
+      answerBox.innerHTML = `
+        <section class="answer-card">
+          <div class="empty">
+            Failed to load products.csv or groups.csv.<br>
+            Make sure both files are in the same folder as this HTML and run it through GitHub Pages or a local server.
+          </div>
+        </section>
+      `;
+      buildMap(null);
+    });
   </script>
 </body>
 </html>
