@@ -869,7 +869,6 @@
           { name: "category", weight: 0.08 },
           { name: "subcategory", weight: 0.08 },
           { name: "department", weight: 0.06 },
-          { name: "needType", weight: 0.06 },
           { name: "sectionLabel", weight: 0.06 },
           { name: "searchText", weight: 0.04 }
         ]
@@ -1207,7 +1206,7 @@
     let searchTimer = null;
     searchInput.addEventListener("input", () => {
       clearTimeout(searchTimer);
-      searchTimer = setTimeout(searchItems, 250);
+      searchTimer = setTimeout(searchItems, 600);
     });
 
     buildQuickButtons();
