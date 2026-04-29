@@ -570,7 +570,8 @@
   <script>
     const CSV_FILES = {
       products: "products.csv",
-      groups: "groups.csv"
+      groups: "groups.csv",
+      synonyms: "synonyms.csv"
     };
 
     const aisles = [
@@ -613,6 +614,8 @@
 
     let items = [];
     let fuse = null;
+    let synonymRows = [];
+    let synonymIndex = [];
 
     const searchInput = document.getElementById("searchInput");
     const searchBtn = document.getElementById("searchBtn");
@@ -702,6 +705,53 @@
       });
     }
 
+    function splitTerms(value) {
+      return normalize(value)
+        .split(/[,;|]/)
+        .map(term => term.trim().toLowerCase())
+        .filter(Boolean);
+    }
+
+    function buildSynonymIndex(rows) {
+      const index = [];
+      rows.forEach(row => {
+        const term = normalizeKey(row.term);
+        const synonyms = splitTerms(row.synonyms);
+        const allTerms = Array.from(new Set([term, ...synonyms].filter(Boolean)));
+        if (!allTerms.length) return;
+        index.push({
+          term,
+          allTerms,
+          searchBoost: normalizeKey(row.searchBoost || "medium"),
+          department: normalize(row.department),
+          notes: normalize(row.notes)
+        });
+      });
+      return index;
+    }
+
+    function expandQueryWithSynonyms(query) {
+      const original = normalizeKey(query);
+      if (!original) return "";
+
+      const expanded = new Set(original.split(/\s+/).filter(Boolean));
+      expanded.add(original);
+
+      synonymIndex.forEach(entry => {
+        const matched = entry.allTerms.some(term => {
+          if (!term) return false;
+          return original === term || original.includes(term) || term.includes(original);
+        });
+
+        if (matched) {
+          entry.allTerms.forEach(term => expanded.add(term));
+          if (entry.term) expanded.add(entry.term);
+        }
+      });
+
+      return Array.from(expanded).join(" ");
+    }
+
     function mergeGroupAndProduct(group, product) {
       const merged = { ...(group || {}) };
       Object.entries(product || {}).forEach(([key, value]) => {
@@ -736,18 +786,25 @@
         merged.groupId,
         merged.groupName,
         merged.variant,
+        merged.series,
         merged.ageRange,
+        merged.gender,
+        merged.targetCustomer,
         merged.size,
+        merged.packSize,
         merged.flavour,
+        merged.format,
+        merged.strength,
+        merged.department,
         merged.category,
         merged.subcategory,
+        merged.needType,
         merged.symptoms,
         merged.aliases,
         merged.keywords,
         merged.keywordsExtra,
         merged.activeIngredient,
         merged.activeIngredientExtra,
-        merged.targetCustomer,
         merged.sectionLabel,
         merged.shelfNote,
         merged.notes
@@ -760,10 +817,17 @@
       answerBox.innerHTML = `<section class="answer-card"><div class="loading">Loading product data...</div></section>`;
       buildMap(null);
 
-      const [productRows, groupRows] = await Promise.all([
+      const [productRows, groupRows, synonymRowsLoaded] = await Promise.all([
         readCSV(CSV_FILES.products),
-        readCSV(CSV_FILES.groups)
+        readCSV(CSV_FILES.groups),
+        readCSV(CSV_FILES.synonyms).catch(error => {
+          console.warn("synonyms.csv not loaded. Search will still work without synonyms.", error);
+          return [];
+        })
       ]);
+
+      synonymRows = synonymRowsLoaded;
+      synonymIndex = buildSynonymIndex(synonymRows);
 
       const groupsById = new Map();
       groupRows.forEach(group => {
@@ -771,8 +835,19 @@
         if (groupId) groupsById.set(groupId, group);
       });
 
-      items = productRows
-        .map(product => mergeGroupAndProduct(groupsById.get(normalize(product.groupId)), product))
+      const productItems = productRows.map(product => mergeGroupAndProduct(groupsById.get(normalize(product.groupId)), product));
+
+      const productGroupIds = new Set(productRows.map(row => normalize(row.groupId)).filter(Boolean));
+      const categoryItems = groupRows
+        .filter(group => !productGroupIds.has(normalize(group.groupId)))
+        .map(group => mergeGroupAndProduct(group, {
+          id: `group-${normalize(group.groupId)}`,
+          title: group.groupName,
+          displayName: group.groupName,
+          type: group.type || "Category"
+        }));
+
+      items = [...productItems, ...categoryItems]
         .filter(item => item.status !== "inactive" && item.status !== "disabled" && item.status !== "hide");
 
       fuse = new Fuse(items, {
@@ -782,17 +857,19 @@
         distance: 120,
         minMatchCharLength: 2,
         keys: [
-          { name: "title", weight: 0.28 },
-          { name: "displayName", weight: 0.24 },
-          { name: "brand", weight: 0.16 },
-          { name: "aliases", weight: 0.14 },
-          { name: "symptoms", weight: 0.12 },
-          { name: "activeIngredient", weight: 0.10 },
-          { name: "activeIngredientExtra", weight: 0.08 },
-          { name: "keywords", weight: 0.08 },
-          { name: "keywordsExtra", weight: 0.08 },
-          { name: "category", weight: 0.06 },
-          { name: "subcategory", weight: 0.06 },
+          { name: "title", weight: 0.30 },
+          { name: "displayName", weight: 0.26 },
+          { name: "brand", weight: 0.18 },
+          { name: "aliases", weight: 0.16 },
+          { name: "symptoms", weight: 0.14 },
+          { name: "activeIngredient", weight: 0.12 },
+          { name: "activeIngredientExtra", weight: 0.10 },
+          { name: "keywords", weight: 0.10 },
+          { name: "keywordsExtra", weight: 0.10 },
+          { name: "category", weight: 0.08 },
+          { name: "subcategory", weight: 0.08 },
+          { name: "department", weight: 0.06 },
+          { name: "needType", weight: 0.06 },
           { name: "sectionLabel", weight: 0.06 },
           { name: "searchText", weight: 0.04 }
         ]
@@ -1034,18 +1111,36 @@
 
     function directScore(item, query) {
       const q = normalizeKey(query);
+      const expanded = expandQueryWithSynonyms(query);
       if (!q) return 0;
+
       const title = normalizeKey(item.title);
       const displayName = normalizeKey(item.displayName);
       const brand = normalizeKey(item.brand);
       const aliases = normalizeKey(item.aliases);
+      const symptoms = normalizeKey(item.symptoms);
+      const keywords = normalizeKey(`${item.keywords} ${item.keywordsExtra}`);
+      const activeIngredient = normalizeKey(`${item.activeIngredient} ${item.activeIngredientExtra}`);
+      const category = normalizeKey(`${item.department} ${item.category} ${item.subcategory} ${item.needType}`);
       const sectionLabel = normalizeKey(item.sectionLabel);
+      const searchText = normalizeKey(item.searchText);
+
       if (displayName === q || title === q) return 1000;
-      if (brand === q) return 600;
-      if (displayName.includes(q) || title.includes(q)) return 420;
-      if (aliases.includes(q)) return 320;
+      if (brand === q) return 650;
+      if (displayName.includes(q) || title.includes(q)) return 450;
+      if (aliases.includes(q)) return 340;
+      if (symptoms.includes(q)) return 320;
+      if (activeIngredient.includes(q)) return 300;
       if (brand.includes(q)) return 260;
+      if (keywords.includes(q)) return 220;
+      if (category.includes(q)) return 200;
       if (sectionLabel.includes(q)) return 180;
+
+      const expandedTerms = expanded.split(/\s+/).filter(Boolean);
+      const expandedHitCount = expandedTerms.filter(term => searchText.includes(term)).length;
+      if (expandedHitCount >= 2) return 170 + expandedHitCount;
+      if (expandedHitCount === 1) return 130;
+
       return 0;
     }
 
@@ -1054,12 +1149,15 @@
 
       if (!query) {
         const list = [...items].sort(sortByPriority).slice(0, 12);
-        selectItem(list[0], list);
+        if (list.length) selectItem(list[0], list);
         return;
       }
 
+      const expandedQuery = expandQueryWithSynonyms(query);
+      const searchQuery = expandedQuery || query;
+
       const fuseResults = fuse
-        ? fuse.search(query, { limit: 30 }).map(result => ({ ...result.item, _score: result.score }))
+        ? fuse.search(searchQuery, { limit: 30 }).map(result => ({ ...result.item, _score: result.score }))
         : [];
 
       const directMatches = items
@@ -1114,8 +1212,8 @@
       answerBox.innerHTML = `
         <section class="answer-card">
           <div class="empty">
-            Failed to load products.csv or groups.csv.<br>
-            Make sure both files are in the same folder as this HTML and run it through GitHub Pages or a local server.
+            Failed to load products.csv, groups.csv, or synonyms.csv.<br>
+            Make sure the CSV files are in the same folder as this HTML and run it through GitHub Pages or a local server.
           </div>
         </section>
       `;
