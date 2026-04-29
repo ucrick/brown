@@ -1204,7 +1204,11 @@
     }
 
     searchBtn.addEventListener("click", searchItems);
-    searchInput.addEventListener("input", searchItems);
+    let searchTimer = null;
+    searchInput.addEventListener("input", () => {
+      clearTimeout(searchTimer);
+      searchTimer = setTimeout(searchItems, 250);
+    });
 
     buildQuickButtons();
     loadData().catch(error => {
