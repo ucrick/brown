@@ -1,53 +1,23 @@
 ﻿term,synonyms,searchBoost,department,notes
-soother,"dummy,pacifier,paci,soother,dummie,pacifer",high,Baby,Baby comfort item
-pacifier,"dummy,soother,paci,pacifer,pacivier",high,Baby,
-teat,"nipple,bottle nipple,bottle teat,flow teat",high,Baby,Bottle teat terms
-baby bottle,"feeding bottle,bottle,bub bottle,milk bottle,infant bottle",high,Baby,
-sippy cup,"sippy,sip cup,trainer cup,training cup,straw cup,spout cup,drink cup",high,Baby,
-straw cup,"sippy cup,straw bottle,training cup,trainer cup",medium,Baby,
-bottle brush,"teat brush,cleaning brush,bottle cleaner brush,baby bottle brush",high,Baby,
-steriliser,"sterilizer,steam steriliser,steam sterilizer,microwave steriliser,microwave sterilizer",high,Baby,UK/NZ and US spelling
-bottle warmer,"warmer,milk warmer,baby bottle warmer,pouch warmer",high,Baby,
-breast pump,"pump,milk pump,electric breast pump,manual breast pump,b/pump,bp",high,Baby,
-breast milk storage,"milk bags,breastmilk bags,milk storage bags,storage bags,milk pouches,breast milk pouches",high,Baby,
-nipple shield,"breast shield,nip shield,contact shield,nipple guard",medium,Baby,
-breast shield,"flange,breast pump shield,PersonalFit,shield",medium,Baby,
-teether,"teething toy,chew toy,chewy,teething ring,teether toy",high,Baby,
-feeding bib,"bib,baby bib,milk bib,disposable bib",medium,Baby,
-food feeder,"fresh food feeder,silicone feeder,fruit feeder,mesh feeder,weaning feeder",medium,Baby,
-baby spoon,"weaning spoon,feeding spoon,silicone spoon,toddler spoon",medium,Baby,
-bottle cleanser,"bottle cleaner,baby bottle cleaner,liquid cleanser,bottle wash",high,Baby,
-antibacterial,"anti bacterial,antibac,sanitising,sanitizing,sterilising,sterilizing",medium,Baby,
-thermometer,"baby thermometer,digital thermometer,temp checker,temperature checker",medium,Baby,
-anti-colic,"anti colic,anticolic,colic bottle,colic",medium,Baby,
-PPSU,"ppsu,plastic bottle,heat resistant bottle",low,Baby,Material abbreviation
-PP,"polypropylene,plastic bottle,pp bottle",low,Baby,Material abbreviation
-glass bottle,"glass feeding bottle,glass baby bottle",medium,Baby,
-silicone,"silicon,silicone baby,sili",low,Baby,Common misspelling included
-nappy,"diaper,diapers,nappies",medium,Baby,NZ vs US wording
-dummy clip,"pacifier clip,soother clip,dummy holder",low,Baby,
-oral care,"baby toothbrush,toothbrush,finger brush,teeth cleaning,first toothbrush",medium,Oral Care,
-drying rack,"bottle rack,drying grass,bottle drying rack,countertop rack",medium,Baby,
-formula dispenser,"milk dispenser,powder dispenser,powdered milk dispenser",medium,Baby,
-cleaning wipes,"wipes,pacifier wipes,dummy wipes,surface wipes",medium,Baby,
-Tommee Tippee,"TT,Tommee,Tippie,Tommy Tippee,Tommee Tipee",high,Baby,Brand synonym and common misspellings
-Avent,"Philips Avent,AVT,AVENT",high,Baby,Brand synonym
-NUK,"Nuk,N.U.K",high,Baby,Brand synonym
-B.Box,"bbox,b box,b-box,bb box",high,Baby,Brand synonym
-Nuby,"nuby,nubi",high,Baby,Brand synonym
-Pigeon,"pigeon,pigion,pidgeon",high,Baby,Brand synonym and common misspellings
-Medela,"medela,medella",high,Baby,Brand synonym and common misspelling
-Milton,"milton,miltn",medium,Baby,Brand synonym
-Boon,"boon,boone",medium,Baby,Brand synonym
-Jack N Jill,"Jack and Jill,Jack n Jill,J&J baby,Jack Jill",medium,Oral Care,Brand synonym
-Playgro,"playgro,play grow,playgroo",medium,Baby,Brand synonym
-Welcare,"welcare,wellcare,wel care",medium,Baby,Brand synonym
-Rite Aid,"rite aid,riteaid,rite-aid",medium,Baby,Brand synonym
-Closer to Nature,"C2N,close to nature,closer nature",medium,Baby,Series abbreviation
-Natural Start,"NS,natural start",medium,Baby,Series abbreviation
-Natural Response,"nat res,natural response,NR",medium,Baby,Series abbreviation
-Advanced Anti-Colic,"anti colic,advanced anti colic,AAC,A/C",medium,Baby,Series abbreviation
-Made for Me,"M4M,made for me",medium,Baby,Series abbreviation
-PersonalFit Flex,"personal fit,personalfit,PF Flex,P/F Flex",medium,Baby,Series abbreviation
-Softouch,"soft touch,softouch,S/T,STOUCH",medium,Baby,Series abbreviation
-Citroganic,"citroganic,citroig,citrog,citroganic wipes",medium,Baby,Product line synonym
+baby bottle,"feeding bottle, milk bottle, bottle, btl",high,Baby,General baby bottle search terms.
+teat,"nipple, bottle teat, flow teat, feeding teat",high,Baby,NZ/AU shoppers may use teat; US term nipple.
+soother,"dummy, pacifier, paci, dummies, comforter",high,Baby,Common terms for baby soothers.
+sippy cup,"training cup, trainer cup, straw cup, spout cup, sippee cup, baby cup, toddler cup",high,Baby,Common cup terms.
+straw cup,"sippy cup, trainer straw cup, drinking cup, water cup",high,Baby,Drinking transition products.
+teether,"teething toy, chew toy, gum soother, teething ring, sore gums",high,Baby,Teething products.
+bottle brush,"cleaning brush, teat brush, nipple brush, btl brush",medium,Baby,Cleaning accessories.
+breast pump,"milk pump, expressing pump, manual pump, electric pump, breastpump",high,Baby,Breastfeeding equipment.
+breastmilk storage,"milk bags, storage bags, breast milk bags, milk container, milk pouches",high,Baby,Milk storage terms.
+steriliser,"sterilizer, steam steriliser, microwave steriliser, sanitizer, bottle steriliser",high,Baby,NZ/AU and US spelling variations.
+bottle warmer,"warmer, milk warmer, pouch warmer, feeding warmer",medium,Baby,Bottle and pouch warmers.
+anti colic,"anticolic, colic, advanced anti-colic, colic bottle",medium,Baby,Anti-colic bottle terms.
+NUK,"nuk, n u k",medium,Baby,Brand spelling support.
+Tommee Tippee,"TT, tommee, tommy tippee, tomee tippee, tommee tippie",high,Baby,Brand abbreviation and misspellings.
+Avent,"philips avent, aventt, avent baby",high,Baby,Brand and common brand phrase.
+B.Box,"bbox, b box, b-box, bbox baby",high,Baby,Brand spelling variants.
+Nuby,"nubi, nuby baby, newbie",medium,Baby,Brand spelling variants.
+Pigeon,"pidgeon, pigeon baby",medium,Baby,Common misspelling.
+Medela,"medella, medela pump, medela breast pump",high,Baby,Common misspelling.
+Boon,"boon grass, drying rack, bottle rack",medium,Baby,Brand and product phrase.
+Jack N' Jill,"jack and jill, jack n jill, jacknjill",medium,Baby,Brand spelling variants.
+Playgro,"play gro, playgrow, playgro baby",medium,Baby,Brand spelling variants.

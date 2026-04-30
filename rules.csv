@@ -1,0 +1,6 @@
+﻿ruleId,ruleType,message,advice,ageRestricted,pharmacistOnly,showWarning,notes
+none,general,,FALSE,FALSE,FALSE,FALSE,Default no special customer warning.
+ask-staff,general,"Ask staff if you cannot find the exact colour, size or teat flow.",TRUE,FALSE,FALSE,FALSE,Planogram notes multiple colours and sizes may share shelf or hook space.
+breast-pump-help,general,Breast pumps and pump accessories vary by model; check compatibility before purchase.,TRUE,FALSE,FALSE,TRUE,"Compatibility warning for pumps, valves, membranes, shields and bags."
+feeding-age-check,safety,"Please check the age range, teat flow and bottle size before purchase.",TRUE,FALSE,FALSE,TRUE,Baby feeding products are age/flow-size specific.
+steriliser-safety,safety,Read steriliser and warmer instructions carefully before use.,FALSE,FALSE,FALSE,TRUE,Electrical and microwave steriliser safety note.
