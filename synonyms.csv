@@ -1,23 +1,60 @@
-term,synonyms,searchBoost,department,notes
-baby bottle,"feeding bottle,bottle,bub bottle,infant bottle,milk bottle",high,Baby,Common baby feeding search terms
-teat,"nipple,bottle nipple,baby teat,flow teat,silicone teat",high,Baby,NZ customers may search teat or nipple
-soother,"dummy,pacifier,paci,comforter,binky",high,Baby,Common soother synonyms
-sippy cup,"training cup,trainer cup,straw cup,spout cup,drink cup,toddler cup",high,Baby,Cups and toddler drinking
-teether,"teething toy,chew toy,teething ring,teething,teeth toy",high,Baby,Teething and gum relief
-breast pump,"pump,milk pump,express pump,electric pump,manual pump,breastfeeding pump",high,Baby,Breastfeeding
-breast milk storage,"milk bags,milk storage bags,breastmilk bags,milk container,express milk storage",medium,Baby,Breastfeeding storage
-steriliser,"sterilizer,steam steriliser,microwave steriliser,bottle steriliser",high,Baby,AU/NZ and US spelling
-bottle warmer,"warmer,milk warmer,pouch warmer,baby bottle heater",medium,Baby,Bottle warming
-bottle brush,"cleaning brush,teat brush,straw brush,bottle cleaner",medium,Baby,Cleaning accessories
-nipple shield,"breast shield,nip shield,contact shield,feeding shield",medium,Baby,Breastfeeding accessories
-bib,"feeding bib,dribble bib,baby bib,milk bib,disposable bib",medium,Baby,Feeding bibs
-drying rack,"bottle drying rack,grass rack,bottle rack,dish rack,baby rack",medium,Baby,Boon racks
-Tommee Tippee,"TT,Tommee,Tommy Tippee,Tomi Tippee,Tommee Tipee",high,Baby,Brand aliases and likely misspellings
-Avent,"Philips Avent,AVT,Phillips Avent,Advent",high,Baby,Brand aliases and likely misspellings
-B.Box,"bbox,b box,b-box,bb box",high,Baby,Brand aliases
-Nuby,"Nuby baby,Nubee,Nubi",high,Baby,Brand aliases
-Pigeon,"Pidgeon,Pigion",high,Baby,Brand misspellings
-Medela,"Medella,Medela breast pump",high,Baby,Brand misspellings
-NUK,"Nuk,N.U.K",medium,Baby,Brand aliases
-Milton,"Milton sterilising,Milton antibacterial",medium,Baby,Brand aliases
-baby cleaning,"bottle cleanser,bottle cleaner,sterilising tablets,surface spray,cleanser",medium,Baby,Cleaning and sterilising
+﻿term,synonyms,searchBoost,department,notes
+pacifier,"dummy, soother, binky, paci, pacifier, dummie, soother dummy",high,Baby,Common NZ/AU and US terms
+baby bottle,"bottle, feeding bottle, milk bottle, infant bottle, btl, botl, bottl",high,Baby,Covers planogram abbreviations
+teat,"nipple, bottle teat, teat, flow teat, silicone teat",high,Baby,US customers may search nipple
+sippy cup,"sippy cup, straw cup, trainer cup, training cup, spout cup, toddler cup, 360 cup, drink bottle",high,Baby,Cups and toddler drinking
+teether,"teether, teething toy, chew toy, gum massager, chewing teether, chewies",high,Baby,Teething related searches
+breast pump,"breastpump, pump, milk pump, electric pump, manual pump, nursing pump",high,Baby,Breastfeeding pump searches
+breast milk storage,"milk bags, breastmilk bags, milk storage, storage bags, milk container, breastmilk container",medium,Baby,Milk storage products
+steriliser,"sterilizer, steriliser, steam steriliser, steam sterilizer, microwave steriliser, bottle steriliser",high,Baby,UK/NZ and US spelling
+bottle warmer,"warmer, bottle warmer, pouch warmer, milk warmer",medium,Baby,Bottle/pouch warming
+nipple shield,"nipple shield, breast shield, contact shield, nursing shield, shield",medium,Baby,Breastfeeding accessories
+cleanser,"cleanser, cleaner, bottle cleaner, bottle cleanser, liquid cleanser, antibacterial, sterilising solution",medium,Baby,Bottle cleaning and Milton/Pigeon items
+drying rack,"drying rack, dry rack, bottle rack, grass rack, boon grass, drying mat",medium,Baby,Boon drying rack terms
+baby oral care,"toothbrush, baby toothbrush, finger brush, oral care, gum brush, massaging toothbrush",medium,Baby,Baby oral care products
+food feeder,"feeder, fresh food feeder, fruit feeder, squeeze feeder, food pouch, weaning feeder",medium,Baby,Weaning and feeding accessories
+bibs,"bib, bibs, feeding bib, milk bib, disposable bib",medium,Baby,Baby feeding bibs
+baby wipes,"wipes, wet wipes, water wipes, nappy wipes, diaper wipes, wipes for babies, fragrance free wipes, sensitive wipes",high,Baby,General customer search terms for baby wipes
+nappy rash,"diaper rash, nappy cream, diaper cream, rash cream, barrier cream, zinc cream, sudocrem, bepanthen",high,Baby,NZ customers may use nappy; some may search diaper
+baby wash,"baby body wash, top to toe wash, baby cleanser, baby bath wash, wash and shampoo, hair and body wash",high,Baby,General baby cleansing terms
+baby shampoo,"baby hair wash, baby spoo, kids shampoo, gentle shampoo, cradle cap shampoo",high,Baby,SPoo is common planogram abbreviation for shampoo
+baby lotion,"baby moisturiser, baby moisturizer, body lotion, baby cream, moisturising lotion, hydrating lotion",high,Baby,NZ/AU and US spelling variations
+eczema baby,"eczma, excema, exzema, eczema cream, dermatitis baby, dry skin baby, sensitive skin baby",high,Baby,Common misspellings and need-based search
+breastfeeding,"nursing pads, breast pads, nipple cream, lanolin, nipple balm, hydrogel pads, maternity pads",high,Baby,For mums shelf terms
+baby powder,"powder, nappy powder, corn starch, cornstarch, rash powder, medicated powder",medium,Baby,Powders shelf terms
+cradle cap,"cradlecap, cradle cap cream, cradle cap lotion, scalp flakes baby",medium,Baby,Baby scalp care
+fragrance free,"ff, f/f, frag free, unscented, no fragrance, sensitive",high,Baby,Frequent abbreviation in product labels
+organic baby,"natural baby, organic care, biodegradable, bio d, plant based, eco baby",medium,Baby,Search expansion for natural products
+kids hair care,"kids shampoo, kids conditioner, detangler, detangling spray, styling gel, hair spray",medium,Baby,Kids hair products within baby aisle
+nappy bags,"diaper bags, disposable nappy bags, scented bags, baby bags, biodegradable nappy bags",medium,Baby,Nappy disposal products
+nappies,"diapers,nappy,diaper,baby nappies,baby diapers,disposable nappies",high,Baby,NZ term nappies; US term diapers
+nappy pants,"pants,pull ups,pull-ups,training pants,pullup nappies,nappy pant",high,Baby,For toddlers and older babies
+swim nappies,"swimmers,swim pants,pool nappies,beach nappies,little swimmers",high,Baby,For swimming and water play
+night nappies,"overnight nappies,night pants,dry nights,drynites,bed wetting,bedwetting,o/b,sleepy nights",high,Baby,For overnight and bedwetting searches
+newborn nappies,"new born,newborn,new baby,infant,premmie,preemie,premature baby,small baby",high,Baby,Newborn and premmie size searches
+size 1 nappies,"s1,size1,newborn size,nb",medium,Baby,Size search expansion
+size 2 nappies,"s2,size2,infant",medium,Baby,Size search expansion
+size 3 nappies,"s3,size3,6-11kg",medium,Baby,Size search expansion
+size 4 nappies,"s4,size4,toddler,crawler,10-15kg",medium,Baby,Size search expansion
+size 5 nappies,"s5,size5,walker,13-18kg",medium,Baby,Size search expansion
+size 6 nappies,"s6,size6,junior,16kg plus,16kg+",medium,Baby,Size search expansion
+eco nappies,"organic nappies,natural nappies,plant based nappies,sustainable nappies,eco diapers",medium,Baby,Eco/natural product searches
+Huggies,"huggie,hugies,huggy,huggys",high,Baby,Common misspellings
+BabyLove,"baby love,babylove,baby luv,babyluv",high,Baby,Common spacing variations
+Bunjie,"bunji,bungee,bunjy,bunjie baby",medium,Baby,Possible misspellings
+Tooshies,"toosh,tooshie,tooshies eco,tooshys",medium,Baby,Possible misspellings
+baby formula,"infant formula,baby milk,milk powder,formula powder,infant milk,toddler milk,follow on formula,follow-on milk,growing up milk,stage 1,stage 2,stage 3,stage 4",high,Baby,
+goat formula,"goat milk formula,goat baby milk,goat infant formula,goat toddler milk",high,Baby,
+A2 formula,"A2 milk,A2 baby milk,A2 infant formula,a2 formula",high,Baby,
+reflux formula,"anti reflux,thickened formula,reflux milk,spit up formula,feed thickener",high,Baby,
+sensitive formula,"sensitive baby milk,gentle formula,colic formula,constipation formula,comfort formula",high,Baby,
+baby food,"baby puree,baby pouch,baby meal,baby dinner,baby breakfast,weaning food,solids,starting solids",high,Baby,
+baby snacks,"kids snacks,baby biscuits,rice rusks,baby rusks,puffs,melts,sticks,wafers,rice cakes,teething biscuits",high,Baby,
+baby cereal,"rice cereal,baby rice,porridge,baby porridge,muesli,infant cereal",high,Baby,
+organic baby food,"organic pouch,organic puree,Only Organic,Bubs Organic,organic snacks",medium,Baby,
+custard,"baby custard,banana custard,vanilla custard,fruit custard",medium,Baby,
+weaning,"starting solids,first foods,baby solids,solid food",medium,Baby,
+PediaSure,"pediasure,kids nutrition,kids shake,nutrition drink,children shake",high,Baby,
+Karicare,"kari care,karicare plus,karicare gold,karicare goat,karicare soy",high,Baby,
+Aptamil,"aptamil gold,aptamil profutura,aptamil prof syn,aptamil sensitive,apta grow",high,Baby,
+S-26,"S26,s 26,S-26 Gold,S26 comfort,S26 newborn",high,Baby,

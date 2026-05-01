@@ -1,6 +1,12 @@
-ruleId,ruleType,message,advice,ageRestricted,pharmacistOnly,showWarning,notes
-no-special-rule,general,This item should be on the shelf shown. Ask staff if you cannot find it.,FALSE,FALSE,FALSE,FALSE,Default rule for normal shelf products
-ask-staff,general,Ask a team member if the item is not visible or if multiple colours share the same shelf space.,TRUE,FALSE,FALSE,FALSE,For planogram items where colours/sizes share hooks or shelf space
-ask-pharmacist,pharmacy,Please ask the pharmacist for advice.,TRUE,FALSE,TRUE,TRUE,Included for future pharmacy expansion; not used for these baby aisle products
-age-check,restriction,Age restriction may apply. Staff may request ID.,TRUE,TRUE,FALSE,TRUE,Included for future restricted products
-behind-counter,restriction,This item may be kept behind the counter. Please ask staff.,TRUE,FALSE,FALSE,TRUE,Included for future behind-counter products
+﻿ruleId,ruleType,message,advice,ageRestricted,pharmacistOnly,showWarning,notes
+none,general,,False,False,False,False,No special customer warning
+ask-staff,general,Ask staff if you cannot find the exact colour or size.,True,False,False,False,Planogram notes that some products share shelf or hook space
+none,general,No special purchase restriction for this item.,False,False,False,False,Default rule for normal shelf products
+ask-staff,general,Ask a staff member if you cannot find the exact size or pack.,True,False,False,False,Use for products with multiple pack sizes or shared shelf space
+sensitive-skin,safety,"For severe rash, broken skin, infection signs, or persistent symptoms, ask a pharmacist or doctor.",True,False,False,True,Useful for nappy rash and eczema-related searches
+baby-safety,safety,Check suitability for your baby's age and skin sensitivity before use.,True,False,False,True,General baby care safety advice
+none,general,,False,False,False,False,No special customer restriction shown on planogram
+ask-staff-bulky,general,Large or bulky nappy packs may be stacked nearby. Ask staff if the exact size is not visible on shelf.,True,False,False,False,Optional rule for bulky nappy packs
+,general,,False,False,False,False,No special rule
+formula-advice,safety,Please follow the preparation and feeding instructions on the formula label. Ask staff if you need help choosing the right stage.,True,False,False,True,Baby formula requires correct preparation and age-stage selection
+ask-staff,general,Ask staff if the item is out of stock or not visible on shelf.,True,False,False,False,General stock assistance
