@@ -1,23 +1,23 @@
-﻿term,synonyms,searchBoost,department,notes
-baby bottle,"feeding bottle, milk bottle, bottle, btl",high,Baby,General baby bottle search terms.
-teat,"nipple, bottle teat, flow teat, feeding teat",high,Baby,NZ/AU shoppers may use teat; US term nipple.
-soother,"dummy, pacifier, paci, dummies, comforter",high,Baby,Common terms for baby soothers.
-sippy cup,"training cup, trainer cup, straw cup, spout cup, sippee cup, baby cup, toddler cup",high,Baby,Common cup terms.
-straw cup,"sippy cup, trainer straw cup, drinking cup, water cup",high,Baby,Drinking transition products.
-teether,"teething toy, chew toy, gum soother, teething ring, sore gums",high,Baby,Teething products.
-bottle brush,"cleaning brush, teat brush, nipple brush, btl brush",medium,Baby,Cleaning accessories.
-breast pump,"milk pump, expressing pump, manual pump, electric pump, breastpump",high,Baby,Breastfeeding equipment.
-breastmilk storage,"milk bags, storage bags, breast milk bags, milk container, milk pouches",high,Baby,Milk storage terms.
-steriliser,"sterilizer, steam steriliser, microwave steriliser, sanitizer, bottle steriliser",high,Baby,NZ/AU and US spelling variations.
-bottle warmer,"warmer, milk warmer, pouch warmer, feeding warmer",medium,Baby,Bottle and pouch warmers.
-anti colic,"anticolic, colic, advanced anti-colic, colic bottle",medium,Baby,Anti-colic bottle terms.
-NUK,"nuk, n u k",medium,Baby,Brand spelling support.
-Tommee Tippee,"TT, tommee, tommy tippee, tomee tippee, tommee tippie",high,Baby,Brand abbreviation and misspellings.
-Avent,"philips avent, aventt, avent baby",high,Baby,Brand and common brand phrase.
-B.Box,"bbox, b box, b-box, bbox baby",high,Baby,Brand spelling variants.
-Nuby,"nubi, nuby baby, newbie",medium,Baby,Brand spelling variants.
-Pigeon,"pidgeon, pigeon baby",medium,Baby,Common misspelling.
-Medela,"medella, medela pump, medela breast pump",high,Baby,Common misspelling.
-Boon,"boon grass, drying rack, bottle rack",medium,Baby,Brand and product phrase.
-Jack N' Jill,"jack and jill, jack n jill, jacknjill",medium,Baby,Brand spelling variants.
-Playgro,"play gro, playgrow, playgro baby",medium,Baby,Brand spelling variants.
+term,synonyms,searchBoost,department,notes
+baby bottle,"feeding bottle,bottle,bub bottle,infant bottle,milk bottle",high,Baby,Common baby feeding search terms
+teat,"nipple,bottle nipple,baby teat,flow teat,silicone teat",high,Baby,NZ customers may search teat or nipple
+soother,"dummy,pacifier,paci,comforter,binky",high,Baby,Common soother synonyms
+sippy cup,"training cup,trainer cup,straw cup,spout cup,drink cup,toddler cup",high,Baby,Cups and toddler drinking
+teether,"teething toy,chew toy,teething ring,teething,teeth toy",high,Baby,Teething and gum relief
+breast pump,"pump,milk pump,express pump,electric pump,manual pump,breastfeeding pump",high,Baby,Breastfeeding
+breast milk storage,"milk bags,milk storage bags,breastmilk bags,milk container,express milk storage",medium,Baby,Breastfeeding storage
+steriliser,"sterilizer,steam steriliser,microwave steriliser,bottle steriliser",high,Baby,AU/NZ and US spelling
+bottle warmer,"warmer,milk warmer,pouch warmer,baby bottle heater",medium,Baby,Bottle warming
+bottle brush,"cleaning brush,teat brush,straw brush,bottle cleaner",medium,Baby,Cleaning accessories
+nipple shield,"breast shield,nip shield,contact shield,feeding shield",medium,Baby,Breastfeeding accessories
+bib,"feeding bib,dribble bib,baby bib,milk bib,disposable bib",medium,Baby,Feeding bibs
+drying rack,"bottle drying rack,grass rack,bottle rack,dish rack,baby rack",medium,Baby,Boon racks
+Tommee Tippee,"TT,Tommee,Tommy Tippee,Tomi Tippee,Tommee Tipee",high,Baby,Brand aliases and likely misspellings
+Avent,"Philips Avent,AVT,Phillips Avent,Advent",high,Baby,Brand aliases and likely misspellings
+B.Box,"bbox,b box,b-box,bb box",high,Baby,Brand aliases
+Nuby,"Nuby baby,Nubee,Nubi",high,Baby,Brand aliases
+Pigeon,"Pidgeon,Pigion",high,Baby,Brand misspellings
+Medela,"Medella,Medela breast pump",high,Baby,Brand misspellings
+NUK,"Nuk,N.U.K",medium,Baby,Brand aliases
+Milton,"Milton sterilising,Milton antibacterial",medium,Baby,Brand aliases
+baby cleaning,"bottle cleanser,bottle cleaner,sterilising tablets,surface spray,cleanser",medium,Baby,Cleaning and sterilising

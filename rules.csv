@@ -1,6 +1,6 @@
-﻿ruleId,ruleType,message,advice,ageRestricted,pharmacistOnly,showWarning,notes
-none,general,,FALSE,FALSE,FALSE,FALSE,Default no special customer warning.
-ask-staff,general,"Ask staff if you cannot find the exact colour, size or teat flow.",TRUE,FALSE,FALSE,FALSE,Planogram notes multiple colours and sizes may share shelf or hook space.
-breast-pump-help,general,Breast pumps and pump accessories vary by model; check compatibility before purchase.,TRUE,FALSE,FALSE,TRUE,"Compatibility warning for pumps, valves, membranes, shields and bags."
-feeding-age-check,safety,"Please check the age range, teat flow and bottle size before purchase.",TRUE,FALSE,FALSE,TRUE,Baby feeding products are age/flow-size specific.
-steriliser-safety,safety,Read steriliser and warmer instructions carefully before use.,FALSE,FALSE,FALSE,TRUE,Electrical and microwave steriliser safety note.
+ruleId,ruleType,message,advice,ageRestricted,pharmacistOnly,showWarning,notes
+no-special-rule,general,This item should be on the shelf shown. Ask staff if you cannot find it.,FALSE,FALSE,FALSE,FALSE,Default rule for normal shelf products
+ask-staff,general,Ask a team member if the item is not visible or if multiple colours share the same shelf space.,TRUE,FALSE,FALSE,FALSE,For planogram items where colours/sizes share hooks or shelf space
+ask-pharmacist,pharmacy,Please ask the pharmacist for advice.,TRUE,FALSE,TRUE,TRUE,Included for future pharmacy expansion; not used for these baby aisle products
+age-check,restriction,Age restriction may apply. Staff may request ID.,TRUE,TRUE,FALSE,TRUE,Included for future restricted products
+behind-counter,restriction,This item may be kept behind the counter. Please ask staff.,TRUE,FALSE,FALSE,TRUE,Included for future behind-counter products
