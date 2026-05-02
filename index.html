@@ -1039,35 +1039,35 @@
       });
     }
 
-    function householdRowFromHorizontal(value) {
+    function householdColumnFromHorizontal(value) {
       const v = normalizeKey(value || "middle");
-      if (["top", "upper", "left", "1", "row1"].includes(v)) return "top";
-      if (["bottom", "lower", "right", "3", "row3"].includes(v)) return "bottom";
+      if (["left", "1", "col1"].includes(v)) return "left";
+      if (["right", "3", "col3"].includes(v)) return "right";
       return "middle";
     }
 
-    function householdPartFromVertical(value) {
+    function householdRowFromVertical(value) {
       const v = normalizeKey(value || "middle");
-      if (["top", "upper", "1"].includes(v)) return "top";
-      if (["bottom", "lower", "3"].includes(v)) return "bottom";
+      if (["top", "upper", "1", "row1"].includes(v)) return "top";
+      if (["bottom", "lower", "3", "row3"].includes(v)) return "bottom";
       return "middle";
     }
 
     function buildHouseholdBox(targetItem) {
       const parts = [
+        { id: "left", label: "Left" },
+        { id: "middle", label: "Middle" },
+        { id: "right", label: "Right" }
+      ];
+      const rows = [
         { id: "top", label: "Top" },
         { id: "middle", label: "Middle" },
         { id: "bottom", label: "Bottom" }
       ];
-      const rows = [
-        { id: "top", label: "1" },
-        { id: "middle", label: "2" },
-        { id: "bottom", label: "3" }
-      ];
 
       const isHouseholdTarget = Boolean(targetItem && targetItem.areaType === "household");
-      const targetPart = isHouseholdTarget ? householdPartFromVertical(targetItem.vertical) : "";
-      const targetRow = isHouseholdTarget ? householdRowFromHorizontal(targetItem.horizontal) : "";
+      const targetPart = isHouseholdTarget ? householdColumnFromHorizontal(targetItem.horizontal) : "";
+      const targetRow = isHouseholdTarget ? householdRowFromVertical(targetItem.vertical) : "";
 
       householdBox.classList.remove("target", "household-active", "household-target");
 
