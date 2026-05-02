@@ -58,3 +58,23 @@ PediaSure,"pediasure,kids nutrition,kids shake,nutrition drink,children shake",h
 Karicare,"kari care,karicare plus,karicare gold,karicare goat,karicare soy",high,Baby,
 Aptamil,"aptamil gold,aptamil profutura,aptamil prof syn,aptamil sensitive,apta grow",high,Baby,
 S-26,"S26,s 26,S-26 Gold,S26 comfort,S26 newborn",high,Baby,
+tissues,"facial tissue, face tissue, tissue box, kleenex, nose tissue, soft tissue",high,Household,general tissue search terms
+pocket tissues,"travel tissues, handbag tissues, mini tissues, purse tissues, pocket pack",high,Household,
+toilet paper,"loo roll, toilet roll, bathroom tissue, toilet tissue, toilet products",high,Household,
+paper towel,"kitchen towel, kitchen paper, kitchen roll, absorbent towel",high,Household,
+wipes,"wet wipes, cleaning wipes, surface wipes, antibacterial wipes, flushable wipes",high,Household,
+dishwashing,"dish wash, dishwasher tablets, dishwasher tabs, dishwashing liquid, dish liquid, dish soap, washing up liquid",high,Household,
+multipurpose cleaner,"multi purpose cleaner, all purpose cleaner, spray and wipe, surface cleaner, surface spray",high,Household,
+bathroom cleaner,"shower cleaner, bath cleaner, toilet cleaner, mould remover, mold remover, scum remover, bleach",high,Household,
+floor cleaner,"floor wash, mopping liquid, floor liquid, floor spray",medium,Household,
+air freshener,"room spray, deodoriser, deodorizer, fragrance, scent, automatic spray, room freshener, refill",high,Household,
+insect spray,"bug spray, fly spray, insect killer, raid, mortein",medium,Household,insect sprays are located near air fresheners in the provided image
+toilet cleaner,"toilet gel, toilet duck, harpic, toilet block, rim block, toilet discs, cistern cleaner",high,Household,
+laundry detergent,"washing powder, washing liquid, laundry liquid, laundry powder, detergent, laundry caps, pods, capsules",high,Household,
+stain remover,"vanish, napisan, oxi action, oxy action, prewash, preen, laundry booster",high,Household,
+fabric softener,"fabric conditioner, laundry softener, cuddly, fluffy, softener",high,Household,
+laundry sanitiser,"laundry sanitizer, clothes disinfectant, laundry disinfectant, dettol laundry",medium,Household,
+sensitive,"fragrance free, hypoallergenic, hypo, gentle, unscented, ultra sensitive",medium,Household,general sensitive-search expansion
+lemon,"lm, lem, lmn, citrus",medium,Household,common shelf abbreviation expansion
+antibacterial,"anti bacterial, antibac, a/bact, anti-bac, disinfectant",high,Household,
+eucalyptus,"eucal, euc, euco, eucalyptus scent",medium,Household,common abbreviation expansion

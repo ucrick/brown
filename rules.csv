@@ -10,3 +10,11 @@ ask-staff-bulky,general,Large or bulky nappy packs may be stacked nearby. Ask st
 ,general,,False,False,False,False,No special rule
 formula-advice,safety,Please follow the preparation and feeding instructions on the formula label. Ask staff if you need help choosing the right stage.,True,False,False,True,Baby formula requires correct preparation and age-stage selection
 ask-staff,general,Ask staff if the item is out of stock or not visible on shelf.,True,False,False,False,General stock assistance
+general-household,general,Household product. Follow label directions and keep out of reach of children.,False,False,False,False,Default household rule.
+ask-staff,general,Ask a team member if you cannot find this item on shelf.,True,False,False,False,Use when code or location is uncertain.
+safety-cleaning,safety,Cleaning products can be hazardous. Read the label and do not mix chemicals such as bleach and ammonia.,False,False,False,True,General cleaning chemical safety message.
+aerosol-safety,safety,Aerosol product. Keep away from heat and flames. Follow label directions.,False,False,False,True,For aerosol air fresheners and insect sprays if needed.
+general-household,general,Household product. Follow label directions and keep out of reach of children.,False,False,False,False,Default household rule.
+ask-staff,general,Ask a team member if you cannot find this item on shelf.,True,False,False,False,Use when code or location is uncertain.
+safety-cleaning,safety,Cleaning products can be hazardous. Read the label and do not mix chemicals such as bleach and ammonia.,False,False,False,True,General cleaning chemical safety message.
+aerosol-safety,safety,Aerosol product. Keep away from heat and flames. Follow label directions.,False,False,False,True,For aerosol air fresheners and insect sprays if needed.
