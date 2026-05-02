@@ -699,6 +699,8 @@
     let locationsById = new Map();
     let rulesById = new Map();
     let searchTimer = null;
+    let lastSearchQuery = null;
+    let lastSearchResults = [];
 
     const servedCounter = document.getElementById("servedCounter");
     const searchInput = document.getElementById("searchInput");
@@ -888,6 +890,18 @@
       return merged;
     }
 
+    function prepareSearchCache(item) {
+      item._titleKey = normalizeKey(item.title);
+      item._displayNameKey = normalizeKey(item.displayName);
+      item._brandKey = normalizeKey(item.brand);
+      item._aliasesKey = normalizeKey(item.aliases);
+      item._symptomsKey = normalizeKey(item.symptoms);
+      item._keywordsKey = normalizeKey(`${item.keywords} ${item.keywordsExtra}`);
+      item._activeIngredientKey = normalizeKey(item.activeIngredient);
+      item._searchTextKey = normalizeKey(item.searchText);
+      return item;
+    }
+
     async function loadData() {
       answerBox.innerHTML = `<section class="answer-card"><div class="loading">Loading product data...</div></section>`;
       buildMap(null);
@@ -928,7 +942,8 @@
         });
 
       items = [...productItems, ...categoryItems]
-        .filter(item => !["inactive", "disabled", "hide"].includes(item.status));
+        .filter(item => !["inactive", "disabled", "hide"].includes(item.status))
+        .map(prepareSearchCache);
 
       fuse = new Fuse(items, {
         includeScore: true,
@@ -1214,32 +1229,21 @@
       renderResults(list || [item], item.id);
     }
 
-    function directScore(item, query) {
+    function directScore(item, query, expandedTerms) {
       const q = normalizeKey(query);
-      const expanded = expandQueryWithSynonyms(query);
       if (!q) return 0;
 
-      const title = normalizeKey(item.title);
-      const displayName = normalizeKey(item.displayName);
-      const brand = normalizeKey(item.brand);
-      const aliases = normalizeKey(item.aliases);
-      const symptoms = normalizeKey(item.symptoms);
-      const keywords = normalizeKey(`${item.keywords} ${item.keywordsExtra}`);
-      const activeIngredient = normalizeKey(item.activeIngredient);
-      const searchText = normalizeKey(item.searchText);
+      if (item._displayNameKey === q || item._titleKey === q) return 1000;
+      if (item._brandKey === q) return 650;
+      if (item._displayNameKey.includes(q) || item._titleKey.includes(q)) return 450;
+      if (item._aliasesKey.includes(q)) return 340;
+      if (item._symptomsKey.includes(q)) return 320;
+      if (item._activeIngredientKey.includes(q)) return 300;
+      if (item._brandKey.includes(q)) return 260;
+      if (item._keywordsKey.includes(q)) return 220;
+      if (item._searchTextKey.includes(q)) return 160;
 
-      if (displayName === q || title === q) return 1000;
-      if (brand === q) return 650;
-      if (displayName.includes(q) || title.includes(q)) return 450;
-      if (aliases.includes(q)) return 340;
-      if (symptoms.includes(q)) return 320;
-      if (activeIngredient.includes(q)) return 300;
-      if (brand.includes(q)) return 260;
-      if (keywords.includes(q)) return 220;
-      if (searchText.includes(q)) return 160;
-
-      const expandedTerms = expanded.split(/\s+/).filter(Boolean);
-      const expandedHitCount = expandedTerms.filter(term => searchText.includes(term)).length;
+      const expandedHitCount = expandedTerms.filter(term => item._searchTextKey.includes(term)).length;
       if (expandedHitCount >= 2) return 170 + expandedHitCount;
       if (expandedHitCount === 1) return 130;
       return 0;
@@ -1247,48 +1251,57 @@
 
     function searchItems() {
       const query = searchInput.value.trim();
+      const normalizedQuery = normalizeKey(query);
+
+      if (normalizedQuery === lastSearchQuery) return;
+      lastSearchQuery = normalizedQuery;
 
       if (!query) {
         const list = [...items].sort(sortByPriority).slice(0, 8);
+        lastSearchResults = list;
         if (list.length) selectItem(list[0], list);
         return;
       }
 
       const expandedQuery = expandQueryWithSynonyms(query);
-      const searchQuery = expandedQuery || query;
+      const expandedTerms = expandedQuery.split(/\s+/).filter(Boolean);
 
-      const fuseResults = fuse
-        ? fuse.search(searchQuery, { limit: 15 }).map(result => ({ ...result.item, _score: result.score }))
-        : [];
+      const directMatches = [];
+      for (const item of items) {
+        const score = directScore(item, query, expandedTerms);
+        if (score > 0) directMatches.push({ ...item, _directScore: score });
+      }
 
-      const directMatches = items
-        .map(item => ({ item, score: directScore(item, query) }))
-        .filter(row => row.score > 0)
-        .map(row => ({ ...row.item, _directScore: row.score }));
-
-      const byId = new Map();
-      [...directMatches, ...fuseResults].forEach(item => {
-        const existing = byId.get(item.id);
-        if (!existing) {
-          byId.set(item.id, item);
-        } else {
-          byId.set(item.id, {
-            ...existing,
-            _directScore: Math.max(existing._directScore || 0, item._directScore || 0),
-            _score: Math.min(existing._score ?? 1, item._score ?? 1)
-          });
-        }
+      directMatches.sort((a, b) => {
+        const directDiff = (b._directScore || 0) - (a._directScore || 0);
+        if (directDiff) return directDiff;
+        return sortByPriority(a, b);
       });
 
-      const results = Array.from(byId.values())
-        .sort((a, b) => {
-          const directDiff = (b._directScore || 0) - (a._directScore || 0);
-          if (directDiff) return directDiff;
-          const fuseDiff = (a._score ?? 1) - (b._score ?? 1);
-          if (fuseDiff) return fuseDiff;
-          return sortByPriority(a, b);
-        })
-        .slice(0, 8);
+      let results = directMatches.slice(0, 8);
+
+      // Fuse fuzzy search is slower, so only use it when direct matching does not find enough results.
+      if (results.length < 8 && fuse) {
+        const searchQuery = expandedQuery || query;
+        const fuseResults = fuse.search(searchQuery, { limit: 8 }).map(result => ({ ...result.item, _score: result.score }));
+
+        const byId = new Map(results.map(item => [item.id, item]));
+        fuseResults.forEach(item => {
+          if (!byId.has(item.id)) byId.set(item.id, item);
+        });
+
+        results = Array.from(byId.values())
+          .sort((a, b) => {
+            const directDiff = (b._directScore || 0) - (a._directScore || 0);
+            if (directDiff) return directDiff;
+            const fuseDiff = (a._score ?? 1) - (b._score ?? 1);
+            if (fuseDiff) return fuseDiff;
+            return sortByPriority(a, b);
+          })
+          .slice(0, 8);
+      }
+
+      lastSearchResults = results;
 
       if (!results.length) {
         answerBox.innerHTML = `<section class="answer-card"><div class="empty">No result found.<br>Try product name, brand name, symptom, ingredient, or category.</div></section>`;
@@ -1303,7 +1316,15 @@
     searchBtn.addEventListener("click", searchItems);
     searchInput.addEventListener("input", () => {
       clearTimeout(searchTimer);
-      searchTimer = setTimeout(searchItems, 1000);
+      searchTimer = setTimeout(searchItems, 450);
+    });
+
+    searchInput.addEventListener("keydown", event => {
+      if (event.key === "Enter") {
+        clearTimeout(searchTimer);
+        lastSearchQuery = null;
+        searchItems();
+      }
     });
 
     updateServedCounter();
