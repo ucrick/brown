@@ -1033,9 +1033,9 @@
       const targetHorizontal = normalizeKey(targetItem.horizontal || "middle");
       const targetVertical = normalizeKey(targetItem.vertical || "middle");
 
-      // Household special rule:
-      // Row: top = left, middle = middle, bottom = right
-      // Column: left = bottom, middle = middle, right = top
+      // Household only:
+      // rows: top = left, middle = middle, bottom = right
+      // columns: left = bottom, middle = middle, right = top
       const rowHorizontals = ["left", "middle", "right"];
       const columnVerticals = ["bottom", "middle", "top"];
 
@@ -1085,7 +1085,7 @@
           targetItem.areaType === "aisle" &&
           String(targetItem.aisle) === String(aisleNumber) &&
           normalizeKey(targetItem.side) === sideName &&
-          normalizeKey(targetItem.section) === normalizeKey(section.id);
+          normalize(targetItem.section) === section.id;
 
         if (isTarget) return `<div class="shelf-section target-section">${buildSectionDetail(targetItem)}</div>`;
         return `<div class="shelf-section">${section.label}</div>`;
