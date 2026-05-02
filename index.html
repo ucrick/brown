@@ -321,15 +321,22 @@
     .household-box {
       grid-column: 1 / 2;
       grid-row: 1 / 3;
+      font-size: 18px;
+      line-height: 1.25;
+      color: #142b4d;
+    }
+
+    .household-box.household-active {
       display: grid;
       grid-template-rows: auto 1fr;
       align-items: stretch;
       justify-content: stretch;
       gap: 6px;
       padding: 8px;
-      font-size: 18px;
-      line-height: 1.25;
-      color: #142b4d;
+      background: var(--yellow);
+      border-color: #111827;
+      box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.35), 0 4px 10px rgba(0,0,0,0.08);
+      z-index: 2;
     }
 
     .household-title {
@@ -364,13 +371,6 @@
       color: rgba(17,24,39,0.46);
       position: relative;
       transition: 0.2s ease;
-    }
-
-    .household-box.household-active {
-      background: var(--yellow);
-      border-color: #111827;
-      box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.35), 0 4px 10px rgba(0,0,0,0.08);
-      z-index: 2;
     }
 
     .household-cell.target-cell {
@@ -1032,12 +1032,16 @@
 
       const targetHorizontal = normalizeKey(targetItem.horizontal || "middle");
       const targetVertical = normalizeKey(targetItem.vertical || "middle");
-      const horizontals = ["left", "middle", "right"];
-      const verticals = ["top", "middle", "bottom"];
+
+      // Household only:
+      // Rows: top = left, middle = middle, bottom = right
+      // Columns: left = bottom, middle = middle, right = top
+      const rowHorizontals = ["left", "middle", "right"];
+      const columnVerticals = ["bottom", "middle", "top"];
 
       let html = `<div class="household-title">Household</div><div class="household-detail">`;
-      verticals.forEach(vertical => {
-        horizontals.forEach(horizontal => {
+      rowHorizontals.forEach(horizontal => {
+        columnVerticals.forEach(vertical => {
           const isTargetCell = cellKey(horizontal, vertical) === cellKey(targetHorizontal, targetVertical);
           html += `<div class="household-cell ${isTargetCell ? "target-cell" : ""}">${isTargetCell ? "ITEM" : ""}</div>`;
         });
