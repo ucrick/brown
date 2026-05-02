@@ -1113,7 +1113,7 @@
         const isTarget =
           targetItem &&
           targetItem.areaType === "aisle" &&
-          String(targetItem.aisle) === String(aisleNumber) &&
+          Number(targetItem.aisle) === Number(aisleNumber) &&
           normalizeKey(targetItem.side) === sideName &&
           normalize(targetItem.section) === section.id;
 
@@ -1126,7 +1126,7 @@
     function buildAisleGroup(container, aisleList, targetItem) {
       container.innerHTML = "";
       aisleList.forEach(aisle => {
-        const isActiveAisle = targetItem && targetItem.areaType === "aisle" && String(targetItem.aisle) === String(aisle.aisle);
+        const isActiveAisle = targetItem && targetItem.areaType === "aisle" && Number(targetItem.aisle) === Number(aisle.aisle);
         const aisleColor = getAisleColor(aisle.aisle);
         const row = document.createElement("div");
         row.className = `aisle-block ${isActiveAisle ? "active-aisle" : ""}`;
