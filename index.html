@@ -326,6 +326,19 @@
       color: #142b4d;
     }
 
+    .household-box.household-active {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      align-items: stretch;
+      justify-content: stretch;
+      gap: 6px;
+      padding: 8px;
+      background: var(--yellow);
+      border-color: #111827;
+      box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.35), 0 4px 10px rgba(0,0,0,0.08);
+      z-index: 2;
+    }
+
     .household-title {
       display: flex;
       align-items: center;
@@ -357,20 +370,6 @@
       font-weight: 900;
       color: rgba(17,24,39,0.46);
       position: relative;
-      transition: 0.2s ease;
-    }
-
-    .household-box.household-active {
-      display: grid;
-      grid-template-rows: auto 1fr;
-      align-items: stretch;
-      justify-content: stretch;
-      gap: 6px;
-      padding: 8px;
-      background: var(--yellow);
-      border-color: #111827;
-      box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.35), 0 4px 10px rgba(0,0,0,0.08);
-      z-index: 2;
     }
 
     .household-cell.target-cell {
@@ -1024,30 +1023,31 @@
     function buildHouseholdBox(targetItem) {
       const isHouseholdTarget = Boolean(targetItem && targetItem.areaType === "household");
       householdBox.classList.toggle("household-active", isHouseholdTarget);
-    
+
       if (!isHouseholdTarget) {
+        householdBox.classList.remove("target");
         householdBox.textContent = "Household";
         return;
       }
-    
+
       const targetHorizontal = normalizeKey(targetItem.horizontal || "middle");
       const targetVertical = normalizeKey(targetItem.vertical || "middle");
-    
-      // Household 专用规则：
-      // 行：最上面=left，中间=middle，最下面=right
-      // 列：最左边=bottom，中间=middle，最右边=top
+
+      // Household special rule:
+      // Row: top = left, middle = middle, bottom = right
+      // Column: left = bottom, middle = middle, right = top
       const rowHorizontals = ["left", "middle", "right"];
       const columnVerticals = ["bottom", "middle", "top"];
-    
+
       let html = `<div class="household-title">Household</div><div class="household-detail">`;
-    
+
       rowHorizontals.forEach(horizontal => {
         columnVerticals.forEach(vertical => {
           const isTargetCell = cellKey(horizontal, vertical) === cellKey(targetHorizontal, targetVertical);
           html += `<div class="household-cell ${isTargetCell ? "target-cell" : ""}">${isTargetCell ? "ITEM" : ""}</div>`;
         });
       });
-    
+
       html += `</div>`;
       householdBox.innerHTML = html;
     }
