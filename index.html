@@ -1024,30 +1024,24 @@
     function buildHouseholdBox(targetItem) {
       const isHouseholdTarget = Boolean(targetItem && targetItem.areaType === "household");
       householdBox.classList.toggle("household-active", isHouseholdTarget);
-    
+
       if (!isHouseholdTarget) {
         householdBox.textContent = "Household";
         return;
       }
-    
+
       const targetHorizontal = normalizeKey(targetItem.horizontal || "middle");
       const targetVertical = normalizeKey(targetItem.vertical || "middle");
-    
-      // Household 专用规则：
-      // 行：最上面=left，中间=middle，最下面=right
-      // 列：最左边=bottom，中间=middle，最右边=top
-      const rowHorizontals = ["left", "middle", "right"];
-      const columnVerticals = ["bottom", "middle", "top"];
-    
+      const horizontals = ["left", "middle", "right"];
+      const verticals = ["top", "middle", "bottom"];
+
       let html = `<div class="household-title">Household</div><div class="household-detail">`;
-    
-      rowHorizontals.forEach(horizontal => {
-        columnVerticals.forEach(vertical => {
+      verticals.forEach(vertical => {
+        horizontals.forEach(horizontal => {
           const isTargetCell = cellKey(horizontal, vertical) === cellKey(targetHorizontal, targetVertical);
           html += `<div class="household-cell ${isTargetCell ? "target-cell" : ""}">${isTargetCell ? "ITEM" : ""}</div>`;
         });
       });
-    
       html += `</div>`;
       householdBox.innerHTML = html;
     }
