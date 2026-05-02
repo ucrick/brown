@@ -342,10 +342,35 @@
       justify-content: stretch;
     }
 
+    .household-box.household-active.household-target {
+      background: var(--yellow) !important;
+      border-color: #111827 !important;
+      box-shadow: 0 0 0 4px rgba(255, 210, 63, 0.35), 0 4px 10px rgba(0,0,0,0.08);
+      z-index: 2;
+      overflow: hidden;
+      padding: 4px;
+    }
+
+    .household-box.household-active.household-target::after {
+      content: "HERE";
+      position: absolute;
+      top: -12px;
+      right: 6px;
+      background: #111827;
+      color: white;
+      font-size: 9px;
+      font-weight: 900;
+      padding: 3px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+      letter-spacing: 0.4px;
+      z-index: 5;
+    }
+
     .household-part {
       border: 1px solid rgba(17, 24, 39, 0.35);
       border-radius: 8px;
-      background: #f8fafc;
+      background: rgba(255,255,255,0.75);
       padding: 3px;
       display: grid;
       grid-template-rows: auto 1fr;
@@ -384,27 +409,10 @@
     }
 
     .household-cell.target-household-cell {
-      background: var(--yellow);
-      border-color: #111827;
-      color: #111827;
-      box-shadow: 0 0 0 3px rgba(255, 210, 63, 0.32), 0 3px 8px rgba(0,0,0,0.08);
-      z-index: 3;
-    }
-
-    .household-cell.target-household-cell::after {
-      content: "HERE";
-      position: absolute;
-      top: -10px;
-      right: 2px;
       background: #111827;
       color: white;
-      font-size: 7px;
-      font-weight: 900;
-      padding: 2px 5px;
-      border-radius: 999px;
-      white-space: nowrap;
-      letter-spacing: 0.3px;
-      z-index: 5;
+      border-color: #111827;
+      font-size: 9px;
     }
 
     .till2-box {
@@ -1061,14 +1069,14 @@
       const targetPart = isHouseholdTarget ? householdPartFromVertical(targetItem.vertical) : "";
       const targetRow = isHouseholdTarget ? householdRowFromHorizontal(targetItem.horizontal) : "";
 
-      householdBox.classList.remove("target", "household-active");
+      householdBox.classList.remove("target", "household-active", "household-target");
 
       if (!isHouseholdTarget) {
         householdBox.innerHTML = "Household";
         return;
       }
 
-      householdBox.classList.add("household-active");
+      householdBox.classList.add("household-active", "household-target");
       householdBox.innerHTML = parts.map(part => `
         <div class="household-part">
           <div class="household-part-title">${part.label}</div>
