@@ -18,3 +18,14 @@ general-household,general,Household product. Follow label directions and keep ou
 ask-staff,general,Ask a team member if you cannot find this item on shelf.,True,False,False,False,Use when code or location is uncertain.
 safety-cleaning,safety,Cleaning products can be hazardous. Read the label and do not mix chemicals such as bleach and ammonia.,False,False,False,True,General cleaning chemical safety message.
 aerosol-safety,safety,Aerosol product. Keep away from heat and flames. Follow label directions.,False,False,False,True,For aerosol air fresheners and insect sprays if needed.
+none,general,No special purchase restriction applies.,False,False,False,False,Default blank rule; product_groups may leave ruleId empty instead
+ask-staff,general,Please ask a staff member if you cannot find the exact variant on shelf.,True,False,False,False,Use for ranges where variants move or shelf space is shared
+check-size,general,Please check the size and variant before purchase.,False,False,False,False,Useful where multiple sizes sit together
+age-check,restriction,Age check may be required for selected items.,True,True,False,True,Not expected for ordinary shampoo/conditioner but kept for store-wide rule system
+ask-pharmacist,pharmacy,Please ask the pharmacist for this item.,True,False,True,True,Store-wide reusable pharmacy rule
+prescription-only,restriction,Prescription only item. Please see the pharmacist.,True,False,True,True,Store-wide reusable rule
+behind-counter,restriction,This item may be kept behind the counter. Please ask staff.,True,False,False,True,Store-wide reusable rule
+,general,No special rule,False,False,False,False,Default empty rule.
+ask-staff,general,Please ask a staff member if you cannot find the exact shade.,True,False,False,True,Some shades may share the same shelf space or hook.
+patch-test,safety,Always follow pack instructions and perform an allergy alert / patch test before colouring hair.,True,False,False,True,General safety reminder for hair colour products.
+bleach-caution,safety,Hair bleach and peroxide products can irritate skin and damage hair if misused. Follow instructions carefully.,True,False,False,True,Safety reminder for bleach/developer products.

@@ -78,3 +78,45 @@ sensitive,"fragrance free, hypoallergenic, hypo, gentle, unscented, ultra sensit
 lemon,"lm, lem, lmn, citrus",medium,Household,common shelf abbreviation expansion
 antibacterial,"anti bacterial, antibac, a/bact, anti-bac, disinfectant",high,Household,
 eucalyptus,"eucal, euc, euco, eucalyptus scent",medium,Household,common abbreviation expansion
+shampoo,"shampoo,shampo,shamp,shampu,hair wash,hair cleanser,wash hair,spoo",high,Hair Care,Common customer terms and planogram abbreviation
+conditioner,"conditioner,cond,con,conditoner,hair conditioner,hair rinse",high,Hair Care,Common customer terms and planogram abbreviation
+hair mask,"hair mask,mask,masque,hair masque,treatment mask,msk",high,Hair Care,
+hair treatment,"hair treatment,treatment,leave in,leave-in,repair treatment,thermal treatment",high,Hair Care,
+purple shampoo,"purple shampoo,silver shampoo,toning shampoo,blonde shampoo,anti brass,anti yellow",high,Hair Care,
+colour care,"colour care,color care,colour protect,color protect,anti fade,dyed hair",high,Hair Care,NZ spelling and US spelling included
+dry hair,"dry hair,dry scalp,moisture,hydrating,hydration,nourish,nourishing",medium,Hair Care,
+damaged hair,"damaged hair,damage,repair,breakage,bond repair,protein,keratin",medium,Hair Care,
+frizz,"frizz,frizzy hair,frizz control,smoothing,smooth hair,anti frizz",medium,Hair Care,
+curly hair,"curly hair,curls,curl,coil,coils,wavy hair,curl care",medium,Hair Care,
+oily hair,"oily hair,oily scalp,oil control,greasy hair,clarifying,detox",medium,Hair Care,
+scalp care,"scalp,scalp care,itchy scalp,sensitive scalp,tonic,scalp scrub",medium,Hair Care,
+volume,"volume,volumising,volumizing,body,fine hair,thin hair",medium,Hair Care,
+hair oil,"hair oil,oil,argan oil,coconut oil,moroccan oil,serum",medium,Hair Care,
+L'Oreal,"loreal,l'oreal,l oreal,LOreal,loreal paris",medium,Hair Care,Brand spelling variations
+L'Oreal Professionnel,"loreal pro,loreal professionnel,loreal professional,serie expert",medium,Hair Care,Brand spelling variations
+TRESemme,"tresemme,tresemmé,tres emme,tresseme",medium,Hair Care,Brand spelling variations
+Schwarzkopf,"schwarzkopf,schwartz kopf,schwarz,swz,extra care",medium,Hair Care,Common misspellings
+John Frieda,"john frieda,jf,frizz ease,sheer blonde,go blonder",medium,Hair Care,
+Herbal Essences,"herbal essences,herbal essence,herbal,he,bio renew",medium,Hair Care,
+Garnier Fructis,"garnier,fructis,hair food,garnier hair food",medium,Hair Care,
+OGX,"ogx,organix,ogx hair",medium,Hair Care,
+Maui Moisture,"maui,maui moisture,mmoi",medium,Hair Care,
+Hask,"hask,hask hair,argan hask,keratin hask",medium,Hair Care,
+Klorane,"klorane,chlorane,kloran",low,Hair Care,Possible misspelling
+hair colour,"hair color, hair dye, dye, box dye, colour, color, permanent colour, permanent color",high,Hair Care,NZ/UK spelling plus US spelling
+semi permanent hair colour,"semi permanent color, semi permanent dye, demi permanent, wash out dye, temporary dye",high,Hair Care,Common customer wording
+root touch up,"root spray, root cover, grey roots, regrowth spray, retouch, touchup, touch up, magic retouch",high,Hair Care,Used for root coverage products
+blonde toner,"toner, purple toner, silver toner, anti yellow, anti brass, brassiness, brassy hair, platinum toner",high,Hair Care,Blonde maintenance synonyms
+bleach,"hair bleach, lightener, bleach powder, peroxide, developer, creme developer, volume developer, vol 20, vol 30, vol 40",high,Hair Care,Developer and lightener terms
+colour remover,"color remover, hair dye remover, dye stripper, colour stripper, colourless, decolour, remove hair dye",high,Hair Care,Colour removal terms
+black hair dye,"black hair colour, blue black, soft black, natural black, ebony black",medium,Hair Care,Shade search
+brown hair dye,"brown hair colour, dark brown, medium brown, light brown, chocolate brown, chestnut, mocha, brunette",medium,Hair Care,Shade search
+blonde hair dye,"blonde hair colour, ash blonde, light blonde, dark blonde, golden blonde, platinum blonde",medium,Hair Care,Shade search
+red hair dye,"red hair colour, auburn, burgundy, mahogany, copper, rose gold, crimson",medium,Hair Care,Shade search
+grey coverage,"gray coverage, cover greys, cover grays, white hair, grey roots, regrowth",high,Hair Care,Common need-based search
+L’Oreal,"loreal, l oreal, l’oréal, loreal paris, paris excellence, preference, casting creme gloss",high,Hair Care,Brand spelling variants
+Schwarzkopf,"schwartzkopf, schwarzkoph, swz, swk, live colour, brilliance, creme supreme",high,Hair Care,Brand spelling variants
+Clairol,"clairal, clairol nice and easy, nice n easy, nice’n easy, n/e",high,Hair Care,Brand spelling variants
+Garnier,"garnia, garnia, olia, nutrisse, garnier good",high,Hair Care,Brand spelling variants
+Revlon,"revlon colorsilk, color silk, colour silk, coloursilk",medium,Hair Care,Brand/product spelling variants
+Napro Palette,"palette, napro, napro hair colour, palette hair dye",medium,Hair Care,Brand and product synonyms
