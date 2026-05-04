@@ -45,3 +45,11 @@ ask-pharmacist,pharmacy,"For medicines or symptom advice, ask the pharmacist if 
 nrt-age-check,restriction,"Nicotine replacement therapy products are for smoking cessation. Ask the pharmacist for advice, especially for pregnancy, medical conditions, or under 18 use.",True,True,False,True,NRT products may require staff/pharmacist advice
 testing-kit-advice,safety,Read testing kit instructions carefully. Ask staff or pharmacist if you need help choosing a test.,True,False,False,True,Self-testing products
 ask-staff,general,Ask staff if you cannot find this product or need a similar alternative.,False,False,False,False,General locating assistance
+selected-stores,general,This range may only be available in selected stores. Ask staff if you cannot find it.,True,False,False,False,Planogram header says selected stores.
+hook-multiple-sizes,general,Multiple sizes may be stocked on hooks. Check the hook label carefully or ask staff for the correct size.,True,False,False,False,Planogram notes multiple sizes on hooks.
+ask-staff,general,Ask a team member if the item is not visible on shelf.,True,False,False,False,General assistance rule.
+check-size,general,Check product size and side before purchasing.,False,False,False,False,"Useful for insoles, sleeves and foot supports."
+no-special-rule,general,No special restriction.,False,False,False,False,
+test-advice,general,Follow the instructions in the test kit. Ask staff if you need help choosing a test.,True,False,False,True,For pregnancy and ovulation tests.
+adult-wellness,restriction,Adult wellness item. Please ask staff if you need assistance.,True,False,False,False,"Neutral prompt for condoms, lubricant, and sexual wellness products."
+ask-staff,general,Please ask staff for assistance if you cannot find this product.,True,False,False,False,
