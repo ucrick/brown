@@ -29,3 +29,19 @@ behind-counter,restriction,This item may be kept behind the counter. Please ask 
 ask-staff,general,Please ask a staff member if you cannot find the exact shade.,True,False,False,True,Some shades may share the same shelf space or hook.
 patch-test,safety,Always follow pack instructions and perform an allergy alert / patch test before colouring hair.,True,False,False,True,General safety reminder for hair colour products.
 bleach-caution,safety,Hair bleach and peroxide products can irritate skin and damage hair if misused. Follow instructions carefully.,True,False,False,True,Safety reminder for bleach/developer products.
+ask-pharmacist,pharmacy,Ask a pharmacist if you are unsure whether this product is suitable for you.,True,False,True,True,"Used for medicated scalp, head lice and hair loss treatments where suitability questions are common."
+ask-staff,general,Ask a team member if you cannot find the product on the shelf.,True,False,False,False,General fallback.
+electrical-item,safety,"For electrical hair tools, check product packaging for voltage, warranty and safety instructions.",True,False,False,True,Optional rule for dryers and stylers.
+none,general,No special restriction.,False,False,False,False,Default rule
+ask-staff,general,Ask a staff member if you cannot find this item on the shelf.,True,False,False,False,Useful for small hook items and travel accessories
+check-airline-rules,safety,"Check airline and destination rules before flying with liquids, aerosols, batteries, or power accessories.",True,False,False,True,Travel accessories and liquids may have airline restrictions
+external-use,safety,For external use only. Read the label before use.,True,False,False,True,"Skin care, wipes, deodorant and tanning products"
+general-eye,general,"For eye products, read the label and use only as directed. Ask staff if you need help choosing the right product.",True,False,False,True,General eye care advice.
+contact-lens-care,safety,Use contact lens solutions only as directed. Do not use if seal is broken. Ask staff if unsure which solution suits your lenses.,True,False,False,True,Contact lens solution safety prompt.
+ear-care,safety,"Do not insert products deeply into the ear canal. Ask a pharmacist or healthcare professional if you have pain, discharge, perforated eardrum, or ongoing symptoms.",True,False,False,True,Ear care safety prompt.
+snoring-advice,general,"Snoring products may help with mild snoring. Seek professional advice if snoring is severe, new, or associated with breathing pauses or daytime sleepiness.",True,False,False,True,Snoring and sleep apnoea caution.
+ask-staff,general,Ask staff for help finding this item or choosing a suitable alternative.,True,False,False,False,General store assistance.
+ask-pharmacist,pharmacy,"For medicines or symptom advice, ask the pharmacist if you are unsure which product is suitable.",True,False,False,True,General pharmacy advice for OTC medicines
+nrt-age-check,restriction,"Nicotine replacement therapy products are for smoking cessation. Ask the pharmacist for advice, especially for pregnancy, medical conditions, or under 18 use.",True,True,False,True,NRT products may require staff/pharmacist advice
+testing-kit-advice,safety,Read testing kit instructions carefully. Ask staff or pharmacist if you need help choosing a test.,True,False,False,True,Self-testing products
+ask-staff,general,Ask staff if you cannot find this product or need a similar alternative.,False,False,False,False,General locating assistance
