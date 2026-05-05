@@ -239,3 +239,57 @@ Schick,"shick, chic, hydro, quattro, xtreme, exacta",high,Personal Care,Common b
 Nivea Men,"nivea, nivea mens, men sensitive, men deep, protect care",medium,Personal Care,
 Lynx,"axe, body wash, lynx shower gel, lynx africa",medium,Personal Care,Lynx is known as Axe in some countries
 adult wellness,"sexual wellness, intimacy, family planning, pleasure product",low,Family Planning,Use neutral customer-facing labels
+toothpaste,"tp, t/p, tooth paste, paste, teathpaste, toothpase, toothpaste for teeth",high,Oral Care,Common abbreviations on shelf labels
+toothbrush,"tb, t/b, tooth brush, brush, manual brush, dental brush",high,Oral Care,
+electric toothbrush,"electric brush, power toothbrush, power brush, sonic toothbrush, battery toothbrush, e/b, elec t/b",high,Oral Care,
+refills,"rfl, refill, brush head, toothbrush head, replacement head, heads",high,Oral Care,
+floss,"dental floss, flos, flossers, floss picks, dental tape, interdental, piksters, tepe, picks",high,Oral Care,
+water flosser,"waterpik, water pick, oral irrigator, wtr fl, wtr/fl, cordless flosser",high,Oral Care,
+mouthwash,"mw, m/w, mouth wash, mouth rinse, oral rinse, rinse, gargle",high,Oral Care,
+sensitive teeth,"sensitivity, tooth sensitivity, sensitive toothpaste, sore teeth, enamel pain, gum sensitivity",high,Oral Care,
+whitening,"white, wht, whitening strips, teeth whitening, stain removal, optic white, 3d white, pap, v34",high,Oral Care,
+kids oral care,"kids toothbrush, children toothpaste, child toothbrush, baby toothbrush, toddler toothbrush, junior toothpaste",high,Oral Care,
+denture care,"dentures, false teeth, denture cleaner, denture tablets, denture adhesive, denture glue, retainer cleaner",high,Oral Care,
+bad breath,"halitosis, fresh breath, breath spray, breath strips, mouth odour, tongue cleaner, tongue scraper",medium,Oral Care,
+fluoride,"fl, fluo, fluoride toothpaste, cavity protection",medium,Oral Care,
+Colgate,"colg, colgat, col gate, colgate oral care",medium,Oral Care,Shelf labels often abbreviate as COLG or COLGAT
+Oral-B,"oral b, oralb, oral bee, orab, oral-b",medium,Oral Care,
+Sensodyne,"sensodine, senso, sensitive toothpaste, sensodyne tp",medium,Oral Care,
+Listerine,"listerin, list, listerine mouthwash, lis mouthwash",medium,Oral Care,
+HiSmile,"hi smile, hismil, hsmile, v34, pap plus, pap+",medium,Oral Care,
+support,"brace,strap,sleeve,wrap,compression,splint",high,First Aid,General supports and braces.
+knee support,"knee brace,knee strap,knee stabiliser,knee sleeve,patella strap",high,First Aid,Futuro and compression knee products.
+wrist support,"wrist brace,carpal tunnel brace,wrist strap,wrist wrap,thumb brace",high,First Aid,Wrist and thumb support products.
+ankle support,"ankle brace,ankle wrap,ankle strap,arch support,plantar fasciitis support",high,First Aid,Ankle and foot support products.
+elbow support,"tennis elbow strap,elbow brace,elbow sleeve,golfer elbow strap",medium,First Aid,Elbow and arm supports.
+back support,"back brace,lumbar support,posture corrector,neck collar,cervical collar",medium,First Aid,Back and neck support.
+hot cold pack,"ice pack,heat pack,gel pack,wheat bag,hot water bottle,hottie,instant cold pack",high,First Aid,Hot and cold therapy.
+plaster,"band aid,bandaid,bandage,sticky plaster,adhesive strip,strip",high,First Aid,Common NZ/AU terms.
+dressing,"wound dressing,foam dressing,gauze dressing,adhesive dressing,post op dressing,pad",high,First Aid,Wound covering products.
+waterproof dressing,"waterproof plaster,shower proof dressing,aqua dressing,transparent dressing,opsite,tegaderm",high,First Aid,Waterproof wound protection.
+sensitive plaster,"sensitive skin plaster,skin sensitive,silicone dressing,hypoallergenic plaster,hypo plaster",medium,First Aid,Sensitive skin wound care.
+blister plaster,"blister patch,blister bandage,heel blister,foot blister plaster",medium,First Aid,Blister care search.
+sports tape,"strapping tape,rigid tape,k tape,kinesiology tape,KT tape,elastic adhesive bandage,EAB",high,First Aid,Sports injury tape.
+medical tape,"paper tape,fixation tape,leukoplast,leukotape,leuko,fixomull,micropore",high,First Aid,Tape brands and common terms.
+first aid kit,"emergency kit,medical kit,travel first aid,home first aid kit",high,First Aid,First aid kits.
+cast protector,"waterproof cast cover,cast sleeve,shower cast cover,arm cast cover,leg cast cover",medium,First Aid,Waterproof cast protection.
+swabs,"gauze swabs,non woven swabs,alcohol swabs,wipes,cotton wool",medium,First Aid,Accessories.
+wound care,"cuts,scrapes,grazes,burn dressing,injury dressing,minor wound",high,First Aid,Symptom and need search.
+vaporiser,"vaporizer,vapouriser,steam vaporiser,warm steam,cool mist,humidifier",high,Medicine,NZ spelling vaporiser plus common US spelling vaporizer.
+humidifier,"vaporiser,vaporizer,cool mist,moisture machine,air humidifier",high,Medicine,Common customer wording for vaporiser devices.
+diffuser,"aroma diffuser,oil diffuser,ultrasonic diffuser,waterless diffuser,usb diffuser,essential oil diffuser",high,Personal Care,Aromatherapy device terms.
+essential oil,"aroma oil,diffuser oil,oil blend,aromatherapy oil,es oil",high,Personal Care,General essential oil search expansion.
+eucalyptus oil,"euc oil,euky oil,eucalyptus,eucalyptus spray,eucaliptus oil",high,Medicine,Common abbreviation and misspelling.
+tea tree oil,"teatree oil,melaleuca,antiseptic oil,tt oil",high,Personal Care,Common tea tree searches.
+lavender oil,"lavendar oil,lavender spray,sleep oil,calming oil",medium,Personal Care,Includes common misspelling lavendar.
+peppermint oil,"pepper mint oil,mint oil,essential mint oil",medium,Personal Care,Aromatherapy oil.
+vicks,"vick,vix,vicks vaporub,vapo rub,vapor rub,vapour rub",high,Medicine,Brand and common misspellings.
+vaporub,"vapo rub,vapor rub,vapour rub,chest rub,menthol rub,rub for cold",high,Medicine,Vicks chest rub terms.
+chest rub,"vaporub,vapo rub,menthol rub,cold rub,baby balsam",high,Medicine,Cold and flu rub terms.
+inhalant,"inhaler fluid,vaporiser liquid,vaposteam,menthol fluid,steam inhalant",high,Medicine,Vaporiser liquid and inhalant terms.
+vapopads,"vapo pads,vicks pads,refill pads,vaporiser pads,menthol pads",medium,Medicine,Vicks pad refill terms.
+blocked nose,"congestion,stuffy nose,nasal congestion,sinus,can't breathe",high,Medicine,Symptom synonym.
+cold relief,"cold and flu,cough relief,congestion relief,flu relief,winter cold",high,Medicine,Symptom synonym.
+sleep aid,"sleep,sleepy time,sweet dreams,bedtime,relaxation,calming",medium,Personal Care,Sleep-related aromatherapy searches.
+aromatherapy,"essential oils,diffuser oils,relaxing oils,wellness oils",medium,Personal Care,Category synonym.
+cleaning tablets,"vaporiser cleaner,cleaning tabs,descaler,cleaning solution",medium,Medicine,Accessory search expansion.

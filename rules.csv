@@ -53,3 +53,18 @@ no-special-rule,general,No special restriction.,False,False,False,False,
 test-advice,general,Follow the instructions in the test kit. Ask staff if you need help choosing a test.,True,False,False,True,For pregnancy and ovulation tests.
 adult-wellness,restriction,Adult wellness item. Please ask staff if you need assistance.,True,False,False,False,"Neutral prompt for condoms, lubricant, and sexual wellness products."
 ask-staff,general,Please ask staff for assistance if you cannot find this product.,True,False,False,False,
+ask-staff,general,Please ask a team member if you cannot find this item on the shelf.,True,False,False,False,General location help
+ask-pharmacist,pharmacy,Please ask the pharmacist for advice before using this product.,True,False,True,True,Use for pharmacist-only oral treatment if required
+age-check,restriction,Age check may be required at checkout.,True,True,False,True,Placeholder for age-restricted products if added later
+behind-counter,restriction,This item may be kept behind the counter. Please ask staff.,True,False,False,True,Use for behind-counter products if store policy applies
+prescription-only,pharmacy,Prescription only. Please speak to the pharmacist.,True,False,True,True,Not directly assigned to current visible shelf items
+none,general,,False,False,False,False,No special customer prompt.
+ask-staff-fit,general,Ask staff if you need help choosing the correct size or fit.,True,False,False,False,"For supports, braces, compression and splints where sizing matters."
+wound-care-advice,safety,"For deep wounds, burns, infection, heavy bleeding or animal bites, seek pharmacist or medical advice.",True,False,False,True,General first aid and wound care safety prompt.
+heat-cold-safety,safety,Follow pack instructions. Do not apply hot or cold packs directly to damaged skin.,True,False,False,True,Hot/cold packs and heat pads.
+ask-pharmacist,pharmacy,"Ask the pharmacist if symptoms are severe, persistent, or if you are unsure which product is suitable.",True,False,True,True,General referral rule.
+essential-oil-safety,safety,Essential oils are for external or diffuser use only. Follow the product label and keep out of reach of children.,True,False,False,True,General essential oil safety note.
+medical-advice,safety,"For cold, flu, breathing, asthma, pregnancy, baby or child use questions, ask a pharmacist or follow the label.",True,False,True,True,"Used for medicated vapour, inhalant, chest rub and respiratory products."
+electrical-item,general,"This is an electrical appliance. Check box instructions, warranty and suitable water or liquid use before purchase.",False,False,False,True,"Used for vaporisers, humidifiers and diffusers."
+ask-staff,general,Ask staff if the item is not visible on shelf or if a display model is required.,False,False,False,False,General staff help rule.
+no-special-rule,general,No special restriction.,False,False,False,False,Default rule when no warning is needed.
