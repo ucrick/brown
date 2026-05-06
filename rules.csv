@@ -68,3 +68,8 @@ medical-advice,safety,"For cold, flu, breathing, asthma, pregnancy, baby or chil
 electrical-item,general,"This is an electrical appliance. Check box instructions, warranty and suitable water or liquid use before purchase.",False,False,False,True,"Used for vaporisers, humidifiers and diffusers."
 ask-staff,general,Ask staff if the item is not visible on shelf or if a display model is required.,False,False,False,False,General staff help rule.
 no-special-rule,general,No special restriction.,False,False,False,False,Default rule when no warning is needed.
+ask-staff,general,Please ask a team member if you need help finding the right size or a bulky item.,True,False,False,False,Used for mobility aids and size-dependent supports
+ask-pharmacist,pharmacy,Please ask the pharmacist for advice before using this product.,True,False,True,True,Used where safe use may require pharmacist advice
+age-check,restriction,Age check may be required for this item.,True,True,False,True,Not currently linked unless required by store policy
+prescription-only,pharmacy,This item may require a prescription or pharmacist supply. Please ask the pharmacist.,True,False,True,True,General pharmacy-only rule
+topical-warning,safety,Read the label and follow directions. Stop use if irritation occurs. Ask a pharmacist if unsure.,True,False,False,True,"For topical pain, wart and medicated skin products"

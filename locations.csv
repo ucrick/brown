@@ -243,3 +243,21 @@ till2-bay1-bottom,active,till2,3.0,,,Vaporisers - Vicks Devices,till2,1.0,,botto
 till2-bay2-top,active,till2,3.0,,,Vaporisers - Bosisto’s Oils & Diffusers,till2,2.0,,top,Till 2 · Aisle 3 · Vaporisers - Bosisto’s Oils & Diffusers · Bay 2 · Top shelf,near Till 2,Vaporisers,3201,Bay 2 top rows: Bosisto’s native oils and diffuser devices.
 till2-bay2-mid,active,till2,3.0,,,Vaporisers - Bosisto’s & Thursday Plantation Oils,till2,2.0,,middle,Till 2 · Aisle 3 · Vaporisers - Bosisto’s & Thursday Plantation Oils · Bay 2 · Middle shelf,near Till 2,Vaporisers,3202,"Bay 2 middle rows: eucalyptus, tea tree, lavender and Thursday Plantation oils."
 till2-bay2-bottom,active,till2,3.0,,,Vaporisers - Euky Bear & VaporPro Devices,till2,2.0,,bottom,Till 2 · Aisle 3 · Vaporisers - Euky Bear & VaporPro Devices · Bay 2 · Bottom shelf,near Till 2,Vaporisers,3203,Bay 2 bottom rows: larger vaporiser appliances.
+a3-b3-bay1-left-top,active,aisle,3.0,bottom,B3,Mobility Aids,,1.0,left,top,A3 · Bottom · B3 · Bay 1 · Left · Top,Ask staff for bulky mobility products,Mobility Aids,301,"Image 1, upper display area"
+a3-b3-bay1-left-middle,active,aisle,3.0,bottom,B3,Posture Medic,,1.0,left,middle,A3 · Bottom · B3 · Bay 1 · Left · Middle,,Posture Medic,302,"Image 1, middle shelf area"
+a3-b3-bay1-left-bottom,active,aisle,3.0,bottom,B3,Walking Sticks & Arm Supports,,1.0,left,bottom,A3 · Bottom · B3 · Bay 1 · Left · Bottom,Ask staff for size help,Walking Sticks,303,"Image 1, lower shelf area"
+a3-b3-bay4-left-top,active,aisle,3.0,bottom,B3,Natural Remedies & Oils,,4.0,left,top,A3 · Bottom · B3 · Bay 4 · Left · Top,,Natural Remedies,304,Image 2 top rows
+a3-b3-bay4-left-middle,active,aisle,3.0,bottom,B3,"Vicks, Numit, Emla, Cold Sore",,4.0,left,middle,A3 · Bottom · B3 · Bay 4 · Left · Middle,,Vicks / Cold Sore,305,Image 2 middle rows
+a3-b3-bay4-left-bottom,active,aisle,3.0,bottom,B3,"Dettol, Isocol & Microshield",,4.0,left,bottom,A3 · Bottom · B3 · Bay 4 · Left · Bottom,,Antiseptics,306,Image 2 bottom rows
+a3-b3-bay3-middle-top,active,aisle,3.0,bottom,B3,"Wound Care, Tattoo Care & Betadine",,3.0,middle,top,A3 · Bottom · B3 · Bay 3 · Middle · Top,,Wound Care,307,Image 3 top rows
+a3-b3-bay3-middle-middle,active,aisle,3.0,bottom,B3,"Wound Creams, Burn Care & Dressings",,3.0,middle,middle,A3 · Bottom · B3 · Bay 3 · Middle · Middle,,Burn & Dressings,308,Image 3 middle rows
+a3-b3-bay3-middle-bottom,active,aisle,3.0,bottom,B3,Scar Treatments & Bruise Care,,3.0,middle,bottom,A3 · Bottom · B3 · Bay 3 · Middle · Bottom,,Scar / Bruise,309,Image 3 bottom rows
+a3-b3-bay2-middle-top,active,aisle,3.0,bottom,B3,"Pain Away, Fisiocrem & Anti-Flamme",,2.0,middle,top,A3 · Bottom · B3 · Bay 2 · Middle · Top,,Muscle Pain,310,Image 4 top rows
+a3-b3-bay2-middle-middle,active,aisle,3.0,bottom,B3,Deep Heat & Mentholatum,,2.0,middle,middle,A3 · Bottom · B3 · Bay 2 · Middle · Middle,,Heat / Ice,311,Image 4 middle rows
+a3-b3-bay2-middle-bottom,active,aisle,3.0,bottom,B3,"Amazing Oils, Mageze & Salts",,2.0,middle,bottom,A3 · Bottom · B3 · Bay 2 · Middle · Bottom,,Magnesium / Salts,312,Image 4 bottom rows
+a3-b3-bay1-right-top,active,aisle,3.0,bottom,B3,Voltaren & Mobilflam,,1.0,right,top,A3 · Bottom · B3 · Bay 1 · Right · Top,,Voltaren,313,Image 5 top rows
+a3-b3-bay1-right-middle,active,aisle,3.0,bottom,B3,"Perskindol, Hot/Cold Packs & Tiger Balm",,1.0,right,middle,A3 · Bottom · B3 · Bay 1 · Right · Middle,,Topical Pain Relief,314,Image 5 middle rows
+a3-b3-bay1-right-bottom,active,aisle,3.0,bottom,B3,Recovery Creams & Metsal,,1.0,right,bottom,A3 · Bottom · B3 · Bay 1 · Right · Bottom,,Recovery / Metsal,315,Image 5 bottom rows
+a3-b3-bay1af-right-top,active,aisle,3.0,bottom,B3,"AntiFungal, Warts & Anti-Itch",,1.0,right,top,A3 · Bottom · B3 · Bay 1 · Right · Top,"Antifungal, warts and anti-itch bay",Antifungal,316,Image 6 top rows
+a3-b3-bay1af-right-middle,active,aisle,3.0,bottom,B3,Athlete’s Foot & Tinea,,1.0,right,middle,A3 · Bottom · B3 · Bay 1 · Right · Middle,,Athlete Foot,317,Image 6 middle rows
+a3-b3-bay1af-right-bottom,active,aisle,3.0,bottom,B3,"Anti-Itch, Bite & Fungal Nail Treatment",,1.0,right,bottom,A3 · Bottom · B3 · Bay 1 · Right · Bottom,,Bites / Nail Fungus,318,Image 6 bottom rows

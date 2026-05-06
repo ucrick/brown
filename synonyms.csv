@@ -293,3 +293,28 @@ cold relief,"cold and flu,cough relief,congestion relief,flu relief,winter cold"
 sleep aid,"sleep,sleepy time,sweet dreams,bedtime,relaxation,calming",medium,Personal Care,Sleep-related aromatherapy searches.
 aromatherapy,"essential oils,diffuser oils,relaxing oils,wellness oils",medium,Personal Care,Category synonym.
 cleaning tablets,"vaporiser cleaner,cleaning tabs,descaler,cleaning solution",medium,Medicine,Accessory search expansion.
+pain relief,"painkiller,pain killer,analgesic,aches,pain gel,pain cream,muscle rub,joint rub",high,Medicine,General pain-related terms
+muscle pain,"sore muscles,body ache,back pain,joint pain,sports injury,sprain,strain",high,Medicine,
+heat patch,"hot patch,warming patch,heat pad,back patch,period pain heat",high,Medicine,
+cold gel,"ice gel,cooling gel,cold spray,cooling spray,sports gel",medium,Medicine,
+antiseptic,"disinfectant,wound cleaner,wound wash,first aid wash,germ killer",high,Medicine,
+wound care,"first aid,cuts,scrapes,grazes,dressing,bandage,wound gel",high,Medicine,
+burn care,"burn gel,burn cream,hydrogel,sunburn,minor burn",high,Medicine,
+scar treatment,"scar gel,scar sheet,silicone gel,silicone sheet,keloid scar",medium,Skin Care,
+cold sore,"lip blister,lip sore,herpes sore,cold sore patch,cold sore cream",high,Medicine,
+chest rub,"vapour rub,vapor rub,vapo rub,vaporub,vapourub,cough rub",high,Medicine,
+numbing cream,"anaesthetic cream,anesthetic cream,skin numbing,emla,numit",high,Medicine,
+antifungal,"fungus,tinea,athletes foot,athlete foot,foot fungus,jock itch,ringworm",high,Medicine,
+athlete’s foot,"athletes foot,athlete foot,tinea pedis,foot fungus,itchy feet",high,Medicine,
+fungal nail,"nail fungus,toenail fungus,yellow nail,onychomycosis,nail lacquer",high,Medicine,
+wart treatment,"wart remover,wart freeze,wart paint,verruca,skin tag remover",high,Medicine,
+anti itch,"itch cream,itch relief,rash cream,bite cream,insect bite,mosquito bite,sting relief",high,Medicine,
+chafing,"anti chafe,3b cream,prickly heat,heat rash,sweat rash,friction rash",medium,Skin Care,
+mobility aids,"walking stick,cane,crutch,crutches,walker,walking frame,wheelchair,commode",medium,Home Health,
+arm sling,"sling,shoulder sling,arm support,fracture support",medium,Home Health,
+posture corrector,"posture brace,back brace,shoulder brace,slouching support",medium,Home Health,
+magnesium,"magnesium oil,magnesium spray,magnesium flakes,epsom salts,bath salts",medium,Personal Care,
+diclofenac,"voltaren,anti inflammatory gel,anti-inflammatory gel,nsaid gel",high,Medicine,
+hydrocortisone,"steroid cream,mild steroid,dermaid,itch steroid,eczema cream",high,Medicine,
+clotrimazole,"canesten,antifungal cream,tinea cream",high,Medicine,
+terbinafine,"lamisil,antifungal cream,athlete foot cream",high,Medicine,
