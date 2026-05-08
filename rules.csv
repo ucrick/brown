@@ -73,3 +73,28 @@ ask-pharmacist,pharmacy,Please ask the pharmacist for advice before using this p
 age-check,restriction,Age check may be required for this item.,True,True,False,True,Not currently linked unless required by store policy
 prescription-only,pharmacy,This item may require a prescription or pharmacist supply. Please ask the pharmacist.,True,False,True,True,General pharmacy-only rule
 topical-warning,safety,Read the label and follow directions. Stop use if irritation occurs. Ask a pharmacist if unsure.,True,False,False,True,"For topical pain, wart and medicated skin products"
+no-special-rule,general,No special restriction identified for this shelf location.,False,False,False,False,Default rule; product groups may leave ruleId blank instead.
+ask-staff,general,Please ask a team member if you cannot find this item on the shelf.,True,False,False,False,Use for unclear shelf location or locked/missing stock.
+ask-pharmacist,pharmacy,Please ask the pharmacist for advice before using this product.,True,False,True,True,Not applied to visible general skincare shelves unless later required.
+patch-test,safety,"For active skincare, patch test first and follow the product directions.",True,False,False,True,"Useful for retinol, acids, benzoyl peroxide, exfoliants and acne products."
+sun-safety,safety,Use sunscreen as directed and reapply regularly.,True,False,False,True,For sunscreen or SPF product groups.
+none,general,,False,False,False,False,Default no special customer warning
+ask-staff,general,Please ask a team member if you cannot find this item on the shelf.,True,False,False,False,General support rule
+patch-test,safety,"Patch test before first use, especially for sensitive skin or active ingredients.",True,False,False,True,"Useful for retinol, vitamin C, acids and sensitive skin products"
+sunscreen-advice,safety,Use sunscreen as directed and reapply regularly when outdoors.,True,False,False,True,For SPF products
+,general,,False,False,False,False,Default no special rule
+ask-staff,general,Please ask staff if you cannot find this item on shelf.,True,False,False,False,General assistance message
+test-before-use,safety,Patch test before use if you have very sensitive or allergy-prone skin.,True,False,False,True,General skincare safety reminder
+spf-advice,safety,Apply sunscreen generously and reapply as directed on the product label.,True,False,False,True,General sun care reminder
+none,general,,False,False,False,False,No special customer prompt needed
+ask-staff,general,Please ask a team member if you cannot find this item on the shelf.,True,False,False,False,For unclear location or seasonal items
+sensitive-skin-note,safety,"For sensitive or irritated skin, check the label and patch test before use.",True,False,False,True,General personal care caution
+flammable-sanitiser,safety,Hand sanitiser may be flammable. Keep away from heat and use as directed.,True,False,False,True,General sanitiser warning
+ask-staff,general,Please ask staff if you cannot find this item on the shelf.,True,False,False,False,General help prompt.
+ask-pharmacist,pharmacy,Please ask the pharmacist for help with this product.,True,False,True,True,Not expected for this section but included for consistency.
+age-check,restriction,Age check may be required for this item.,True,True,False,True,General age restriction rule.
+patch-test,safety,Patch test before use and follow the product directions.,True,False,False,True,"Useful for hair removal creams, waxes and deodorants for sensitive skin."
+sun-care,safety,Use sunscreen as directed and reapply regularly. Seek medical advice for severe sunburn.,True,False,False,True,General sunscreen safety prompt.
+ask-staff,general,Ask staff if you cannot find this item on shelf.,True,False,False,False,General assistance rule.
+sensitive-skin,safety,"For very sensitive or allergy-prone skin, patch test first and ask a pharmacist if unsure.",True,False,False,True,Useful for sunscreen and skincare.
+flammable-aerosol,safety,Aerosol products are flammable. Keep away from heat and flames.,False,False,False,True,For aerosol sunscreen or insect sprays.

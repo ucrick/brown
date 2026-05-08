@@ -318,3 +318,149 @@ diclofenac,"voltaren,anti inflammatory gel,anti-inflammatory gel,nsaid gel",high
 hydrocortisone,"steroid cream,mild steroid,dermaid,itch steroid,eczema cream",high,Medicine,
 clotrimazole,"canesten,antifungal cream,tinea cream",high,Medicine,
 terbinafine,"lamisil,antifungal cream,athlete foot cream",high,Medicine,
+acne,"pimple,pimples,zit,zits,spots,breakout,blemish,blemishes,acne treatment,acne cream,pimple cream,pimple gel",high,Skin Care,Common blemish-prone skincare search terms
+pimple patch,"acne patch,spot patch,zit sticker,pimple sticker,hydrocolloid patch,spot sticker,mighty patch,nexcare patch",high,Skin Care,
+blackheads,"black head,blackhead,nose strip,pore strip,pore strips,clogged pores,pores,charcoal strip",high,Skin Care,
+cleanser,"face wash,facial wash,wash,foam wash,foaming wash,gel wash,cleansing gel,cleansing foam",high,Skin Care,
+moisturiser,"moisturizer,cream,lotion,face cream,day cream,night cream,hydrating cream,moisturising cream",high,Skin Care,NZ spelling and US spelling included
+sunscreen,"sunblock,SPF,SPF50,SPF50+,UV fluid,daily defence,sun protection",high,Skin Care,
+vitamin c,"vit c,vc,brightening,glow serum,vitamin c serum,vitamin c cream",high,Skin Care,
+hyaluronic acid,"hyaluronic,hyaluron,HA,hydrating serum,hydration serum,hydro boost",high,Skin Care,
+retinol,"retinal,retinoid,anti aging,anti-ageing,wrinkle repair,rapid wrinkle,renewal serum",high,Skin Care,
+micellar water,"makeup remover,make up remover,cleansing water,makeup water,remover water,micellair",high,Skin Care,
+face wipes,"facial wipes,makeup wipes,cleansing wipes,make up wipes,remover wipes,sensitive wipes",medium,Skin Care,
+toner,"facial toner,witch hazel,toning lotion,mist,facial mist",medium,Skin Care,
+serum,"face serum,treatment serum,booster,concentrate,ampoule",medium,Skin Care,
+mask,"face mask,sheet mask,clay mask,masque,peel off mask",medium,Skin Care,
+scrub,"exfoliator,exfoliating scrub,face scrub,polish,peeling scrub",medium,Skin Care,
+sensitive skin,"gentle,fragrance free,calming,redness,irritated skin,reactive skin",medium,Skin Care,
+dry skin,"dehydrated skin,flaky skin,rough skin,very dry,hydration,hydro boost,moisture",medium,Skin Care,
+oily skin,"oil control,shine control,greasy skin,large pores,clogged pores",medium,Skin Care,
+hair skin nails,"HSN,hair nails skin,beauty vitamins,biotin,collagen tablets",medium,Vitamins,
+la roche-posay,"LRP,la roche posay,laroche posay,effaclar",high,Skin Care,
+ceraVe,"cerave,cera ve,cerave blemish,cerave cleanser",high,Skin Care,
+bioderma,"sebium,bioderma green,sebium h2o",medium,Skin Care,
+benzac,"benzoyl peroxide,benzac ac,ac gel,benzac wash",high,Skin Care,
+azclear,"az clear,azelaic acid,azclear lotion,ego azclear",high,Skin Care,
+nivea,"nivea q10,nivea cellular,nivea micellar,nivea wipes",medium,Skin Care,
+neutrogena,"hydro boost,rapid wrinkle repair,neutrogena cleanser,neutrogena sunscreen",medium,Skin Care,
+moisturiser,"moisturizer,moisturising cream,moisturizing cream,face cream,day cream,night cream,lotion",high,Skin Care,NZ/AU spelling and US spelling
+cleanser,"face wash,facial wash,cleansing gel,cleansing cream,foaming cleanser,gel cleanser",high,Skin Care,
+serum,"face serum,skin serum,essence,concentrate,ampoule",high,Skin Care,
+sunscreen,"sun cream,spf,sunblock,uv protection,spf50,spf50+,sun lotion",high,Skin Care,
+retinol,"retinal,retinoid,retinoids,vitamin a,anti wrinkle,anti ageing,anti aging",high,Skin Care,
+vitamin c,"vit c,vc,ascorbic,ascorbic acid,brightening,dark spots,pigmentation",high,Skin Care,
+hyaluronic acid,"hyaluron,hyaluronic,ha,hydrating,hydration,plumping",high,Skin Care,
+niacinamide,"vitamin b3,niacin,blemish,pores,barrier,brightening",medium,Skin Care,
+collagen,"collagen peptide,peptides,firming,plumping,elasticity",medium,Skin Care,
+face mask,"sheet mask,facial mask,tissue mask,hydrogel mask,clay mask,mask bar",high,Beauty,
+eye patch,"eye mask,under eye patch,under-eye patch,puffy eyes,dark circles",medium,Beauty,
+acne,"pimples,spots,blemish,breakout,blackheads,oily skin",high,Skin Care,
+sensitive skin,"redness,irritation,reactive skin,barrier repair,hypersensitive",high,Skin Care,
+dry skin,"dehydrated skin,flaky skin,rough skin,very dry,eczema prone",high,Skin Care,
+micellar water,"makeup remover,make up remover,cleansing water,makeup removal",high,Skin Care,
+thermal water,"thermal spring water,face spray,mist,facial spray",medium,Skin Care,
+la roche-posay,"la roche posay,laroche,lrp,la roshay,posay",high,Skin Care,Common spelling variations
+loreal,"l’oréal,loreal paris,l oreal,lorealparis",high,Skin Care,
+dr lewinns,"dr lewins,drlewinns,lewinns,dr lewinn",medium,Skin Care,
+ceraVe,"cerave,cera ve,ceramides",high,Skin Care,
+bioderma,"bio derma,sensibio,hydrabio,cicabio",high,Skin Care,
+avene,"avène,eau thermale avene,aven,thermal spring",high,Skin Care,
+olay,"oil of olay,olay regenerist,regenerist,total effects",high,Skin Care,
+roc,"retinol correxion,roc skincare,deep wrinkle",medium,Skin Care,
+dry skin,"xerosis, dehydrated skin, flaky skin, rough skin, very dry skin",high,Skin Care,
+sensitive skin,"reactive skin, irritated skin, redness, gentle skin care",high,Skin Care,
+eczema,"dermatitis, atopic dermatitis, itchy rash, dry itchy skin",high,Skin Care,
+itch relief,"anti itch, itchy skin, itch cream, itch wash",high,Skin Care,
+moisturiser,"moisturizer, lotion, cream, body cream, face cream, moisturising, moisturizing",high,Skin Care,
+cleanser,"cleanser, face wash, body wash, wash, soap free wash, gentle wash",high,Skin Care,
+sunscreen,"sunblock, sun cream, spf, SPF50, SPF50+, UV protection",high,Skin Care,
+vitamin e,"vit e, vitamin e oil, vitamin e cream, tocopherol",medium,Skin Care,
+bio oil,"biooil, bio-oil, scar oil, stretch mark oil",high,Skin Care,
+goat milk,"goat, goats milk, goat soap, goat lotion",medium,Skin Care,
+oatmeal,"oat, colloidal oatmeal, oat lotion, oat cream",medium,Skin Care,
+ceramides,"ceramide, skin barrier, barrier repair",medium,Skin Care,
+hyaluronic acid,"hyaluronic, hyal, hydration serum, HA serum",medium,Skin Care,
+retinol,"vitamin a, anti ageing serum, anti aging serum",medium,Skin Care,
+salicylic acid,"SA, BHA, blemish, acne, rough bumpy skin",high,Skin Care,
+sorbolene,"sorbolene cream, sorbolene lotion, soap substitute",medium,Skin Care,
+urea,"urea cream, cracked skin, thick dry skin",medium,Skin Care,
+cicaplast,"cica, baume b5, repair balm, skin repair",high,Skin Care,
+lipikar,"lipikar balm, lipikar wash, la roche body care",medium,Skin Care,
+atoderm,"bioderma atoderm, shower oil, atoderm baume",medium,Skin Care,
+qv,"ego qv, qv wash, qv cream, qv lotion",high,Skin Care,
+cetaphil,"cetafil, cetaphil cleanser, cetaphil cream, cetaphil lotion",high,Skin Care,common misspelling included
+cerave,"cera ve, cerav, cerave cleanser, cerave moisturising cream",high,Skin Care,common spacing/misspelling included
+la roche posay,"lrp, la roche, laroche, la roche-posay",high,Skin Care,
+body wash,"shower gel,body cleanser,bath wash,bw,b/w,b wash",high,Personal Care,General bath and body synonym
+body lotion,"body moisturiser,moisturizer,body cream,lotion,cream,b/l,bdy ltn",high,Personal Care,NZ/US spelling variants included
+hand wash,"hand soap,liquid soap,hand cleanser,handwash,h/w,hwash,hwp",high,Personal Care,
+hand sanitiser,"hand sanitizer,sanitiser,sanitizer,antibacterial gel,hand gel,anti bac,antibac",high,Personal Care,
+soap bar,"bar soap,beauty bar,solid soap,soap,3 pack,4 pack",high,Personal Care,
+bath salts,"epsom salt,epsom salts,magnesium salts,soak,bath soak",medium,Personal Care,
+body scrub,"exfoliating scrub,exfoliator,body polish,exf,exfoliant",medium,Personal Care,
+dry skin,"very dry skin,extra dry skin,rough skin,itchy skin,hydration,moisture",high,Personal Care,
+sensitive skin,"sensitive,fragrance free,ultra sensitive,dermatological,skin irritation",high,Personal Care,
+cocoa butter,"coco butter,c/btr,cocoa,cbtr",medium,Personal Care,
+coconut,"coconut oil,coco,c/oil,cnut",medium,Personal Care,
+aloe vera,"aloe,av,aloe gel,aloe body wash",medium,Personal Care,
+vitamin e,"vit e,ve,vitamin-e",medium,Personal Care,
+shea butter,"shea,shea btr,s/btr",medium,Personal Care,
+refill,"refil,rfl,rf,handwash refill,soap refill",medium,Personal Care,
+antibacterial,"anti bacterial,anti-bac,antibac,a/b,anti b",high,Personal Care,
+Q10,"q10 firming,firming lotion,firm lotion",medium,Personal Care,
+hand cream,"hand lotion,hand balm,cuticle cream,rough hand cream",high,Personal Care,
+goat soap,"goat milk soap,goat body wash,goat lotion,goat cream",medium,Personal Care,
+triple milled soap,"australian triple milled,t/mil soap,milled soap",low,Personal Care,
+rosehip,"rose hip,roseh,r/h",medium,Personal Care,
+lavender,"lav,lavedner,lavendar",medium,Personal Care,Common misspellings
+eczema dry skin,"eczema prone,dermatitis dry,itch relief,dry relief",medium,Personal Care,Search support only; not a medical claim
+bath bomb,"bath fizzer,bath soak,bubble bath,foaming bath",medium,Personal Care,
+deodorant,"deo, antiperspirant, anti perspirant, body odour, body odor, sweat, underarm, roll on, aerosol deodorant, spray deodorant",high,Personal Care,Common deodorant search terms
+clinical deodorant,"clinical protection, strong deodorant, heavy sweat, excessive sweating, no more sweat, perspi guard",high,Personal Care,For stronger antiperspirants
+natural deodorant,"aluminium free, aluminum free, crystal deodorant, mineral deodorant, tea tree deodorant",medium,Personal Care,Natural deodorant terms
+body wash,"shower gel, shower wash, bath wash, body cleanser, shower cream, bath gel",high,Personal Care,Body wash synonyms
+body lotion,"moisturiser, moisturizer, moisturising lotion, moisturizing lotion, sorbolene, body cream",high,Personal Care,Body moisturiser synonyms
+soap,"bar soap, soap bar, beauty bar, body soap, hand soap",high,Personal Care,Soap bar terms
+talc,"talcum powder, body powder, perfumed powder, powder",medium,Personal Care,Talc terms
+razor,"shaver, shaving razor, women razor, ladies razor, disposable razor, venus, schick",high,Personal Care,Razor terms
+razor blades,"refills, blade refill, cartridges, razor refill, blades",high,Personal Care,Razor refill terms
+shaving gel,"shave gel, shaving cream, shave cream, satin care",medium,Personal Care,Shaving prep terms
+hair removal,"depilatory, hair remover, remove hair, unwanted hair, hair removal cream, veet, nair",high,Personal Care,Hair removal terms
+wax strips,"waxing strips, cold wax, face wax, leg wax, body wax, bikini wax",high,Personal Care,Waxing terms
+ingrown hair,"razor bumps, shaving bumps, bump eraser, ingrow, after wax",medium,Personal Care,Aftercare terms
+dermaplaning,"face razor, facial razor, dermaplane, touch up razor, eyebrow razor",medium,Personal Care,Face shaving terms
+body spray,"perfume spray, fragrance spray, deodorant spray, impulse, daise",medium,Personal Care,Fragrance body sprays
+body tape,"booby tape, fashion tape, breast tape, nipple covers, nipple pasties",medium,Personal Care,Body tape and covers
+sensitive skin,"sensitive, gentle, hypoallergenic, fragrance free, unscented",medium,Personal Care,Sensitive variants
+coconut,"coco, coconut oil, coconut milk, coconut vanilla",low,Personal Care,Fragrance and variant
+aloe vera,"aloe, soothing, aloe body wash, aloe lotion",low,Personal Care,Ingredient or variant
+tea tree,"tea tree oil, tee tree, thursday plantation",medium,Personal Care,Tea tree deodorant
+rexona,"sure, rexona deodorant, rexona roll on, rexona spray",high,Personal Care,Brand synonym
+dove,"dove body wash, dove deodorant, dove soap, dove beauty bar",high,Personal Care,Brand synonym
+veet,"veet wax, veet hair removal, veet cream, veet strips",high,Personal Care,Brand synonym
+nivea,"nivea deodorant, nivea roll on, nivea body wash, nivea women",high,Personal Care,Brand synonym
+sunscreen,"sunblock,SPF,sun cream,sun lotion,sun protection,uv protection",high,Skin Care,
+SPF50,"SPF 50,SPF50+,50 plus,50+,high protection",high,Skin Care,
+face sunscreen,"facial sunscreen,face SPF,face sunblock,day cream SPF",high,Skin Care,
+kids sunscreen,"children sunscreen,baby sunscreen,kid SPF,child SPF",high,Skin Care,
+sensitive sunscreen,"sensitive skin sunscreen,eczema sunscreen,dermatological sunscreen",medium,Skin Care,
+zinc sunscreen,"mineral sunscreen,zinc stick,physical sunscreen,zinc oxide",medium,Skin Care,
+after sun,"aloe vera,sunburn gel,cooling gel,after sun lotion,burn relief",high,Skin Care,
+fake tan,"self tan,self tanning,gradual tan,bronzer,tanning mousse,tan foam",high,Beauty,
+tanning mitt,"tan mitt,exfoliating mitt,application mitt,self tan glove",medium,Beauty,
+gradual tan,"summer glow,body tan,tanning lotion,buildable tan",medium,Beauty,
+insect repellent,"bug spray,mosquito spray,mozzie spray,repellent,DEET",high,Personal Care,
+mosquito bite,"mozzie bite,insect bite,bite relief,itchy bite,sting relief",high,Medicine,
+DEET,"diethyltoluamide,heavy duty repellent,tropical strength",medium,Personal Care,
+aerosol,"spray can,pressurised spray",low,Personal Care,
+pump spray,"spray,pump bottle",low,Personal Care,
+lotion,"cream,moisturiser,body lotion",low,Skin Care,
+gel,"cooling gel,clear gel",low,Skin Care,
+water resistant,"waterproof,swim proof,beach sunscreen,sport sunscreen",medium,Skin Care,
+natural sunscreen,"mineral sunscreen,reef friendly,zinc sunscreen",medium,Skin Care,
+La Roche Posay,"LRP,la roche,anthelios",high,Skin Care,
+NZ Cancer Society,"cancer society,nz cancer sunscreen",high,Skin Care,
+Bondi Sands,"bondi,bondi tan,bondi sunscreen",high,Beauty,
+Nivea,"nivea sun,nivea sunscreen,nivia",high,Skin Care,common misspelling included
+Banana Boat,"banana sunscreen,banana boat spf",high,Skin Care,
