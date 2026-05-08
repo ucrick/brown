@@ -124,3 +124,6 @@ diet-advice,safety,Meal replacement and VLCD products may not be suitable for ev
 none,general,,False,False,False,False,Default no special customer prompt.
 ask-staff,general,Ask staff if you cannot find this product on the shelf.,True,False,False,False,Use for unclear or variable facings.
 supplement-advice,safety,Read the label and follow directions. Ask staff if you need help choosing a supplement.,True,False,False,True,General sports supplement safety prompt.
+no-special-rule,general,No special purchase restriction shown for this shelf location.,False,False,False,False,Default rule for general sports nutrition items.
+ask-staff-if-not-found,general,"If the exact flavour or size is not on shelf, please ask a team member for help.",True,False,False,False,Useful for sports nutrition flavours and sizes that rotate frequently.
+check-label-caffeine,safety,Some pre-workout and energy products contain caffeine. Please check the label before use.,True,False,False,True,General customer safety prompt; no pharmacist restriction implied.

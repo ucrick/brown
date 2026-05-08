@@ -610,3 +610,19 @@ watermelon,"w melon, w/mel, watermelon flavour, melon",medium,Sports Nutrition,F
 blue raspberry,"blue razz, b/raspberry, bl/rs, blue rasberry",medium,Sports Nutrition,Flavour and typo expansion.
 salted caramel,"s/cara, caramel, salted carmel",medium,Sports Nutrition,Flavour abbreviation.
 unflavoured,"unflav, no flavour, plain, unflavored",medium,Sports Nutrition,NZ/US spelling and abbreviation.
+protein powder,"whey, whey powder, protein tub, gym protein, workout protein, supplement powder",high,Sports,sports nutrition general
+whey protein,"whey, gold standard, ON whey, protein shake powder, milk protein",high,Sports,
+plant protein,"vegan protein, dairy free protein, pea protein, plant pro, plant based protein",high,Sports,
+creatine,"creatine monohydrate, creatine powder, muscle creatine, strength powder, creatin",high,Sports,
+pre workout,"preworkout, pre-workout, pre wrkout, prewrkout, gym energy, workout energy, pump, stim",high,Sports,
+BCAA,"bcaa, amino, amino acids, branched chain amino acids, intra workout, recovery amino",high,Sports,
+electrolytes,"electrolyte, hydration salts, sports hydration, rehydration, e lyte, elyte, sports drink",high,Sports,
+energy gel,"sports gel, running gel, cycling gel, endurance gel, caffeine gel",medium,Sports,
+collagen,"collagen peptides, beauty collagen, collagen powder, collagen bar, collagen protein",medium,Sports,
+protein water,"clear protein, water protein, protein drink powder, low sugar protein drink",medium,Sports,
+ready to drink protein,"RTD, protein drink, shake2go, ready shake, protein shake, 4 pack shake",medium,Sports,
+cookies and cream,"c&c, cookie cream, cookies cream, cookies n cream",low,Sports,flavour search expansion
+strawberry,"strawb, straw, s/berry, s/bery, strawbery",low,Sports,flavour search expansion
+watermelon,"w/melon, water melon, wmelon",low,Sports,flavour search expansion
+blue raspberry,"blu rasp, blue rasp, b/rsp, bluerasp, blue razz",low,Sports,flavour search expansion
+vanilla,"van, vanila, vanilla ice cream, van/icrm, soft serve",low,Sports,flavour search expansion
