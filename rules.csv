@@ -98,3 +98,29 @@ sun-care,safety,Use sunscreen as directed and reapply regularly. Seek medical ad
 ask-staff,general,Ask staff if you cannot find this item on shelf.,True,False,False,False,General assistance rule.
 sensitive-skin,safety,"For very sensitive or allergy-prone skin, patch test first and ask a pharmacist if unsure.",True,False,False,True,Useful for sunscreen and skincare.
 flammable-aerosol,safety,Aerosol products are flammable. Keep away from heat and flames.,False,False,False,True,For aerosol sunscreen or insect sprays.
+general-info,general,Check the shelf label and ask staff if the exact size is not visible.,True,False,False,False,General product-location guidance
+ask-staff,general,Ask a staff member if you cannot find this item on the shelf.,True,False,False,False,For unclear or low-stock items
+health-advice,safety,"For health conditions, pregnancy, children, or medication interactions, ask a pharmacist or healthcare professional.",True,False,True,True,Supplement safety advice
+age-check,restriction,Age or purchase restrictions may apply to selected products.,True,True,False,True,Generic restriction rule
+general-info,general,Product availability and exact packaging may vary. Please ask staff if you cannot find the item.,False,False,False,False,Default general rule.
+ask-staff,general,Please ask a team member for help locating this product.,True,False,False,False,For unclear or display-only items.
+health-advice,safety,Supplements may not be suitable for everyone. Read the label and ask a healthcare professional if unsure.,True,False,False,True,General supplement safety warning.
+pregnancy-advice,safety,"If pregnant, breastfeeding, taking medication or managing a medical condition, ask a healthcare professional before use.",True,False,False,True,"Relevant for prenatal, women health and specialty supplements."
+ask-staff,general,Ask a team member if you cannot find this product on the shelf.,False,False,False,False,General fallback for open-shelf supplements
+check-label,safety,Please read the product label and warnings before use.,True,False,False,True,General supplement safety prompt
+ask-pharmacist,pharmacy,Ask the pharmacist if you are unsure whether this product is suitable for you.,True,False,False,True,Use for medicine or pharmacist advice areas if added later
+general-location,general,Product location is based on current store planogram. Ask staff if the shelf has changed.,True,False,False,False,General fallback for shelf changes
+ask-staff,general,Ask a team member if you cannot find this product on shelf.,True,False,False,False,Used when product or barcode is partly unclear
+pharmacist-check,pharmacy,"Ask the pharmacist if you need advice about suitability, dosage, interactions, pregnancy, or children.",True,False,True,True,General health advice; not a prescription-only flag
+general-location,general,"Product is located in Aisle 6, bottom side, section B3.",False,False,False,False,Default display rule for this planogram section.
+ask-staff,general,"If the product is not visible, ask a team member for help.",True,False,False,False,Use for partly unclear or small products.
+ask-pharmacist,pharmacy,"For medicine advice, please ask the pharmacist.",True,False,True,True,General health advice rule.
+general-supplement-advice,general,Ask a team member if you need help choosing the right supplement.,True,False,False,False,General supplement advice
+ask-pharmacist,pharmacy,"Ask the pharmacist if you are pregnant, taking medicines, or have a medical condition.",True,False,True,True,Use when clinical advice may be needed
+check-label,safety,Always read the label and follow directions for use.,True,False,False,True,General safety reminder
+none,general,,False,False,False,False,Default no special warning.
+ask-staff,general,Please ask a team member if you cannot find this item on the shelf.,True,False,False,False,For unclear or high-movement shelf items.
+diet-advice,safety,Meal replacement and VLCD products may not be suitable for everyone. Read the label and follow directions.,True,False,False,True,General caution for weight management products.
+none,general,,False,False,False,False,Default no special customer prompt.
+ask-staff,general,Ask staff if you cannot find this product on the shelf.,True,False,False,False,Use for unclear or variable facings.
+supplement-advice,safety,Read the label and follow directions. Ask staff if you need help choosing a supplement.,True,False,False,True,General sports supplement safety prompt.

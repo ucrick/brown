@@ -464,3 +464,149 @@ NZ Cancer Society,"cancer society,nz cancer sunscreen",high,Skin Care,
 Bondi Sands,"bondi,bondi tan,bondi sunscreen",high,Beauty,
 Nivea,"nivea sun,nivea sunscreen,nivia",high,Skin Care,common misspelling included
 Banana Boat,"banana sunscreen,banana boat spf",high,Skin Care,
+fish oil,"omega 3,omega-3,omega,fishoil",high,Vitamins,General fish oil search expansion
+krill oil,"red krill,krill,krill capsules",high,Vitamins,
+joint support,"joint pain,arthritis,glucosamine,chondroitin,bone support,joints",high,Vitamins,
+turmeric,"curcumin,tumeric,inflammation,joint turmeric",high,Vitamins,Common misspelling included
+immunity,"immune,cold,flu,viral,viralex,vitamin c,zinc",high,Vitamins,
+vitamin c,"vit c,vc,ascorbic acid,immune support",high,Vitamins,
+zinc,"zinc melts,zinc tablet,zinc supplement",medium,Vitamins,
+detox,"cleanse,body cleanse,liver tonic,milk thistle,weight management",medium,Vitamins,
+laxative,"lax,laxative capsules,constipation",medium,Vitamins,
+probiotic,"prebiotic,pre probiotic,flora,gut health,digestive",high,Vitamins,
+multivitamin,"multi,multis,mens multi,womens multi,kids multi",high,Vitamins,
+gummies,"gummy,vitamin gummies,chewable vitamins",high,Vitamins,
+coq10,"co q10,coenzyme q10,ubiquinol,heart health",medium,Vitamins,
+iron,"iron tablets,iron supplement,ferrefix,low iron",high,Vitamins,
+womens health,"cranberry,menopause,cycle balance,flora,urinary,uti",high,Vitamins,
+magnesium,"mag,magnesium cream,magnesium tablets,cramps,sleep,stress",high,Vitamins,
+sleep,"good sleep,sleep aid,relax,calm,stress,insomnia",high,Vitamins,
+ashwagandha,"ashwaganda,ashwa,stress support,mood support",medium,Vitamins,
+mens health,"men,mens multi,prostate,oyster,men supplement",medium,Vitamins,
+vision,"eye health,lutein,blueberry,premium vision",medium,Vitamins,
+colostrum,"colostrum chew,goat milk,goat milk powder",medium,Vitamins,
+microgenics,"micro g,micro/g,microgenics vitamins",medium,Vitamins,
+hair skin nails,"beauty vitamin,collagen,nails,hair supplement",medium,Vitamins,
+vitamin d,"vit d,d3,vitamin d3,1000iu",high,Vitamins,
+vitamin c,"vit c,vc,immune vitamin,cold flu vitamin,ascorbic acid",high,Vitamins,
+vitamin d,"vit d,d3,cholecalciferol,sunshine vitamin",high,Vitamins,
+fish oil,"omega 3,omega,epa,dha,fish capsules,nutritional oil",high,Vitamins,
+probiotic,"probiotics,good bacteria,gut flora,digestive bacteria,flora balance",high,Vitamins,
+magnesium,"mag,magnesium glycinate,mag sleep,sleep magnesium,cramp supplement",high,Vitamins,
+sleep support,"sleep tablets,sleep capsules,insomnia support,relaxation,5-htp,melatonin alternative",high,Vitamins,
+joint support,"glucosamine,chondroitin,turmeric,joint health,bone health,arthritis support",high,Vitamins,
+immune support,"immunity,immune health,cold support,flu support,olive leaf,lysine,ester c",high,Vitamins,
+multivitamin,"multi,multis,multi vitamin,daily vitamin,everyday vitamin,all in one vitamin",high,Vitamins,
+womens health,"women vitamins,female health,hair skin nails,cranberry,menopause,hormone support",medium,Vitamins,
+mens health,"men vitamins,male health,prostate,libido,oyster zinc,man plus",medium,Vitamins,
+kids vitamins,"children vitamins,kids immune,kids vitamin c,kid supplement,childrens supplement",medium,Vitamins,
+liver support,"liver detox,detox,milk thistle,cleanse,liver health",medium,Vitamins,
+coq10,"co-q10,co q 10,coenzyme q10,ubiquinone,heart supplement",medium,Vitamins,
+manuka honey,"honey,nz honey,umf,mgo,immune honey,manuka",medium,Vitamins,
+apple cider vinegar,"acv,a cider vinegar,cider vinegar,capsimax,weight management",medium,Vitamins,
+solgar,"solgar vitamins,solgar supplements",medium,Vitamins,
+go healthy,"good health,gh,go healthy vitamins,go healthy supplements",high,Vitamins,
+iron,"iron tablets,iron capsules,ferritin,low iron,womens iron",medium,Vitamins,
+collagen,"collagen powder,skin collagen,hair skin nails,beauty collagen",medium,Vitamins,
+ashwagandha,"ashwaganda,stress support,calm support,relax supplement",medium,Vitamins,
+lysine,"l lysine,lysine lip,cold sore support,lip support",medium,Vitamins,
+zinc,"zinc complex,zinc capsules,immune zinc",medium,Vitamins,
+cranberry,"urinary tract,uti support,urinary health,cranberry capsules",medium,Vitamins,
+vitamin c,"vit c,vc,c vitamin,immune vitamin,ascorbic acid,vitamin-c",high,Vitamins,Common abbreviation and misspelling support
+magnesium,"mag,mg,magnesium glycinate,mag glycinate,mag complete,cramp tablet,muscle cramp",high,Vitamins,
+fish oil,"omega 3,omega-3,omega3,fishoil,krill oil,algae omega,epa,dha",high,Vitamins,
+probiotic,"probiotics,probio,good bacteria,gut bacteria,digestive bacteria,acidophilus",high,Vitamins,
+multivitamin,"multi vitamin,multivite,multi,m/vit,vitamins for men,vitamins for women,daily vitamin",high,Vitamins,
+sleep support,"sleeping tablets,sleep aid,poor sleep,insomnia,rem sleep,mag sleep,peaceful dreams",high,Vitamins,"Supplement area, not pharmacy sleep medicines"
+stress support,"stress,anxiety support,mood support,relax,calm,ashwagandha,5htp,5-htp",medium,Vitamins,
+joint support,"joint pain,arthritis,glucosamine,chondroitin,turmeric,msm,joint care,joint ease",high,Vitamins,
+digestive health,"digestion,gut health,bloating,bloat,indigestion,liver support,digestive enzymes,lecithin",high,Vitamins,
+women health,"menopause,pms,pmt,hormone,cycle balance,bladder support,flora,evening primrose",medium,Vitamins,
+kids vitamins,"children vitamins,kid vitamin,kids immune,kids multi,children immune,vitamin d drops",medium,Vitamins,
+immune support,"immunity,cold,flu,cough,bronchial,zinc,vitamin d,ester c,rapid c,lipo c",high,Vitamins,
+heart health,"coq10,co q10,co-enzyme q10,garlic,kyolic,cholesterol support,krill oil",medium,Vitamins,
+eye health,"vision,lutein,macular,optisight,eye vitamin,macu perform",medium,Vitamins,
+vegan supplements,"plant based,plant-based,vegan omega,algae oil,vegan glucosamine,vegan magnesium",medium,Vitamins,
+vitamin c,"vit c, vc, ascorbic acid, immunity vitamin",high,Vitamins,General search expansion
+vitamin d,"vit d, d3, cholecalciferol, sunshine vitamin",high,Vitamins,
+magnesium,"mag, magnesium glycinate, muscle cramps, sleep mineral",high,Vitamins,
+fish oil,"omega 3, omega3, fishoil, DHA, EPA, odourless fish oil",high,Vitamins,
+probiotic,"probiotics, prebiotic, gut health, good bacteria, digestion",high,Vitamins,
+collagen,"marine collagen, beauty powder, hair skin nails, hsn",high,Vitamins,
+hair skin nails,"hsn, beauty vitamins, biotin, nails hair skin",high,Vitamins,
+kids vitamins,"kids gummies, children vitamins, childrens vitamins, child vitamins, toddler vitamins",high,Vitamins,
+sleep support,"sleep tablets, insomnia, calm, melatonin alternative, valerian, deep sleep",medium,Vitamins,
+stress support,"stress, anxiety support, calm, ashwagandha, executive b stress",medium,Vitamins,
+joint support,"joints, arthritis, glucosamine, joint pain, bone muscle",high,Vitamins,
+eye health,"vision, lutein, macuvision, bilberry, eyesight",medium,Vitamins,
+superfoods,"greens powder, super greens, spirulina, beetroot powder, kale powder, smoothie powder",medium,Vitamins,
+pregnancy vitamins,"pregnancy, breastfeeding, conceive well, prenatal, folate",high,Vitamins,
+blackmores,"bm, black mores, blk mores",medium,Vitamins,Brand abbreviation in planogram
+natures way,"nway, nature way, nature's way, sv gummies, vita gummies",medium,Vitamins,Brand abbreviation in planogram
+radiance,"rad, radiance vitamins",medium,Vitamins,Brand abbreviation in planogram
+vitamin c,"vit c,vc,ascorbic acid,immune vitamin,cold vitamin",high,Vitamins,Common vitamin C terms.
+fish oil,"omega 3,omega-3,fishoil,krill oil,cod liver oil,flaxseed oil",high,Vitamins,Nutritional oils.
+multivitamin,"multi,multis,multi vitamin,multivitamins,daily vitamin",high,Vitamins,General multivitamin search.
+magnesium,"mag,mag glycinate,magnesium glycinate,muscle cramp,cramps",high,Vitamins,Magnesium and cramp support.
+collagen,"colgn,coll,beauty collagen,collagen powder,skin glow",high,Beauty,Beauty and collagen.
+hair skin nails,"hsn,hair skin nail,biotin,nails,hair vitamins",high,Beauty,Hair skin nails support.
+sleep support,"sleep,deep sleep,calm,relax,rest,stress,sleep tablets",high,Vitamins,Sleep and stress support.
+probiotic,"probiotics,prebiotic,gut health,digestion,billion,stomach health",high,Vitamins,Gut health terms.
+detox,"liver detox,liver support,milk thistle,cleanse",medium,Vitamins,Liver detox support.
+joint support,"glucosamine,chondroitin,joint care,mobility,bone and muscle",high,Vitamins,Joint mobility terms.
+kids vitamins,"children vitamins,kids gummies,child vitamin,kids multi",high,Vitamins,Kids vitamin terms.
+gummies,"gummy,chewable,chews,chew vitamins",medium,Vitamins,Gummy vitamins.
+effervescent,"fizz,fizzy tablet,soluble tablet,vitamin drink",medium,Vitamins,Effervescent vitamins.
+paw paw,"pawpaw,papaya ointment,lip balm,skin balm",medium,Beauty,Paw paw skincare.
+be pure,"bepure,be-pure,be pure vitamins",medium,Vitamins,Brand spelling variations.
+fish oil,"omega 3, omega-3, DHA, EPA, cod liver oil, krill oil, flaxseed oil, fatty acids, efa",high,Vitamins,General omega and oil supplement searches
+joint support,"joints, arthritis, mobility, glucosamine, chondroitin, turmeric, bone support",high,Vitamins,
+immune support,"immunity, immune, cold and flu, vit c, vitamin c, ester c, zinc, echinacea, lysine",high,Vitamins,
+vitamin c,"vit c, vc, ester c, ascorbic acid, immune vitamin, cold vitamin",high,Vitamins,
+magnesium,"mag, muscle cramps, cramps, sleep mineral, magnesium fx",high,Vitamins,
+calcium,"cal, bone mineral, bones, calcium tablets",medium,Vitamins,
+sleep support,"sleep, insomnia, can not sleep, relaxation, rest, sleep drops, sleep fx",high,Vitamins,
+probiotic,"probiotics, gut health, digestion, digestive, stomach, colon, bloating, gut bacteria",high,Vitamins,
+detox,"liver cleanse, cleanse, liver support, detox program, fluid retention",medium,Vitamins,
+herbal supplements,"herbals, herbs, natural medicine, ginkgo, ginseng, green tea, valerian, slippery elm",medium,Vitamins,
+kids vitamins,"children vitamins, child health, junior, kids multi, kids fish oil",high,Vitamins,
+vitamin d,"vit d, d3, vitamin d3, sunshine vitamin",high,Vitamins,
+vitamin e,"vit e, tocopherol, mixed tocopherol, antioxidant vitamin",medium,Vitamins,
+veins,"varicose veins, circulation, vein cream, leg veins, fluid retention",medium,Vitamins,
+beauty supplements,"hair skin nails, collagen, biotin, beauty collagen, skin supplement",medium,Vitamins,
+meal replacement,"diet shake, replacement shake, meal shake, shake sachet, slimming shake",high,Weight Management,
+vlcd,"very low calorie diet, vcld, low calorie diet, diet program",high,Weight Management,Common misspelling VCLD included.
+weight loss,"slimming, diet, lose weight, weight management, appetite control",high,Weight Management,
+protein powder,"protein, whey, plant protein, vegan protein, shake powder",high,Sports & Weight Management,
+keto,"ketogenic, ketosis, ketone, keto diet, low carb",high,Weight Management,
+mct oil,"medium chain triglyceride, keto oil, brain oil, energy oil",medium,Weight Management,
+sweetener,"stevia, monk fruit, monkfruit, sugar substitute, sugar free sweetener",medium,Food,
+bar,"snack bar, protein bar, diet bar, meal bar",medium,Weight Management,
+soup,"diet soup, meal soup, sachet soup",medium,Weight Management,
+shaker,"shake bottle, mixer bottle, protein shaker, blender bottle",medium,Accessories,
+Optislim,"opti slim, optislm, optislimm",high,Weight Management,
+Optifast,"opti fast, optifst, optifast vlcd",high,Weight Management,
+IsoWhey,"iso whey, isoway, iso way",medium,Weight Management,
+Amazonia,"amazonia raw, raw protein, raw meal",medium,Sports & Weight Management,
+Slimfit,"slim fit, appetite management, fat burner",medium,Weight Management,
+BSC,"body science, green tea tx100",medium,Weight Management,
+Lazu Keto,"lazu, keto max, keto shake",medium,Weight Management,
+protein powder,"whey, whey protein, protein, gym powder, workout powder, proteen, protien",high,Sports Nutrition,General protein search expansion.
+whey protein isolate,"WPI, isolate, whey isolate, iso whey",high,Sports Nutrition,Common abbreviation for WPI products.
+plant protein,"vegan protein, pea protein, plant based protein, dairy free protein",high,Sports Nutrition,"Used for INC, Musashi and Balance plant protein."
+pre workout,"preworkout, PWO, pre work, workout energy, pump powder, gym energy",high,Sports Nutrition,Customer spellings and abbreviations.
+BCAA,"branched chain amino acids, amino acids, bcaa powder, bcaa caps, amino",medium,Sports Nutrition,Performance supplement synonyms.
+creatine,"creatine monohydrate, creatin, crea, strength powder, muscle powder",high,Sports Nutrition,Common misspelling and use case.
+glutamine,"l glutamine, recovery powder, glutamin",medium,Sports Nutrition,Recovery supplement synonyms.
+carnitine,"l carnitine, fat metabolism supplement, carnitin",medium,Sports Nutrition,Performance supplement synonyms.
+mass gainer,"weight gainer, hard gainer, bulking powder, gain powder",high,Sports Nutrition,Used for Eternal Mass and Hardgainer.
+casein,"micellar casein, night protein, slow release protein",medium,Sports Nutrition,Casein synonyms.
+shaker bottle,"protein shaker, gym bottle, mixer bottle, shake bottle, shaker, bottle",high,Sports Nutrition,Shaker and bottle search expansion.
+electrolyte,"hydration powder, salts, sports hydration, elyte, electrolite",high,Sports Nutrition,Hydration-related search terms.
+ready to drink,"RTD, drink, sports drink, protein drink, shake, milkshake",medium,Sports Nutrition,Drink products.
+chocolate,"choc, cocoa, coco, choco",medium,Sports Nutrition,Flavour abbreviation.
+vanilla,"van, vnl, vnla",medium,Sports Nutrition,Flavour abbreviation.
+watermelon,"w melon, w/mel, watermelon flavour, melon",medium,Sports Nutrition,Flavour abbreviation.
+blue raspberry,"blue razz, b/raspberry, bl/rs, blue rasberry",medium,Sports Nutrition,Flavour and typo expansion.
+salted caramel,"s/cara, caramel, salted carmel",medium,Sports Nutrition,Flavour abbreviation.
+unflavoured,"unflav, no flavour, plain, unflavored",medium,Sports Nutrition,NZ/US spelling and abbreviation.
