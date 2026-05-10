@@ -1188,7 +1188,7 @@
           targetItem.areaType === "aisle" &&
           Number(targetItem.aisle) === Number(aisleNumber) &&
           normalizeKey(targetItem.side) === sideName &&
-          normalize(targetItem.section) === section.id;
+          normalizeKey(targetItem.section) === normalizeKey(section.id);
 
         if (isTarget) return `<div class="shelf-section target-section">${buildSectionDetail(targetItem)}</div>`;
         return `<div class="shelf-section">${section.label}</div>`;
