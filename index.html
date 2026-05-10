@@ -121,28 +121,6 @@
       cursor: pointer;
     }
 
-    .quick-buttons {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .quick-btn {
-      border: 1px solid var(--border);
-      background: white;
-      border-radius: 12px;
-      padding: 11px 8px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .quick-btn:hover {
-      background: var(--light-blue);
-      border-color: var(--blue);
-    }
 
     .card-title { margin: 0 0 10px; font-size: 18px; }
 
@@ -622,7 +600,6 @@
     .loading { color: var(--muted); font-weight: 700; line-height: 1.5; }
 
     @media (max-width: 820px) {
-      .quick-buttons { grid-template-columns: repeat(2, 1fr); }
       .location-segment { font-size: 13px; }
       .store-map { min-width: 980px; }
     }
@@ -641,7 +618,6 @@
         <input id="searchInput" type="text" placeholder="Search: vitamin C, Panadol, cough, Swisse..." autocomplete="off" />
         <button id="searchBtn">Search</button>
       </div>
-      <div class="quick-buttons" id="quickButtons"></div>
     </section>
 
     <section id="answerBox"></section>
@@ -715,17 +691,6 @@
       { id: "back-door", label: "Back Door" }
     ];
 
-    const quickButtons = [
-      { label: "Vitamins", key: "vitamins" },
-      { label: "Pain Relief", key: "pain relief" },
-      { label: "Cold & Flu", key: "cold flu" },
-      { label: "Cough Syrup", key: "cough syrup" },
-      { label: "Toothbrush", key: "toothbrush" },
-      { label: "Honey", key: "honey" },
-      { label: "First Aid", key: "first aid" },
-      { label: "Prescription", key: "prescription" }
-    ];
-
     let items = [];
     let fuse = null;
     let synonymIndex = [];
@@ -738,7 +703,6 @@
     const servedCounter = document.getElementById("servedCounter");
     const searchInput = document.getElementById("searchInput");
     const searchBtn = document.getElementById("searchBtn");
-    const quickButtonsBox = document.getElementById("quickButtons");
     const answerBox = document.getElementById("answerBox");
     const upperAisleMap = document.getElementById("upperAisleMap");
     const lowerAisleMap = document.getElementById("lowerAisleMap");
@@ -1012,20 +976,6 @@
 
     function sortByPriority(a, b) {
       return (b.priority || 0) - (a.priority || 0) || normalize(a.displayName).localeCompare(normalize(b.displayName));
-    }
-
-    function buildQuickButtons() {
-      quickButtonsBox.innerHTML = "";
-      quickButtons.forEach(item => {
-        const btn = document.createElement("button");
-        btn.className = "quick-btn";
-        btn.textContent = item.label;
-        btn.onclick = () => {
-          searchInput.value = item.key;
-          searchItems();
-        };
-        quickButtonsBox.appendChild(btn);
-      });
     }
 
     function getDisplayName(item) {
@@ -1378,7 +1328,6 @@
     });
 
     updateServedCounter();
-    buildQuickButtons();
     loadData().catch(error => {
       console.error(error);
       answerBox.innerHTML = `
