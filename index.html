@@ -288,6 +288,7 @@
 
     .upper-aisles {
       grid-column: 1 / 4;
+      grid-row: 1 / 2;
     }
 
     #upperAisleMap .shelf-side.two {
@@ -296,6 +297,7 @@
 
     .upper-side-stack {
       grid-column: 3 / 4;
+      grid-row: 1 / 2;
       display: grid;
       grid-template-columns: 0.72fr 1fr;
       /* Overlay the right-side household/till area on the empty third column
@@ -517,6 +519,11 @@
       letter-spacing: 0.6px;
     }
 
+    #upperAisleMap .aisle-block:nth-child(-n+2) .walkway {
+      width: calc(((100% - 16px) / 3) * 2 + 8px);
+      justify-self: start;
+    }
+
     .target {
       background: var(--yellow) !important;
       border-color: #111827 !important;
@@ -647,12 +654,12 @@
 
     const aisles = [
       { aisle: 1, top: [{ id: "T1", label: "Beauty" }, { id: "T2", label: "Beauty" }], bottom: [{ id: "B1", label: "Nail Polish" }, { id: "B2", label: "Adult Pads" }] },
-      { aisle: 2, top: [{ id: "T1", label: "Baby Skin&Wipes" }, { id: "T2", label: "Baby Nappies" }], bottom: [{ id: "B1", label: "Baby Teats&Soothers" }, { id: "B2", label: "Baby Formula&Food" }] },
-      { aisle: 3, top: [{ id: "T1", label: "Men & Family Planning" }, { id: "T2", label: "Oral Care" }], bottom: [{ id: "B1", label: "Footcare" }, { id: "B2", label: "First Aid" }, { id: "B3", label: "Pain & Wound Care" }] },
-      { aisle: 4, top: [{ id: "T1", label: "Shampoo&Conditioner" }, { id: "T2", label: "Hair Styling&Treatments" }, { id: "T3", label: "Eye&Ear Care" }], bottom: [{ id: "B1", label: "Hair Colour" }, { id: "B2", label: "Travel&Cotton Care" }, { id: "B3", label: "Digestive Health" }] },
-      { aisle: 5, top: [{ id: "T1", label: "Facial Skincare" }, { id: "T2", label: "Sensitive Skin&Body Care" }, { id: "T3", label: "Hair Removal&Deodorant" }], bottom: [{ id: "B1", label: "Anti-Ageing Skincare" }, { id: "B2", label: "Bath&Body" }, { id: "B3", label: "Sun Care&Insect Repellent" }] },
-      { aisle: 6, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Supplements" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Go Healthy & Solgar" }, { id: "B2", label: "Supplements" }, { id: "B3", label: "Supplements" }] },
-      { aisle: 7, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Protein Bars & Snacks" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Perfume" }, { id: "B2", label: "Sports Nutrition" }, { id: "B3", label: "Supplements" }] }
+      { aisle: 2, top: [{ id: "T1", label: "Baby Skin&Wipes" }, { id: "T2", label: "Baby Nappies" }], bottom: [{ id: "B1", label: "Baby Teats" }, { id: "B2", label: "Baby Formula" }] },
+      { aisle: 3, top: [{ id: "T1", label: "Men&Family Planning" }, { id: "T2", label: "Oral Care" }], bottom: [{ id: "B1", label: "Footcare" }, { id: "B2", label: "First Aid" }, { id: "B3", label: "Pain&Wound" }] },
+      { aisle: 4, top: [{ id: "T1", label: "Shampoo&Conditioner" }, { id: "T2", label: "Hair Styling" }, { id: "T3", label: "Eye&Ear Care" }], bottom: [{ id: "B1", label: "Hair Colour" }, { id: "B2", label: "Travel&Cotton" }, { id: "B3", label: "Digestive Health" }] },
+      { aisle: 5, top: [{ id: "T1", label: "Facial Skincare" }, { id: "T2", label: "Body Care" }, { id: "T3", label: "Women" }], bottom: [{ id: "B1", label: "Skincare" }, { id: "B2", label: "Bath&Body" }, { id: "B3", label: "Sun Care" }] },
+      { aisle: 6, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Supplements" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Go Healthy&Solgar" }, { id: "B2", label: "Supplements" }, { id: "B3", label: "Supplements" }] },
+      { aisle: 7, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Protein Bars" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Perfume" }, { id: "B2", label: "Sports Nutrition" }, { id: "B3", label: "Supplements" }] }
     ];
 
     const leftZones = [
