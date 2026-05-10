@@ -666,12 +666,12 @@
 
     const aisles = [
       { aisle: 1, top: [{ id: "T1", label: "Beauty" }, { id: "T2", label: "Hair" }], bottom: [{ id: "B1", label: "Skin" }, { id: "B2", label: "Body" }] },
-      { aisle: 2, top: [{ id: "T1", label: "Baby Skin Care" }, { id: "T2", label: "Nappies" }], bottom: [{ id: "B1", label: "Baby Teats" }, { id: "B2", label: "Baby Formula" }] },
-      { aisle: 3, top: [{ id: "T1", label: "Men" }, { id: "T2", label: "First Aid" }], bottom: [{ id: "B1", label: "Footcare" }, { id: "B2", label: "Kids" }] },
-      { aisle: 4, top: [{ id: "T1", label: "Hair Care" }, { id: "T2", label: "Hair Care" }, { id: "T3", label: "Eye Care" }], bottom: [{ id: "B1", label: "Hair Colour" }, { id: "B2", label: "Travel" }, { id: "B3", label: "Digestive Health" }] },
-      { aisle: 5, top: [{ id: "T1", label: "Honey" }, { id: "T2", label: "Manuka" }, { id: "T3", label: "Propolis" }], bottom: [{ id: "B1", label: "Protein" }, { id: "B2", label: "Sports" }, { id: "B3", label: "Weight" }] },
-      { aisle: 6, top: [{ id: "T1", label: "Toothbrush" }, { id: "T2", label: "Toothpaste" }, { id: "T3", label: "Mouthwash" }], bottom: [{ id: "B1", label: "Hygiene" }, { id: "B2", label: "Deodorant" }, { id: "B3", label: "Care" }] },
-      { aisle: 7, top: [{ id: "T1", label: "General" }, { id: "T2", label: "General" }, { id: "T3", label: "General" }], bottom: [{ id: "B1", label: "General" }, { id: "B2", label: "General" }, { id: "B3", label: "General" }] }
+      { aisle: 2, top: [{ id: "T1", label: "Baby Skin&Wipes" }, { id: "T2", label: "Baby Nappies" }], bottom: [{ id: "B1", label: "Baby Teats&Soothers" }, { id: "B2", label: "Baby Formula&Food" }] },
+      { aisle: 3, top: [{ id: "T1", label: "Men & Family Planning" }, { id: "T2", label: "Oral Care" }], bottom: [{ id: "B1", label: "Footcare" }, { id: "B2", label: "First Aid" }] },
+      { aisle: 4, top: [{ id: "T1", label: "Shampoo&Conditioner" }, { id: "T2", label: "Hair Styling&Treatments" }, { id: "T3", label: "Eye&Ear Care" }], bottom: [{ id: "B1", label: "Hair Colour" }, { id: "B2", label: "Travel&Cotton Care" }, { id: "B3", label: "Digestive Health" }] },
+      { aisle: 5, top: [{ id: "T1", label: "Facial Skincare" }, { id: "T2", label: "Sensitive Skin&Body Care" }, { id: "T3", label: "Hair Removal&Deodorant" }], bottom: [{ id: "B1", label: "Anti-Ageing Skincare" }, { id: "B2", label: "Bath&Body" }, { id: "B3", label: "Sun Care&Insect Repellent" }] },
+      { aisle: 6, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Supplements" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Go Healthy & Solgar" }, { id: "B2", label: "Supplements" }, { id: "B3", label: "Supplements" }] },
+      { aisle: 7, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Protein Bars & Snacks" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Perfume" }, { id: "B2", label: "Sports Nutrition" }, { id: "B3", label: "Supplements" }] }
     ];
 
     const leftZones = [
@@ -1106,7 +1106,7 @@
         a3b3Box.classList.add("target-section");
         a3b3Box.innerHTML = buildSectionDetail(targetItem);
       } else {
-        a3b3Box.innerHTML = "Vita C";
+        a3b3Box.innerHTML = "Pain & Wound Care";
       }
     }
 
