@@ -287,19 +287,25 @@
     }
 
     .upper-aisles {
-      grid-column: 1 / 3;
+      grid-column: 1 / 4;
+    }
+
+    #upperAisleMap .shelf-side.two {
+      grid-template-columns: repeat(3, 1fr);
     }
 
     .upper-side-stack {
       grid-column: 3 / 4;
       display: grid;
       grid-template-columns: 0.72fr 1fr;
-      /* Match the exact vertical rhythm of the A1/A2/A3 aisle blocks:
-         each aisle block is 122px high including its 4px padding, and aisle blocks are 10px apart.
-         The last three rows mirror A3 top / walkway / bottom, so Vita C aligns with Kids. */
-      grid-template-rows: 126px 126px 42px 18px 42px;
+      /* Overlay the right-side household/till area on the empty third column
+         of the first two aisles and the A3 top row. A3-B3 is now rendered
+         as a normal aisle section in the A3 bottom row. */
+      grid-template-rows: 126px 126px 42px 18px;
       gap: 7px;
-      min-height: 100%;
+      min-height: 0;
+      align-self: start;
+      z-index: 3;
     }
 
     .upper-side-empty { display: none; }
@@ -406,30 +412,6 @@
       grid-row: 3 / 4;
       font-size: 18px;
       color: #142b4d;
-    }
-
-    .a3-b3-box {
-      grid-column: 1 / 3;
-      grid-row: 5 / 6;
-      width: 100%;
-      height: 42px;
-      min-height: 42px;
-      width: 100%;
-      background: white;
-      border: 2px solid #243041;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-size: 13px;
-      font-weight: 800;
-      line-height: 1.1;
-      padding: 4px 6px;
-      position: relative;
-      transition: 0.2s ease;
-      color: #0f172a;
-      box-sizing: border-box;
     }
 
     .aisle-block {
@@ -636,7 +618,6 @@
                 <div class="household-box" id="householdBox">Household</div>
                 <div class="upper-side-empty" aria-hidden="true"></div>
                 <div class="till2-box" id="till2Box">Till 2</div>
-                <div class="a3-b3-box" id="a3b3Box">Vita C</div>
               </div>
             </div>
             <div class="lower-aisles" id="lowerAisleMap"></div>
@@ -667,7 +648,7 @@
     const aisles = [
       { aisle: 1, top: [{ id: "T1", label: "Beauty" }, { id: "T2", label: "Beauty" }], bottom: [{ id: "B1", label: "Nail Polish" }, { id: "B2", label: "Adult Pads" }] },
       { aisle: 2, top: [{ id: "T1", label: "Baby Skin&Wipes" }, { id: "T2", label: "Baby Nappies" }], bottom: [{ id: "B1", label: "Baby Teats&Soothers" }, { id: "B2", label: "Baby Formula&Food" }] },
-      { aisle: 3, top: [{ id: "T1", label: "Men & Family Planning" }, { id: "T2", label: "Oral Care" }], bottom: [{ id: "B1", label: "Footcare" }, { id: "B2", label: "First Aid" }] },
+      { aisle: 3, top: [{ id: "T1", label: "Men & Family Planning" }, { id: "T2", label: "Oral Care" }], bottom: [{ id: "B1", label: "Footcare" }, { id: "B2", label: "First Aid" }, { id: "B3", label: "Pain & Wound Care" }] },
       { aisle: 4, top: [{ id: "T1", label: "Shampoo&Conditioner" }, { id: "T2", label: "Hair Styling&Treatments" }, { id: "T3", label: "Eye&Ear Care" }], bottom: [{ id: "B1", label: "Hair Colour" }, { id: "B2", label: "Travel&Cotton Care" }, { id: "B3", label: "Digestive Health" }] },
       { aisle: 5, top: [{ id: "T1", label: "Facial Skincare" }, { id: "T2", label: "Sensitive Skin&Body Care" }, { id: "T3", label: "Hair Removal&Deodorant" }], bottom: [{ id: "B1", label: "Anti-Ageing Skincare" }, { id: "B2", label: "Bath&Body" }, { id: "B3", label: "Sun Care&Insect Repellent" }] },
       { aisle: 6, top: [{ id: "T1", label: "Supplements" }, { id: "T2", label: "Supplements" }, { id: "T3", label: "Supplements" }], bottom: [{ id: "B1", label: "Go Healthy & Solgar" }, { id: "B2", label: "Supplements" }, { id: "B3", label: "Supplements" }] },
@@ -712,7 +693,6 @@
     const resultList = document.getElementById("resultList");
     const householdBox = document.getElementById("householdBox");
     const till2Box = document.getElementById("till2Box");
-    const a3b3Box = document.getElementById("a3b3Box");
 
     function updateServedCounter() {
       const key = "storeFinderOpenCount";
@@ -1092,22 +1072,6 @@
     function buildSideZones(targetItem) {
       buildHouseholdBox(targetItem);
       till2Box.classList.toggle("target", Boolean(targetItem && targetItem.areaType === "till2"));
-
-      const isA3B3Target = Boolean(
-        targetItem &&
-        targetItem.areaType === "aisle" &&
-        Number(targetItem.aisle) === 3 &&
-        normalizeKey(targetItem.side) === "bottom" &&
-        normalize(targetItem.section) === "B3"
-      );
-
-      a3b3Box.classList.remove("target", "target-section");
-      if (isA3B3Target) {
-        a3b3Box.classList.add("target-section");
-        a3b3Box.innerHTML = buildSectionDetail(targetItem);
-      } else {
-        a3b3Box.innerHTML = "Pain & Wound Care";
-      }
     }
 
     function cellKey(horizontal, vertical) {
