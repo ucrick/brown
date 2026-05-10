@@ -127,3 +127,23 @@ supplement-advice,safety,Read the label and follow directions. Ask staff if you 
 no-special-rule,general,No special purchase restriction shown for this shelf location.,False,False,False,False,Default rule for general sports nutrition items.
 ask-staff-if-not-found,general,"If the exact flavour or size is not on shelf, please ask a team member for help.",True,False,False,False,Useful for sports nutrition flavours and sizes that rotate frequently.
 check-label-caffeine,safety,Some pre-workout and energy products contain caffeine. Please check the label before use.,True,False,False,True,General customer safety prompt; no pharmacist restriction implied.
+no-special-rule,general,,False,False,False,False,Default empty rule; no customer warning needed
+default-location,general,Check shelf label and ask staff if the item is not visible.,False,False,False,False,Default rule for shelf location search.
+ask-pharmacist-pregnancy,safety,"For pregnancy, breastfeeding, iron deficiency or medication interactions, ask the pharmacist if unsure.",True,False,False,True,Used for pregnancy and iron related searches if configured later.
+sleep-advice,safety,"For persistent sleep problems, medication interactions, pregnancy, breastfeeding or children, ask the pharmacist or staff for advice.",True,False,False,True,Sleep products may not be suitable for everyone.
+none,general,No special service restriction.,False,False,False,False,Default rule for open-shelf products.
+ask-staff,general,Please ask a staff member if you cannot find this product on shelf.,True,False,False,False,"Useful for small sachets, high-demand or occasionally moved items."
+check-label,safety,Always read the label and use only as directed.,True,False,False,True,General vitamins and supplements safety notice.
+general-vitamins,general,Always read the label and use only as directed. Supplements should not replace a balanced diet.,True,False,False,False,Default vitamin supplement advice.
+ask-pharmacist,pharmacy,Some allergy and hayfever medicines may not be suitable for everyone. Ask the pharmacist if you are unsure.,True,False,True,True,Use for antihistamines and medicated nasal sprays.
+age-check,safety,Check the label for age limits and maximum days of use. Ask staff or pharmacist if buying for a child.,True,True,False,True,Use for decongestant nasal sprays and products with age restrictions.
+general-med-advice,general,Always read the label and follow directions for use.,True,False,False,True,General medicine advice.
+ask-pharmacist,pharmacy,"Please ask the pharmacist or staff if symptoms persist, if buying for a child, or if you are taking other medicines.",True,False,False,True,"General medicine advice for cough, cold, flu and sore throat products"
+age-check,restriction,"Some cough, cold and flu products may not be suitable for young children. Check age directions on pack or ask staff.",True,True,False,True,Use for child-specific or age-sensitive products
+behind-counter,pharmacy,This item may be behind the counter or require staff assistance.,True,False,True,True,Use only if store policy requires pharmacist/staff handling
+pain-relief-general,general,Always read the label and use only as directed. Ask staff if you are unsure which pain relief product is suitable.,True,False,False,True,General warning for over-the-counter pain relief products
+ibuprofen-warning,safety,"Ibuprofen may not be suitable for some people, including those with stomach ulcers, kidney problems, blood-thinner use, asthma sensitivity, or during some stages of pregnancy. Ask a pharmacist if unsure.",True,False,True,True,NSAID caution for ibuprofen products
+age-check,restriction,Some pain relief products may have age or dose restrictions. Check the label or ask a pharmacist.,True,True,False,True,Use when age range is uncertain or customer is buying for a child
+age-check,restriction,Some medicines may have age limits or purchase restrictions. Check the pack and ask staff if unsure.,True,True,False,True,"Use for analgesics, NSAIDs, aspirin and combination pain relief."
+ask-pharmacist,pharmacy,"Ask the pharmacist if you are pregnant, taking blood thinners, have asthma, stomach ulcers, kidney issues, or are buying for a child.",True,False,True,True,General safety prompt for NSAIDs and aspirin.
+follow-label,safety,Always follow the dosage instructions on the label and do not combine products with the same active ingredient unless advised.,True,False,False,True,"Avoid duplicate dosing, especially paracetamol plus ibuprofen combinations."

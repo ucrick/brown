@@ -626,3 +626,111 @@ strawberry,"strawb, straw, s/berry, s/bery, strawbery",low,Sports,flavour search
 watermelon,"w/melon, water melon, wmelon",low,Sports,flavour search expansion
 blue raspberry,"blu rasp, blue rasp, b/rsp, bluerasp, blue razz",low,Sports,flavour search expansion
 vanilla,"van, vanila, vanilla ice cream, van/icrm, soft serve",low,Sports,flavour search expansion
+protein bar,"protein snack, protein bars, gym snack, workout snack, high protein bar, low carb bar, keto bar",high,Sports Nutrition,General search expansion for protein snack bay
+protein drink,"protein shake, ready to drink protein, rtd protein, milkshake, recovery drink, protein water",high,Sports Nutrition,RTD protein drinks
+energy drink,"pre workout drink, preworkout, amino drink, caffeine drink, workout drink, sports drink",high,Sports Nutrition,Energy and amino RTD drinks
+low carb,"keto, keto snack, low sugar, reduced carb, carb conscious",medium,Sports Nutrition,Low-carb snacks
+peanut butter,"pb, pbutter, peanut, nut butter",medium,Food,Common flavour abbreviation
+cookies and cream,"cookie cream, cookies cream, c and c, c&c",medium,Food,Common flavour variants
+chocolate,"choc, choco, cocoa, cacao",medium,Food,Common flavour abbreviation
+salted caramel,"s/c, saltd caramel, salt caramel, caramel salt",medium,Food,Common flavour abbreviation
+psyllium,"psyllium husk, fibre, fiber, constipation fibre, digestive fibre",high,Health Food,Common superfood/fibre search
+chia seeds,"chia, black chia, organic chia, chia seed",medium,Health Food,Seeds
+quinoa,"keenwah, qunioa, tri colour quinoa, tricolour quinoa",medium,Health Food,Common misspelling
+nuts,"almonds, cashews, pistachios, nut snack, roasted nuts, salted nuts",medium,Health Food,Healthy snack search
+jerky,"beef jerky, biltong, meat snack, dried beef, high protein meat snack",medium,Health Food,Meat snack search
+snack mix,"trail mix, nut mix, energy mix, healthy mix, scroggin, dried fruit mix",medium,Health Food,JCs snack mixes
+superfoods,"super foods, seeds, seed blend, lsa, lsc, flaxseed, lecithin",medium,Health Food,Health food and seeds
+magnesium,"mag,mg,mega mag,magnesium tablets,magnesium powder,cramp tablets,leg cramp supplement",high,Vitamins,General magnesium search expansion.
+immune support,"immunity,immune defence,immune protect,cold prevention,vit c,zinc,echinacea",high,Vitamins,General immunity terms.
+fish oil,"omega 3,omega-3,fish capsules,joint oil,heart oil",medium,Vitamins,Fish oil common terms.
+probiotics,"probiotic,good bacteria,gut health,digestive health,bloating,antibiotic recovery,inner health,lifespace",high,Vitamins,Digestive probiotic terms.
+baby probiotics,"baby probiotic,colic drops,kids probiotic,biogaia,protectis",high,Vitamins,Baby and kids probiotic search terms.
+nutrition drink,"meal replacement,nutrition shake,medical nutrition,ensure,fortisip,souvenaid,sustagen,glucerna",high,Health Food,Adult nutrition and medical nutrition.
+milk powder,"powdered milk,anchor milk,a2 milk,blue milk,trim milk,skim milk",medium,Health Food,Milk powder terms.
+menopause,"hot flush,hot flushes,night sweats,hormone support,women balance,black cohosh,red clover",high,Vitamins,Menopause and hormone support.
+pregnancy vitamins,"prenatal,pregnancy supplement,folate,folic acid,conception,breastfeeding,elevit,menevit",high,Vitamins,Pregnancy and conception terms.
+iron,"iron tablets,iron liquid,iron sachets,low iron,anaemia,anemia,fatigue,tiredness,ferro,floradix,maltofer,spatone",high,Vitamins,Iron supplement search terms.
+sleep support,"sleep aid,sleep drops,insomnia,melatonin,calm,stress,relax,rescue remedy",high,Vitamins,Sleep and stress terms.
+liposomal vitamin c,"lipo c,lipoc,lypo c,vit c sachet,vitamin c sachets,immune sachet,vc",high,Vitamins,Liposomal vitamin C terms.
+men's health,"mens health,men health,testosterone,libido,prostate,sexual health,performance",medium,Vitamins,Men's health terms.
+women's health,"womens health,women health,breastfeeding,menopause,pregnancy,urinary probiotic",medium,Vitamins,Women's health terms.
+children supplements,"kids,kid,junior,child,children,baby powder,kids probiotic,kids vitamin",medium,Vitamins,Kids product terms.
+vitamin c,"vit c,vc,ascorbic acid,immune vitamin,c vitamin",high,Vitamins,
+immune support,"immunity,immune booster,cold prevention,wellness,defence,defense",high,Vitamins,
+energy,"energy booster,low energy,fatigue,tired,tiredness,wake up",high,Vitamins,
+gummies,"gummy vitamins,vitamin gummies,chewables,chews,lollies",high,Vitamins,
+manuka honey,"mgo honey,umf honey,nz honey,medical honey,honey",high,Vitamins,
+lozenges,"lozenge,throat drops,cough drops,sore throat sweets,throat lollies",high,Vitamins,
+herbal remedies,"herbal tonic,natural remedy,herbs,plant medicine,liquid herbs",medium,Vitamins,
+collagen,"collagen powder,collagen peptides,beauty powder,skin hair nails",high,Vitamins,
+protein powder,"protein,powder,shake,workout powder,fitness protein",medium,Vitamins,
+greens,"greens powder,super greens,superfood,green powder",medium,Vitamins,
+apple cider vinegar,"acv,cider vinegar,bragg vinegar,vinegar drink",medium,Food,
+kids vitamins,"childrens vitamins,kids gummies,child vitamin,toddler vitamins",high,Vitamins,
+sleep support,"sleep aid,melatonin,night,insomnia,rest,sleep gummies",high,Vitamins,
+stress support,"stress,calm,anxiety support,relax,distress,ashwagandha",medium,Vitamins,
+gut health,"digestion,digestive health,probiotic,prebiotic,bloating,stomach",medium,Vitamins,
+women health,"womens health,period,pms,menopause,cranberry,uti,intimacy",medium,Vitamins,
+magnesium,"mag,cramps,leg cramps,muscle cramps,cramp ease,crampeze",high,Vitamins,
+multivitamin,"multi, multivitamins, daily vitamin, daily multi, vitamins and minerals",high,Vitamins,General supplement synonym.
+men vitamins,"mens vitamins, male vitamins, men multi, men multivitamin",high,Vitamins,
+women vitamins,"womens vitamins, female vitamins, women multi, women multivitamin",high,Vitamins,
+50 plus,"50+, senior, seniors, mature adults, over 50",high,Vitamins,
+kids vitamins,"children vitamins, child vitamins, kids multi, children multi, childrens vitamins",high,Vitamins,
+immune support,"immunity, immune, defence, defense, immune booster",medium,Vitamins,
+vision support,"eye health, eyes, vision, eyesight",medium,Vitamins,
+collagen,"beauty collagen, skin supplement, glow, skin support",medium,Vitamins,
+chewable,"chew, chewy, gummies, chewables",medium,Vitamins,
+liquid vitamin,"liquid multivitamin, syrup vitamin, oral liquid vitamin",medium,Vitamins,
+hayfever,"hay fever, pollen allergy, seasonal allergy, allergies, sneezing, itchy eyes, runny nose",high,Medicine,General allergy search terms
+antihistamine,"allergy tablets, hayfever tablets, anti allergy, non drowsy, antihistamin",high,Medicine,Common misspelling included
+fexofenadine,"telfast, fexo, fexaclear, hayfever 180, hayfever 120",high,Medicine,Active ingredient and brands
+loratadine,"claratyne, claratyn, lora clear, lora tabs, lorapaed, loratadine tablets",high,Medicine,Active ingredient and brands
+cetirizine,"razene, zyrtec, histaclear, cetirizine tablets",high,Medicine,Active ingredient and brands
+levocetirizine,"levrix, levo cetirizine, levocetirizine tablets",medium,Medicine,Active ingredient and brand
+bilastine,"labixten, bilastine tablets, labixtin",medium,Medicine,Brand and misspelling
+nasal spray,"nose spray, nasal mist, hayfever spray, blocked nose spray, sinus spray",high,Medicine,General nasal spray search
+decongestant,"blocked nose, stuffy nose, nasal congestion, nose unblocker, congestion spray",high,Medicine,Cold and flu nasal terms
+saline,"salt water, seawater, sea water, nasal rinse, sinus rinse, nasal wash",high,Medicine,Saline nasal care
+sinus rinse,"sinus wash, nasal irrigation, rinse bottle, refill sachets, neti pot",high,Medicine,Sinus rinse kit terms
+inhaler,"vicks inhaler, nasal inhaler, menthol stick, vapour inhaler, vapor inhaler",medium,Medicine,Nasal inhaler terms
+children allergy,"kids hayfever, child hayfever, allergy syrup, childrens elixir, kids antihistamine",high,Medicine,Childrens allergy search
+sore throat,"throat pain, scratchy throat, tickly throat, sore thoat, soar throat, strep throat, throat infection",high,Medicine,
+lozenges,"throat lollies, cough drops, pastilles, loz, drops, throat candy",high,Medicine,
+throat spray,"sore throat spray, anaesthetic spray, numbing spray, oral spray",high,Medicine,
+gargle,"throat gargle, mouth gargle, betadine gargle, antiseptic gargle",high,Medicine,
+cough,"cough syrup, cough mixture, cough medicine, chesty cough, dry cough, tickly cough",high,Medicine,
+cold and flu,"cold flu, cold tablets, flu tablets, flu medicine, cold and flu relief, day and night",high,Medicine,
+blocked nose,"stuffy nose, nasal congestion, congested, decongestant, sinus congestion",high,Medicine,
+sinus,"sinus pain, sinus pressure, sinus headache, sinus relief",high,Medicine,
+mucus,"phlegm, chest mucus, mucus cough, chesty, productive cough",medium,Medicine,
+honey lemon,"honey and lemon, hon lem, h/l, honey lemon lozenges",medium,Medicine,
+sugar free,"sf, diabetic friendly, no sugar",medium,Medicine,
+kids cough,"children cough, child cough, toddler cough, kids cold medicine",medium,Medicine,
+immune support,"immunity, immune, vitamin c, elderberry, sambucol, blis",medium,Medicine,
+nasal spray,"nose spray, saline spray, sinus spray, decongestant spray",medium,Medicine,
+probiotic throat,"oral probiotic, BLIS K12, throat probiotic, good bacteria",medium,Medicine,
+pain relief,"painkiller,pain killers,analgesic,pain tablets,pain meds,pain medicine",high,Medicine,General pain relief terms
+paracetamol,"acetaminophen,panadol,para,paraceta,paracetemol,paracetomol,fever tablets",high,Medicine,Paracetamol is also known as acetaminophen
+ibuprofen,"brufen,nurofen,nsaid,anti inflammatory,anti-inflammatory,inflammation tablets",high,Medicine,NSAID pain relief terms
+headache,"migraine,head pain,sore head",medium,Medicine,Symptom synonym
+fever,"temperature,high temperature,flu fever",medium,Medicine,Symptom synonym
+period pain,"menstrual pain,cramps,period cramps",medium,Medicine,Symptom synonym
+toothache,"tooth pain,dental pain",medium,Medicine,Symptom synonym
+caplets,"caps,caplet,capsules,tablets,tabs",medium,Medicine,Format synonym
+soluble tablets,"dissolvable tablets,effervescent tablets,water tablets",medium,Medicine,Format synonym
+soft gel,"softgel,liquid caps,liquid capsules,liquid soft caps",medium,Medicine,Format synonym
+mini caplets,"mini tablets,small tablets,easy swallow",medium,Medicine,Format synonym
+ibuprofen,"nurofen, advil, brufen, ibu, nsaid, anti inflammatory, painkiller, fever medicine",high,Medicine,Common search expansion for ibuprofen products.
+paracetamol ibuprofen,"nuromol, maxigesic, para ibu, paraibu, dual action, double action, paracetamol plus ibuprofen",high,Medicine,Combination pain relief terms.
+aspirin,"aspro, disprin, cartia, acetylsalicylic acid, ASA, blood thinner, soluble aspirin",medium,Medicine,Includes pain relief and low-dose aspirin terms.
+diclofenac,"voltaren, voltaren rapid, mobiflam, anti inflammatory, nsaid, inflammation medicine",medium,Medicine,Voltaren Rapid shelf expansion.
+naproxen,"naprogesic, sonaflam, period pain, menstrual pain, nsaid, anti inflammatory",medium,Medicine,Naproxen related search terms.
+pain relief,"painkiller, pain medicine, analgesic, headache tablets, fever tablets, body ache, aches and pains",high,Medicine,General pain relief terms.
+fever,"temperature, high temperature, fever medicine, flu fever, cold fever",high,Medicine,Symptom-based search term.
+cold and flu,"cold, flu, influenza, blocked nose, headache, body ache, chills, sick, cold medicine",high,Medicine,Right-med zone term.
+migraine,"migraine relief, headache, bad headache, migrastick, migraine patch, kool migraine",medium,Medicine,Migraine search terms.
+liquid capsules,"liq caps, liquid caps, liquicaps, soft gels, softgel, capsules",medium,Medicine,Format synonyms.
+tablets,"tabs, tab, caplets, caps, pills",medium,Medicine,Format synonyms.
+anti inflammatory,"anti-inflammatory, inflammation, swelling, nsaid, voltaren, naproxen, ibuprofen",medium,Medicine,Spelling variants and category terms.

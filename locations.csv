@@ -581,3 +581,126 @@ a7-b2-bay8-right-middle-bondi-protein-ready,active,aisle,7.0,bottom,B2,Bondi Pro
 a7-b2-bay8-right-middle-bondi-protein-sachets,active,aisle,7.0,bottom,B2,Bondi Protein Sachets & Bars,,8,right,middle,A7 · Bondi Protein Sachets & Bars · Bay 8 · Right · Middle,,Bondi Protein Sachets ,817,section is b2.horizontal from supplied instruction
 a7-b2-bay8-right-bottom-bondi-protein-powder,active,aisle,7.0,bottom,B2,Bondi Protein Powders & Collagen,,8,right,bottom,A7 · Bondi Protein Powders & Collagen · Bay 8 · Right · Bottom,,Bondi Protein Powders ,818,section is b2.horizontal from supplied instruction
 a7-b2-bay8-right-bottom-bondi-protein-large,active,aisle,7.0,bottom,B2,Bondi Protein 800g Powders,,8,right,bottom,A7 · Bondi Protein 800g Powders · Bay 8 · Right · Bottom,,Bondi Protein 800g Pow,819,section is b2.horizontal from supplied instruction
+a7-t2-b1-left-top-inc-1,active,aisle,7.0,top,T2,INC Protein Bars Shelf 1,,1,left,top,A7 · Top · T2 · Bay 1 · Left · Top · INC Protein Bars Shelf 1,,INC Protein Bars Shelf 1,101,
+a7-t2-b1-left-top-inc-2,active,aisle,7.0,top,T2,INC Protein Bars Shelf 2,,1,left,top,A7 · Top · T2 · Bay 1 · Left · Top · INC Protein Bars Shelf 2,,INC Protein Bars Shelf 2,102,
+a7-t2-b1-left-top-inc-3,active,aisle,7.0,top,T2,INC Low Carb Protein,,1,left,top,A7 · Top · T2 · Bay 1 · Left · Top · INC Low Carb Protein,,INC Low Carb Protein,103,
+a7-t2-b1-left-middle-inc-4,active,aisle,7.0,top,T2,INC Low Carb Protein Shelf 4,,1,left,middle,A7 · Top · T2 · Bay 1 · Left · Middle · INC Low Carb Protein Shelf 4,,INC Low Carb Protein She,104,
+a7-t2-b1-left-middle-atkins-1,active,aisle,7.0,top,T2,Atkins Endulge Bars Shelf 1,,1,left,middle,A7 · Top · T2 · Bay 1 · Left · Middle · Atkins Endulge Bars Shelf 1,,Atkins Endulge Bars Shel,105,
+a7-t2-b1-left-middle-atkins-2,active,aisle,7.0,top,T2,Atkins Endulge Bars Shelf 2,,1,left,middle,A7 · Top · T2 · Bay 1 · Left · Middle · Atkins Endulge Bars Shelf 2,,Atkins Endulge Bars Shel,106,
+a7-t2-b1-left-bottom-grenade,active,aisle,7.0,top,T2,Grenade Protein Bars,,1,left,bottom,A7 · Top · T2 · Bay 1 · Left · Bottom · Grenade Protein Bars,,Grenade Protein Bars,107,
+a7-t2-b1-left-bottom-justine-1,active,aisle,7.0,top,T2,Justine Protein Cookies Bars Shelf 5,,1,left,bottom,A7 · Top · T2 · Bay 1 · Left · Bottom · Justine Protein Cookies Bars Shelf 5,,Justine Protein Cookies ,108,
+a7-t2-b1-left-bottom-justine-2,active,aisle,7.0,top,T2,Justine Protein Cookies Bars Shelf 5 Lower,,1,left,bottom,A7 · Top · T2 · Bay 1 · Left · Bottom · Justine Protein Cookies Bars Shelf 5 Lower,,Justine Protein Cookies ,109,
+a7-t2-b2-left-top-musashi-1,active,aisle,7.0,top,T2,Musashi Protein Snacks Shelf 1,,2,left,top,A7 · Top · T2 · Bay 2 · Left · Top · Musashi Protein Snacks Shelf 1,,Musashi Protein Snacks S,201,
+a7-t2-b2-left-top-musashi-2,active,aisle,7.0,top,T2,Musashi Protein Crisps Shelf 2,,2,left,top,A7 · Top · T2 · Bay 2 · Left · Top · Musashi Protein Crisps Shelf 2,,Musashi Protein Crisps S,202,
+a7-t2-b2-left-top-musashi-3,active,aisle,7.0,top,T2,Musashi Deluxe Bars Shelf 3,,2,left,top,A7 · Top · T2 · Bay 2 · Left · Top · Musashi Deluxe Bars Shelf 3,,Musashi Deluxe Bars Shel,203,
+a7-t2-b2-left-middle-athena-1,active,aisle,7.0,top,T2,Athena Protein Crisps Bars Shelf 1,,2,left,middle,A7 · Top · T2 · Bay 2 · Left · Middle · Athena Protein Crisps Bars Shelf 1,,Athena Protein Crisps Ba,204,
+a7-t2-b2-left-middle-athena-2,active,aisle,7.0,top,T2,Athena Luxe Protein Shelf 2,,2,left,middle,A7 · Top · T2 · Bay 2 · Left · Middle · Athena Luxe Protein Shelf 2,,Athena Luxe Protein Shel,205,
+a7-t2-b2-left-middle-quest-1,active,aisle,7.0,top,T2,Quest Protein Bars Shelf 1,,2,left,middle,A7 · Top · T2 · Bay 2 · Left · Middle · Quest Protein Bars Shelf 1,,Quest Protein Bars Shelf,206,
+a7-t2-b2-left-bottom-quest-2,active,aisle,7.0,top,T2,Quest Tortilla Chips and Bars,,2,left,bottom,A7 · Top · T2 · Bay 2 · Left · Bottom · Quest Tortilla Chips and Bars,,Quest Tortilla Chips and,207,
+a7-t2-b2-left-bottom-quest-3,active,aisle,7.0,top,T2,Quest Cookies and Peanut Butter Cups,,2,left,bottom,A7 · Top · T2 · Bay 2 · Left · Bottom · Quest Cookies and Peanut Butter Cups,,Quest Cookies and Peanut,208,
+a7-t2-b2-left-bottom-quest-4,active,aisle,7.0,top,T2,Quest Cookies Cups Lower Shelf,,2,left,bottom,A7 · Top · T2 · Bay 2 · Left · Bottom · Quest Cookies Cups Lower Shelf,,Quest Cookies Cups Lower,209,
+a7-t2-b3-middle-top-musashi-1,active,aisle,7.0,top,T2,Musashi Protein Wafers Shelf 1,,3,middle,top,A7 · Top · T2 · Bay 3 · Middle · Top · Musashi Protein Wafers Shelf 1,,Musashi Protein Wafers S,301,
+a7-t2-b3-middle-top-musashi-2,active,aisle,7.0,top,T2,Musashi Protein Crisps Shelf 2,,3,middle,top,A7 · Top · T2 · Bay 3 · Middle · Top · Musashi Protein Crisps Shelf 2,,Musashi Protein Crisps S,302,
+a7-t2-b3-middle-top-musashi-3,active,aisle,7.0,top,T2,Musashi High Protein Bars Shelf 3,,3,middle,top,A7 · Top · T2 · Bay 3 · Middle · Top · Musashi High Protein Bars Shelf 3,,Musashi High Protein Bar,303,
+a7-t2-b3-middle-middle-muscle-nation-1,active,aisle,7.0,top,T2,Muscle Nation Cake Protein Bars,,3,middle,middle,A7 · Top · T2 · Bay 3 · Middle · Middle · Muscle Nation Cake Protein Bars,,Muscle Nation Cake Prote,304,
+a7-t2-b3-middle-middle-muscle-nation-2,active,aisle,7.0,top,T2,Muscle Nation Custard Protein Bars,,3,middle,middle,A7 · Top · T2 · Bay 3 · Middle · Middle · Muscle Nation Custard Protein Bars,,Muscle Nation Custard Pr,305,
+a7-t2-b3-middle-middle-bsc,active,aisle,7.0,top,T2,BSC High Protein Bars,,3,middle,middle,A7 · Top · T2 · Bay 3 · Middle · Middle · BSC High Protein Bars,,BSC High Protein Bars,306,
+a7-t2-b3-middle-middle-bondi,active,aisle,7.0,top,T2,Bondi Protein Co Bars,,3,middle,middle,A7 · Top · T2 · Bay 3 · Middle · Middle · Bondi Protein Co Bars,,Bondi Protein Co Bars,307,
+a7-t2-b3-middle-bottom-barebells-1,active,aisle,7.0,top,T2,Barebells Protein Bars Shelf 5,,3,middle,bottom,A7 · Top · T2 · Bay 3 · Middle · Bottom · Barebells Protein Bars Shelf 5,,Barebells Protein Bars S,308,
+a7-t2-b3-middle-bottom-barebells-2,active,aisle,7.0,top,T2,Barebells Protein Bars Lower Shelf,,3,middle,bottom,A7 · Top · T2 · Bay 3 · Middle · Bottom · Barebells Protein Bars Lower Shelf,,Barebells Protein Bars L,309,
+a7-t2-b1rtd-middle-top-optimum,active,aisle,7.0,top,T2,Optimum Amino Energy RTD,,1,middle,top,A7 · Top · T2 · Bay 1 · Middle · Top · Optimum Amino Energy RTD,,Optimum Amino Energy RTD,401,
+a7-t2-b1rtd-middle-top-musashi-rtd,active,aisle,7.0,top,T2,Musashi Protein Drinks RTD,,1,middle,top,A7 · Top · T2 · Bay 1 · Middle · Top · Musashi Protein Drinks RTD,,Musashi Protein Drinks R,402,
+a7-t2-b1rtd-middle-middle-musashi-rtd,active,aisle,7.0,top,T2,Musashi Energy Drinks RTD,,1,middle,middle,A7 · Top · T2 · Bay 1 · Middle · Middle · Musashi Energy Drinks RTD,,Musashi Energy Drinks RT,403,
+a7-t2-b1rtd-middle-middle-faction,active,aisle,7.0,top,T2,Faction Labs RTD,,1,middle,middle,A7 · Top · T2 · Bay 1 · Middle · Middle · Faction Labs RTD,,Faction Labs RTD,404,
+a7-t2-b1rtd-middle-middle-bsc-rtd,active,aisle,7.0,top,T2,BSC Energy Drinks RTD,,1,middle,middle,A7 · Top · T2 · Bay 1 · Middle · Middle · BSC Energy Drinks RTD,,BSC Energy Drinks RTD,405,
+a7-t2-b1rtd-middle-middle-oxyshred,active,aisle,7.0,top,T2,OxyShred Energy Drinks RTD,,1,middle,middle,A7 · Top · T2 · Bay 1 · Middle · Middle · OxyShred Energy Drinks RTD,,OxyShred Energy Drinks R,406,
+a7-t2-b1rtd-middle-bottom-snack-shake2go,active,aisle,7.0,top,T2,Snack and Shake2Go Drinks,,1,middle,bottom,A7 · Top · T2 · Bay 1 · Middle · Bottom · Snack and Shake2Go Drinks,,Snack and Shake2Go Drink,407,
+a7-t2-b1rtd-middle-bottom-muscle-nation-rtd,active,aisle,7.0,top,T2,Muscle Nation Energy and Water,,1,middle,bottom,A7 · Top · T2 · Bay 1 · Middle · Bottom · Muscle Nation Energy and Water,,Muscle Nation Energy and,408,
+a7-t2-b1rtd-middle-bottom-sup-cellucor,active,aisle,7.0,top,T2,SUP and Cellucor Drinks,,1,middle,bottom,A7 · Top · T2 · Bay 1 · Middle · Bottom · SUP and Cellucor Drinks,,SUP and Cellucor Drinks,409,
+a7-t2-b1-right-top-healthyway-1,active,aisle,7.0,top,T2,Healthy Way Nuts and Snacks Shelf 1,,1,right,top,A7 · Top · T2 · Bay 1 · Right · Top · Healthy Way Nuts and Snacks Shelf 1,,Healthy Way Nuts and Sna,501,
+a7-t2-b1-right-top-healthyway-2,active,aisle,7.0,top,T2,Healthy Way Soy Crisps and Cashews,,1,right,top,A7 · Top · T2 · Bay 1 · Right · Top · Healthy Way Soy Crisps and Cashews,,Healthy Way Soy Crisps a,502,
+a7-t2-b1-right-middle-healthyway-3,active,aisle,7.0,top,T2,Healthy Way Seeds Pistachios Flax Chia Shelf 3,,1,right,middle,A7 · Top · T2 · Bay 1 · Right · Middle · Healthy Way Seeds Pistachios Flax Chia Shelf 3,,Healthy Way Seeds Pistac,503,
+a7-t2-b1-right-middle-healthyway-4,active,aisle,7.0,top,T2,Healthy Way Seeds Pistachios Flax Chia Shelf 4,,1,right,middle,A7 · Top · T2 · Bay 1 · Right · Middle · Healthy Way Seeds Pistachios Flax Chia Shelf 4,,Healthy Way Seeds Pistac,504,
+a7-t2-b1-right-bottom-healthyway-5,active,aisle,7.0,top,T2,Healthy Way Chia Quinoa Psyllium Shelf 5,,1,right,bottom,A7 · Top · T2 · Bay 1 · Right · Bottom · Healthy Way Chia Quinoa Psyllium Shelf 5,,Healthy Way Chia Quinoa ,505,
+a7-t2-b1-right-bottom-healthyway-6,active,aisle,7.0,top,T2,Healthy Way Chia Quinoa Psyllium Lower Shelf,,1,right,bottom,A7 · Top · T2 · Bay 1 · Right · Bottom · Healthy Way Chia Quinoa Psyllium Lower Shelf,,Healthy Way Chia Quinoa ,506,
+a7-t2-b2-right-top-ceres-1,active,aisle,7.0,top,T2,Ceres Superfoods Shelf 1,,2,right,top,A7 · Top · T2 · Bay 2 · Right · Top · Ceres Superfoods Shelf 1,,Ceres Superfoods Shelf 1,601,
+a7-t2-b2-right-top-ceres-2,active,aisle,7.0,top,T2,Ceres Superfoods Shelf 2,,2,right,top,A7 · Top · T2 · Bay 2 · Right · Top · Ceres Superfoods Shelf 2,,Ceres Superfoods Shelf 2,602,
+a7-t2-b2-right-middle-ceres-3,active,aisle,7.0,top,T2,Ceres Superfoods Shelf 3,,2,right,middle,A7 · Top · T2 · Bay 2 · Right · Middle · Ceres Superfoods Shelf 3,,Ceres Superfoods Shelf 3,603,
+a7-t2-b2-right-middle-canterbury-biltong,active,aisle,7.0,top,T2,Canterbury Biltong Jerky,,2,right,middle,A7 · Top · T2 · Bay 2 · Right · Middle · Canterbury Biltong Jerky,,Canterbury Biltong Jerky,604,
+a7-t2-b2-right-bottom-jcs-1,active,aisle,7.0,top,T2,JCs Snack Mixes Shelf 1,,2,right,bottom,A7 · Top · T2 · Bay 2 · Right · Bottom · JCs Snack Mixes Shelf 1,,JCs Snack Mixes Shelf 1,605,
+a7-t2-b2-right-bottom-jcs-2,active,aisle,7.0,top,T2,JCs Snack Mixes Shelf 2,,2,right,bottom,A7 · Top · T2 · Bay 2 · Right · Bottom · JCs Snack Mixes Shelf 2,,JCs Snack Mixes Shelf 2,606,
+a7-b3-bay1-left-top-ethical-nutrients,active,aisle,7.0,bottom,B3,Ethical Nutrients,,1,left,top,A7 · B3 · Ethical Nutrients · Bay 1 · Left · Top,,Ethical Nutrients,101,
+a7-b3-bay1-left-mid-thompsons,active,aisle,7.0,bottom,B3,Thompsons,,1,left,middle,A7 · B3 · Thompsons · Bay 1 · Left · Middle,,Thompsons,102,
+a7-b3-bay1-left-bot-thompsons,active,aisle,7.0,bottom,B3,Thompsons,,1,left,bottom,A7 · B3 · Thompsons · Bay 1 · Left · Bottom,,Thompsons,103,
+a7-b3-bay1-left-top-inner-health,active,aisle,7.0,bottom,B3,Inner Health,,1,left,top,A7 · B3 · Inner Health · Bay 1 · Left · Top,,Inner Health,104,
+a7-b3-bay1-left-mid-biogaia-immune-probiotics,active,aisle,7.0,bottom,B3,"Biogaia, Dental Probiotics & Immune Probiotics",,1,left,middle,"A7 · B3 · Biogaia, Dental Probiotics & Immune Probiotics · Bay 1 · Left · Middle",,"Biogaia, Dental Probiotics &",105,
+a7-b3-bay1-left-bot-lifespace,active,aisle,7.0,bottom,B3,Lifespace,,1,left,bottom,A7 · B3 · Lifespace · Bay 1 · Left · Bottom,,Lifespace,106,
+a7-b3-bay1-middle-top-ensure,active,aisle,7.0,bottom,B3,Ensure & Glucerna,,1,middle,top,A7 · B3 · Ensure & Glucerna · Bay 1 · Middle · Top,,Ensure & Glucerna,201,
+a7-b3-bay1-middle-mid-complan-isowhey-isustain,active,aisle,7.0,bottom,B3,"Complan, IsoWhey & Isustain",,1,middle,middle,"A7 · B3 · Complan, IsoWhey & Isustain · Bay 1 · Middle · Middle",,"Complan, IsoWhey & Isustain",202,
+a7-b3-bay1-middle-bot-anchor,active,aisle,7.0,bottom,B3,Anchor Milk Powder,,1,middle,bottom,A7 · B3 · Anchor Milk Powder · Bay 1 · Middle · Bottom,,Anchor Milk Powder,203,
+a7-b3-bay2-middle-top-sustagen,active,aisle,7.0,bottom,B3,Sustagen,,2,middle,top,A7 · B3 · Sustagen · Bay 2 · Middle · Top,,Sustagen,204,
+a7-b3-bay2-middle-mid-fortisip-souvenaid-healtheries,active,aisle,7.0,bottom,B3,"Fortisip, Souvenaid & Healtheries",,2,middle,middle,"A7 · B3 · Fortisip, Souvenaid & Healtheries · Bay 2 · Middle · Middle",,"Fortisip, Souvenaid & Health",205,
+a7-b3-bay2-middle-bot-anchor,active,aisle,7.0,bottom,B3,Anchor Milk Powder,,2,middle,bottom,A7 · B3 · Anchor Milk Powder · Bay 2 · Middle · Bottom,,Anchor Milk Powder,206,
+a7-b3-bay2-right-top-menopause,active,aisle,7.0,bottom,B3,Menopause & Hormone Support,,2,right,top,A7 · B3 · Menopause & Hormone Support · Bay 2 · Right · Top,,Menopause & Hormone Support,301,
+a7-b3-bay2-right-mid-pregnancy-conception,active,aisle,7.0,bottom,B3,Pregnancy & Conception,,2,right,middle,A7 · B3 · Pregnancy & Conception · Bay 2 · Right · Middle,,Pregnancy & Conception,302,
+a7-b3-bay2-right-bot-iron,active,aisle,7.0,bottom,B3,Iron,,2,right,bottom,A7 · B3 · Iron · Bay 2 · Right · Bottom,,Iron,303,
+a7-b3-bay1-right-top-sleep-stress,active,aisle,7.0,bottom,B3,"Sleep, Stress & Rescue Remedy",,1,right,top,"A7 · B3 · Sleep, Stress & Rescue Remedy · Bay 1 · Right · Top",,"Sleep, Stress & Rescue Remed",304,
+a7-b3-bay1-right-mid-lipoc-vitamin-c,active,aisle,7.0,bottom,B3,Lipo-C Vitamin C,,1,right,middle,A7 · B3 · Lipo-C Vitamin C · Bay 1 · Right · Middle,,Lipo-C Vitamin C,305,
+a7-b3-bay1-right-bot-mens-sexual-health,active,aisle,7.0,bottom,B3,Men's Health & Sexual Health,,1,right,bottom,A7 · B3 · Men's Health & Sexual Health · Bay 1 · Right · Bottom,,Men's Health & Sexual Health,306,
+a7-t3-bay1-left-top-natural-energy-boo,active,aisle,7.0,top,T3,Natural Energy Boost,,1,left,top,A7 · T3 · Bay 1 · Left · Top · Natural Energy Boost,,A7 T3 Natural Energy Boost,100,
+a7-t3-bay1-left-top-the-good-vitamin-c,active,aisle,7.0,top,T3,The Good Vitamin Co,,1,left,top,A7 · T3 · Bay 1 · Left · Top · The Good Vitamin Co,,A7 T3 The Good Vitamin Co,101,
+a7-t3-bay1-left-top-nordia,active,aisle,7.0,top,T3,Nordia,,1,left,top,A7 · T3 · Bay 1 · Left · Top · Nordia,,A7 T3 Nordia,102,
+a7-t3-bay1-left-middle-berocca,active,aisle,7.0,top,T3,Berocca,,1,left,middle,A7 · T3 · Bay 1 · Left · Middle · Berocca,,A7 T3 Berocca,103,
+a7-t3-bay1-left-middle-gummies,active,aisle,7.0,top,T3,Gummies,,1,left,middle,A7 · T3 · Bay 1 · Left · Middle · Gummies,,A7 T3 Gummies,104,
+a7-t3-bay1-left-middle-supplements,active,aisle,7.0,top,T3,Supplements,,1,left,middle,A7 · T3 · Bay 1 · Left · Middle · Supplements,,A7 T3 Supplements,105,
+a7-t3-bay1-left-bottom-the-good-vitamin-c,active,aisle,7.0,top,T3,The Good Vitamin Co Kids,,1,left,bottom,A7 · T3 · Bay 1 · Left · Bottom · The Good Vitamin Co Kids,,A7 T3 The Good Vitamin Co Kids,106,
+a7-t3-bay1-left-bottom-manuka-health,active,aisle,7.0,top,T3,Manuka Health,,1,left,bottom,A7 · T3 · Bay 1 · Left · Bottom · Manuka Health,,A7 T3 Manuka Health,107,
+a7-t3-bay1-left-bottom-harker-herbal,active,aisle,7.0,top,T3,Harker Herbal,,1,left,bottom,A7 · T3 · Bay 1 · Left · Bottom · Harker Herbal,,A7 T3 Harker Herbal,108,
+a7-t3-bay1-left-bottom-me-today,active,aisle,7.0,top,T3,Me Today,,1,left,bottom,A7 · T3 · Bay 1 · Left · Bottom · Me Today,,A7 T3 Me Today,109,
+a7-t3-bay1-left-bottom-artemis,active,aisle,7.0,top,T3,Artemis,,1,left,bottom,A7 · T3 · Bay 1 · Left · Bottom · Artemis,,A7 T3 Artemis,110,
+a7-t3-bay2-middle-top-comvita,active,aisle,7.0,top,T3,Comvita,,2,middle,top,A7 · T3 · Bay 2 · Middle · Top · Comvita,,A7 T3 Comvita,200,
+a7-t3-bay2-middle-middle-mother-earth,active,aisle,7.0,top,T3,Mother Earth,,2,middle,middle,A7 · T3 · Bay 2 · Middle · Middle · Mother Earth,,A7 T3 Mother Earth,201,
+a7-t3-bay2-middle-middle-eve-wellness,active,aisle,7.0,top,T3,EVE Wellness,,2,middle,middle,A7 · T3 · Bay 2 · Middle · Middle · EVE Wellness,,A7 T3 EVE Wellness,202,
+a7-t3-bay2-middle-bottom-bio-island,active,aisle,7.0,top,T3,Bio Island,,2,middle,bottom,A7 · T3 · Bay 2 · Middle · Bottom · Bio Island,,A7 T3 Bio Island,203,
+a7-t3-bay2-middle-bottom-barkers,active,aisle,7.0,top,T3,Barkers,,2,middle,bottom,A7 · T3 · Bay 2 · Middle · Bottom · Barkers,,A7 T3 Barkers,204,
+a7-t3-bay2-middle-bottom-bragg,active,aisle,7.0,top,T3,Bragg,,2,middle,bottom,A7 · T3 · Bay 2 · Middle · Bottom · Bragg,,A7 T3 Bragg,205,
+a7-t3-bay3-right-top-vital-collagen,active,aisle,7.0,top,T3,Vital Collagen,,3,right,top,A7 · T3 · Bay 3 · Right · Top · Vital Collagen,,A7 T3 Vital Collagen,300,
+a7-t3-bay3-right-top-dose-co,active,aisle,7.0,top,T3,Dose & Co,,3,right,top,A7 · T3 · Bay 3 · Right · Top · Dose & Co,,A7 T3 Dose & Co,301,
+a7-t3-bay3-right-middle-two-islands,active,aisle,7.0,top,T3,Two Islands,,3,right,middle,A7 · T3 · Bay 3 · Right · Middle · Two Islands,,A7 T3 Two Islands,302,
+a7-t3-bay3-right-middle-nutra-organics,active,aisle,7.0,top,T3,Nutra Organics,,3,right,middle,A7 · T3 · Bay 3 · Right · Middle · Nutra Organics,,A7 T3 Nutra Organics,303,
+a7-t3-bay3-right-bottom-dr-lewinns,active,aisle,7.0,top,T3,Dr Lewinns,,3,right,bottom,A7 · T3 · Bay 3 · Right · Bottom · Dr Lewinns,,A7 T3 Dr Lewinns,304,
+a7-t3-bay4-right-top-vital-proteins,active,aisle,7.0,top,T3,Vital Proteins,,4,right,top,A7 · T3 · Bay 4 · Right · Top · Vital Proteins,,A7 T3 Vital Proteins,400,
+a7-t3-bay4-right-top-vital-greens,active,aisle,7.0,top,T3,Vital Greens,,4,right,top,A7 · T3 · Bay 4 · Right · Top · Vital Greens,,A7 T3 Vital Greens,401,
+a7-t3-bay4-right-middle-melrose,active,aisle,7.0,top,T3,Melrose,,4,right,middle,A7 · T3 · Bay 4 · Right · Middle · Melrose,,A7 T3 Melrose,402,
+a7-t3-bay4-right-middle-natures-sunshine,active,aisle,7.0,top,T3,Natures Sunshine,,4,right,middle,A7 · T3 · Bay 4 · Right · Middle · Natures Sunshine,,A7 T3 Natures Sunshine,403,
+a7-t3-bay4-right-middle-weleda,active,aisle,7.0,top,T3,Weleda,,4,right,middle,A7 · T3 · Bay 4 · Right · Middle · Weleda,,A7 T3 Weleda,404,
+a7-t3-bay4-right-bottom-martin-pleasance,active,aisle,7.0,top,T3,Martin & Pleasance,,4,right,bottom,A7 · T3 · Bay 4 · Right · Bottom · Martin & Pleasance,,A7 T3 Martin & Pleasance,405,
+a7-t3-bay4-right-bottom-misc-vitamins,active,aisle,7.0,top,T3,Misc Vitamins,,4,right,bottom,A7 · T3 · Bay 4 · Right · Bottom · Misc Vitamins,,A7 T3 Misc Vitamins,406,
+a7-t3-bay4-right-bottom-crampeze,active,aisle,7.0,top,T3,CrampEze,,4,right,bottom,A7 · T3 · Bay 4 · Right · Bottom · CrampEze,,A7 T3 CrampEze,407,
+a6-t3-bay1-left-top,active,aisle,6.0,top,T3,Centrum,,1,left,top,A6 · Centrum · Bay 1 · Left · Top,,Centrum,6311,Rows 1-3 from Bay 1 image.
+a6-t3-bay1-left-middle,active,aisle,6.0,top,T3,Centrum,,1,left,middle,A6 · Centrum · Bay 1 · Left · Middle,,Centrum,6312,Rows 4-6 from Bay 1 image.
+a6-t3-bay1-left-bottom,active,aisle,6.0,top,T3,Centrum,,1,left,bottom,A6 · Centrum · Bay 1 · Left · Bottom,,Centrum,6313,Rows 7-8 from Bay 1 image.
+rightmed-cough-bay1-top,active,right-med,,,,Cough Syrup,cough-syrup,1,,top,Right Medicines · Cough Syrup · Bay 1 · Top,,Cough Syrup Bay 1,11,"Image section title shows Hayfever/Nasal Sprays, but user specified areaType right-med and zoneId cough-syrup."
+rightmed-cough-bay1-middle,active,right-med,,,,Cough Syrup,cough-syrup,1,,middle,Right Medicines · Cough Syrup · Bay 1 · Middle,,Cough Syrup Bay 1,12,"Image section title shows Hayfever/Nasal Sprays, but user specified areaType right-med and zoneId cough-syrup."
+rightmed-cough-bay1-bottom,active,right-med,,,,Cough Syrup,cough-syrup,1,,bottom,Right Medicines · Cough Syrup · Bay 1 · Bottom,,Cough Syrup Bay 1,13,"Image section title shows Hayfever/Nasal Sprays, but user specified areaType right-med and zoneId cough-syrup."
+rightmed-cough-bay2-top,active,right-med,,,,Cough Syrup,cough-syrup,2,,top,Right Medicines · Cough Syrup · Bay 2 · Top,,Cough Syrup Bay 2,21,"Image section title shows Hayfever/Nasal Sprays, but user specified areaType right-med and zoneId cough-syrup."
+rightmed-cough-bay2-middle,active,right-med,,,,Cough Syrup,cough-syrup,2,,middle,Right Medicines · Cough Syrup · Bay 2 · Middle,,Cough Syrup Bay 2,22,"Image section title shows Hayfever/Nasal Sprays, but user specified areaType right-med and zoneId cough-syrup."
+rightmed-cough-bay2-bottom,active,right-med,,,,Cough Syrup,cough-syrup,2,,bottom,Right Medicines · Cough Syrup · Bay 2 · Bottom,,Cough Syrup Bay 2,23,"Image section title shows Hayfever/Nasal Sprays, but user specified areaType right-med and zoneId cough-syrup."
+rightmed-sore-throat-bay3-top,active,right-med,,,,Sore Throat,sore-throat,3,,top,Right Med · Sore Throat · Bay 3 · Top,,Sore Throat,1,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay3-middle,active,right-med,,,,Sore Throat,sore-throat,3,,middle,Right Med · Sore Throat · Bay 3 · Middle,,Sore Throat,2,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay3-bottom,active,right-med,,,,Sore Throat,sore-throat,3,,bottom,Right Med · Sore Throat · Bay 3 · Bottom,,Sore Throat,3,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay4-top,active,right-med,,,,Sore Throat,sore-throat,4,,top,Right Med · Sore Throat · Bay 4 · Top,,Sore Throat,4,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay4-middle,active,right-med,,,,Sore Throat,sore-throat,4,,middle,Right Med · Sore Throat · Bay 4 · Middle,,Sore Throat,5,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay4-bottom,active,right-med,,,,Sore Throat,sore-throat,4,,bottom,Right Med · Sore Throat · Bay 4 · Bottom,,Sore Throat,6,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay5-top,active,right-med,,,,Sore Throat,sore-throat,5,,top,Right Med · Sore Throat · Bay 5 · Top,,Sore Throat,7,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay5-middle,active,right-med,,,,Sore Throat,sore-throat,5,,middle,Right Med · Sore Throat · Bay 5 · Middle,,Sore Throat,8,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-sore-throat-bay5-bottom,active,right-med,,,,Sore Throat,sore-throat,5,,bottom,Right Med · Sore Throat · Bay 5 · Bottom,,Sore Throat,9,"areaType and zoneId set according to user instruction; image headings include Cold & Flu, Cough Mixtures and Sore Throat"
+rightmed-pain-relief-bay1-top,active,right-med,,,,Pain Relief,pain-relief,1,,top,Right Med · Pain Relief · Bay 1 · Top shelves,,Pain Relief,100,Bay 1 Paracetamol; rows 1-3
+rightmed-pain-relief-bay1-middle,active,right-med,,,,Pain Relief,pain-relief,1,,middle,Right Med · Pain Relief · Bay 1 · Middle shelves,,Pain Relief,110,Bay 1 Paracetamol; rows 4-6
+rightmed-pain-relief-bay1-bottom,active,right-med,,,,Pain Relief,pain-relief,1,,bottom,Right Med · Pain Relief · Bay 1 · Bottom shelves,,Pain Relief,120,Bay 1 Paracetamol; rows 7-8
+rightmed-cold-flu-bay2-top,active,right-med,,,,Cold & Flu,cold-flu,2,,top,Right Med · Cold & Flu · Bay 2 · Top shelf area,,Cold & Flu Bay 2,21,Generated from Bay 2 Ibuprofen / Bay 3 Ibuprofen & Aspirin shelf image.
+rightmed-cold-flu-bay2-middle,active,right-med,,,,Cold & Flu,cold-flu,2,,middle,Right Med · Cold & Flu · Bay 2 · Middle shelf area,,Cold & Flu Bay 2,22,Generated from Bay 2 Ibuprofen / Bay 3 Ibuprofen & Aspirin shelf image.
+rightmed-cold-flu-bay2-bottom,active,right-med,,,,Cold & Flu,cold-flu,2,,bottom,Right Med · Cold & Flu · Bay 2 · Bottom shelf area,,Cold & Flu Bay 2,23,Generated from Bay 2 Ibuprofen / Bay 3 Ibuprofen & Aspirin shelf image.
+rightmed-cold-flu-bay3-top,active,right-med,,,,Cold & Flu,cold-flu,3,,top,Right Med · Cold & Flu · Bay 3 · Top shelf area,,Cold & Flu Bay 3,31,Generated from Bay 2 Ibuprofen / Bay 3 Ibuprofen & Aspirin shelf image.
+rightmed-cold-flu-bay3-middle,active,right-med,,,,Cold & Flu,cold-flu,3,,middle,Right Med · Cold & Flu · Bay 3 · Middle shelf area,,Cold & Flu Bay 3,32,Generated from Bay 2 Ibuprofen / Bay 3 Ibuprofen & Aspirin shelf image.
+rightmed-cold-flu-bay3-bottom,active,right-med,,,,Cold & Flu,cold-flu,3,,bottom,Right Med · Cold & Flu · Bay 3 · Bottom shelf area,,Cold & Flu Bay 3,33,Generated from Bay 2 Ibuprofen / Bay 3 Ibuprofen & Aspirin shelf image.
